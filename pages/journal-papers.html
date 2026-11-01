@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en"
-      data-title-en="International journal papers — AIIC Lab"
-      data-title-vi="Bài báo tạp chí quốc tế — AIIC Lab">
+<html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -29,9 +27,6 @@ body{
   color:var(--text); -webkit-font-smoothing:antialiased;
 }
 
-/* ===== Bilingual: only the selected language is shown ===== */
-html[data-lang="vi"] [lang="en"]{ display:none; }
-html[data-lang="en"] [lang="vi"]{ display:none; }
 
 /* ===== Header ===== */
 header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
@@ -43,10 +38,6 @@ header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box
 nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
 nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
 nav a:hover{ background:rgba(255,255,255,.12); }
-.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
-.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
-.lang-btn:hover{ color:#fff; }
-.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
 @media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
 
 /* ===== Page container ===== */
@@ -92,7 +83,13 @@ article li{ margin-bottom:8px; }
 .card li{ margin-bottom:3px; }
 .card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
 .person{ display:flex; gap:14px; align-items:flex-start; }
-.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .avatar{ width:72px; height:72px; font-size:22px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+img.avatar, .person img.avatar{ object-fit:cover; object-position:center top; border-radius:14px; width:96px; height:120px; background:#eef1f7; box-shadow:0 4px 12px rgba(20,83,143,.25); }
+.hero img.avatar{ width:132px; height:164px; }
+figure{ margin:12px 0 18px; }
+figure img{ display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); background:#fff; }
+figcaption{ font-size:.88em; color:var(--muted); text-align:center; margin-top:6px; }
+.fig-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
 .person .who{ flex:1; min-width:0; }
 .person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
 .cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
@@ -153,34 +150,28 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
   <div class="header-inner">
     <div class="site-title"><a href="../index.html">AIIC<span class="dot">·</span>Lab</a></div>
     <div class="site-tag">
-      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
-      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+      AI &amp; Intelligent Communication Lab · Sejong University
     </div>
     <nav>
       <ul>
-        <li><a href="../index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
-        <li><a href="../index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
-        <li><a href="../index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
-        <li><a href="../index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
-        <li><a href="../index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
-        <li><a href="../index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#research">Research</a></li>
+        <li><a href="../index.html#members">Members</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#join">Join us</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
-    </div>
   </div>
 </header>
 
 <main id="top">
 <article>
-<h1><span lang="en">International journal papers</span><span lang="vi">Bài báo tạp chí quốc tế</span></h1>
-<div class="meta"><span lang="en">Publications · updated 1 Nov 2026 from the original lab site</span><span lang="vi">Công bố · cập nhật 01/11/2026 từ trang gốc của lab</span></div>
-<p class="lede" lang="en">158 papers in international journals (IEEE, IEICE, Elsevier, Springer and others), numbered as on the original lab site and grouped by year, newest first. Prof. Kim's name is highlighted.</p>
-<p class="lede" lang="vi">158 bài báo trên các tạp chí quốc tế (IEEE, IEICE, Elsevier, Springer…), đánh số như trên trang gốc của lab và xếp theo năm, mới nhất trước. Tên GS. Kim được tô đậm.</p>
-<p><span lang="en">Jump to year</span><span lang="vi">Đến năm</span>: <a class="link-ext" href="#y2026">2026</a> · <a class="link-ext" href="#y2025">2025</a> · <a class="link-ext" href="#y2024">2024</a> · <a class="link-ext" href="#y2023">2023</a> · <a class="link-ext" href="#y2022">2022</a> · <a class="link-ext" href="#y2021">2021</a> · <a class="link-ext" href="#y2020">2020</a> · <a class="link-ext" href="#y2019">2019</a> · <a class="link-ext" href="#y2018">2018</a> · <a class="link-ext" href="#y2017">2017</a> · <a class="link-ext" href="#y2016">2016</a> · <a class="link-ext" href="#y2015">2015</a> · <a class="link-ext" href="#y2014">2014</a> · <a class="link-ext" href="#y2013">2013</a> · <a class="link-ext" href="#y2012">2012</a> · <a class="link-ext" href="#y2011">2011</a> · <a class="link-ext" href="#y2010">2010</a> · <a class="link-ext" href="#y2008">2008</a> · <a class="link-ext" href="#y2007">2007</a> · <a class="link-ext" href="#y2006">2006</a> · <a class="link-ext" href="#y2004">2004</a></p>
-<p><span lang="en">See also</span><span lang="vi">Xem thêm</span>: <a class="link-html" href="conference-papers.html"><span lang="en">International conference papers</span><span lang="vi">Bài báo hội nghị quốc tế</span></a></p>
+<h1>International journal papers</h1>
+<div class="meta">Publications · updated 1 Nov 2026</div>
+<p class="lede">158 papers in international journals (IEEE, IEICE, Elsevier, Springer and others), numbered as in the lab's publication list and grouped by year, newest first. Prof. Kim's name is highlighted.</p>
+<p>Jump to year: <a class="link-ext" href="#y2026">2026</a> · <a class="link-ext" href="#y2025">2025</a> · <a class="link-ext" href="#y2024">2024</a> · <a class="link-ext" href="#y2023">2023</a> · <a class="link-ext" href="#y2022">2022</a> · <a class="link-ext" href="#y2021">2021</a> · <a class="link-ext" href="#y2020">2020</a> · <a class="link-ext" href="#y2019">2019</a> · <a class="link-ext" href="#y2018">2018</a> · <a class="link-ext" href="#y2017">2017</a> · <a class="link-ext" href="#y2016">2016</a> · <a class="link-ext" href="#y2015">2015</a> · <a class="link-ext" href="#y2014">2014</a> · <a class="link-ext" href="#y2013">2013</a> · <a class="link-ext" href="#y2012">2012</a> · <a class="link-ext" href="#y2011">2011</a> · <a class="link-ext" href="#y2010">2010</a> · <a class="link-ext" href="#y2008">2008</a> · <a class="link-ext" href="#y2007">2007</a> · <a class="link-ext" href="#y2006">2006</a> · <a class="link-ext" href="#y2004">2004</a></p>
+<p>See also: <a class="link-html" href="conference-papers.html">International conference papers</a></p>
 <!-- PUBS:START (generated by tools/build_publications.py from tools/publications.json; do not edit by hand) -->
 <h2 class="pub-year" id="y2026">2026</h2><ol class="pub-list">
 <li><span class="n">[158]</span>Khac-Tuan Nguyen, Thai-Hoc Vu and <span class="pi">Sunghwan Kim</span>, <span class="t">"Optical RIS for FSO systems: Theoretical analysis perspectives,"</span> accepted at IEEE Internet of Things Journal, July 2026.</li>
@@ -384,48 +375,15 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
 </ol>
 <!-- PUBS:END -->
 <div class="footer-nav">
-  <a href="../index.html"><span lang="en">← Home</span><span lang="vi">← Trang chủ</span></a>
-  <a href="#top"><span lang="en">↑ Top</span><span lang="vi">↑ Đầu trang</span></a>
+  <a href="../index.html">← Home</a>
+  <a href="#top">↑ Top</a>
 </div>
 </article>
 </main>
 
 <footer>
-  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
-  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+  © 2026 AIIC Lab · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea
 </footer>
-
-<script>
-(function () {
-  var KEY = 'aiic-lang';
-  var root = document.documentElement;
-  function apply(lang) {
-    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
-    root.setAttribute('data-lang', lang);
-    root.setAttribute('lang', lang);
-    var t = root.getAttribute('data-title-' + lang);
-    if (t) { document.title = t; }
-    var btns = document.querySelectorAll('.lang-btn');
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
-    }
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved) { apply(saved); }
-  document.addEventListener('click', function (ev) {
-    var el = ev.target;
-    while (el && el !== document) {
-      if (el.classList && el.classList.contains('lang-btn')) {
-        apply(el.getAttribute('data-lang'));
-        return;
-      }
-      el = el.parentNode;
-    }
-  });
-})();
-</script>
 
 </body>
 </html>

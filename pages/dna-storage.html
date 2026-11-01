@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en"
-      data-title-en="DNA storage — AIIC Lab"
-      data-title-vi="Lưu trữ DNA — AIIC Lab">
+<html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -29,9 +27,6 @@ body{
   color:var(--text); -webkit-font-smoothing:antialiased;
 }
 
-/* ===== Bilingual: only the selected language is shown ===== */
-html[data-lang="vi"] [lang="en"]{ display:none; }
-html[data-lang="en"] [lang="vi"]{ display:none; }
 
 /* ===== Header ===== */
 header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
@@ -43,10 +38,6 @@ header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box
 nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
 nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
 nav a:hover{ background:rgba(255,255,255,.12); }
-.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
-.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
-.lang-btn:hover{ color:#fff; }
-.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
 @media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
 
 /* ===== Page container ===== */
@@ -92,7 +83,13 @@ article li{ margin-bottom:8px; }
 .card li{ margin-bottom:3px; }
 .card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
 .person{ display:flex; gap:14px; align-items:flex-start; }
-.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .avatar{ width:72px; height:72px; font-size:22px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+img.avatar, .person img.avatar{ object-fit:cover; object-position:center top; border-radius:14px; width:96px; height:120px; background:#eef1f7; box-shadow:0 4px 12px rgba(20,83,143,.25); }
+.hero img.avatar{ width:132px; height:164px; }
+figure{ margin:12px 0 18px; }
+figure img{ display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); background:#fff; }
+figcaption{ font-size:.88em; color:var(--muted); text-align:center; margin-top:6px; }
+.fig-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
 .person .who{ flex:1; min-width:0; }
 .person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
 .cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
@@ -153,114 +150,78 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
   <div class="header-inner">
     <div class="site-title"><a href="../index.html">AIIC<span class="dot">·</span>Lab</a></div>
     <div class="site-tag">
-      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
-      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+      AI &amp; Intelligent Communication Lab · Sejong University
     </div>
     <nav>
       <ul>
-        <li><a href="../index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
-        <li><a href="../index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
-        <li><a href="../index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
-        <li><a href="../index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
-        <li><a href="../index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
-        <li><a href="../index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#research">Research</a></li>
+        <li><a href="../index.html#members">Members</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#join">Join us</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
-    </div>
   </div>
 </header>
 
 <main id="top">
 <article>
-<h1><span lang="en">DNA storage</span><span lang="vi">Lưu trữ DNA</span></h1>
-<div class="meta"><span lang="en">Research field · from the original lab page</span><span lang="vi">Lĩnh vực nghiên cứu · theo trang gốc của lab</span></div>
+<h1>DNA storage</h1>
+<div class="meta">Research field</div>
 
-<p class="lede" lang="en">DNA can store data at a density no silicon memory approaches, and keeps it for centuries — but writing and reading it (synthesis and sequencing) introduce substitutions, insertions and deletions. Error-correcting codes designed for this channel are what make DNA a storage medium rather than a curiosity.</p>
-<p class="lede" lang="vi">DNA có thể lưu dữ liệu với mật độ mà không bộ nhớ silicon nào sánh được, và giữ được hàng thế kỷ — nhưng việc ghi và đọc (tổng hợp và giải trình tự) sinh ra lỗi thay thế, chèn và xoá. Mã sửa lỗi thiết kế riêng cho kênh này là thứ biến DNA từ một điều thú vị thành một phương tiện lưu trữ.</p>
+<p class="lede">DNA can store data at a density no silicon memory approaches, and keeps it for centuries — but writing and reading it (synthesis and sequencing) introduce substitutions, insertions and deletions. Error-correcting codes designed for this channel are what make DNA a storage medium rather than a curiosity.</p>
 
-<h2><span lang="en">Specific topics on ECC for DNA storage</span><span lang="vi">Các chủ đề cụ thể về ECC cho lưu trữ DNA</span></h2>
+<h2>Specific topics on ECC for DNA storage</h2>
 <ul>
-  <li><span lang="en">Error-correcting codes (ECC) converted from classical codes for DNA storage</span><span lang="vi">Mã sửa lỗi (ECC) chuyển từ các mã cổ điển sang cho lưu trữ DNA</span></li>
-  <li><span lang="en">New designs of insertion/deletion codes that satisfy the GC-content and homopolymer-run constraints</span><span lang="vi">Thiết kế mới cho mã chèn/xoá thoả ràng buộc về hàm lượng GC và độ dài chuỗi lặp (homopolymer run)</span></li>
-  <li><span lang="en">LDPC code design for DNA storage</span><span lang="vi">Thiết kế mã LDPC cho lưu trữ DNA</span></li>
-  <li><span lang="en">Run-length-limited and constrained coding for composite DNA</span><span lang="vi">Mã giới hạn độ dài chạy và mã ràng buộc cho DNA tổ hợp (composite DNA)</span></li>
+  <li>Error-correcting codes (ECC) converted from classical codes for DNA storage</li>
+  <li>New designs of insertion/deletion codes that satisfy the GC-content and homopolymer-run constraints</li>
+  <li>LDPC code design for DNA storage</li>
+  <li>Run-length-limited and constrained coding for composite DNA</li>
 </ul>
-<p><span lang="en">Basics of DNA storage:</span><span lang="vi">Cơ bản về lưu trữ DNA:</span> <a class="link-ext" href="https://en.wikipedia.org/wiki/DNA_digital_data_storage" target="_blank" rel="noopener"><span lang="en">Wikipedia (properties, history, references)</span><span lang="vi">Wikipedia (tính chất, lịch sử, tài liệu)</span></a></p>
+<p>Basics of DNA storage: <a class="link-ext" href="https://en.wikipedia.org/wiki/DNA_digital_data_storage" target="_blank" rel="noopener">Wikipedia (properties, history, references)</a></p>
 
-<h2><span lang="en">In plain words</span><span lang="vi">Nói một cách đơn giản</span></h2>
-<p lang="en">A file is turned into a long string over the four bases A, C, G, T, cut into short strands, synthesised, and later sequenced back. Two constraints make strands easier to synthesise and read: the share of G and C bases should stay near one half (<em>GC content</em>), and the same base should not repeat too many times in a row (<em>homopolymer run</em>). A code for DNA storage therefore has to correct errors <em>and</em> respect these constraints at the same time.</p>
-<p lang="vi">Một tập tin được chuyển thành chuỗi dài trên bốn ba-zơ A, C, G, T, cắt thành các đoạn ngắn, tổng hợp, rồi sau này giải trình tự trở lại. Hai ràng buộc giúp đoạn DNA dễ tổng hợp và dễ đọc hơn: tỉ lệ ba-zơ G và C nên giữ gần một nửa (<em>hàm lượng GC</em>), và cùng một ba-zơ không nên lặp lại quá nhiều lần liên tiếp (<em>homopolymer run</em>). Vì vậy mã cho lưu trữ DNA phải vừa sửa lỗi <em>vừa</em> thoả các ràng buộc đó cùng lúc.</p>
+<h2>In plain words</h2>
+<p>A file is turned into a long string over the four bases A, C, G, T, cut into short strands, synthesised, and later sequenced back. Two constraints make strands easier to synthesise and read: the share of G and C bases should stay near one half (<em>GC content</em>), and the same base should not repeat too many times in a row (<em>homopolymer run</em>). A code for DNA storage therefore has to correct errors <em>and</em> respect these constraints at the same time.</p>
 
-<h2><span lang="en">Comparison between DNA storage and other storage systems</span><span lang="vi">So sánh lưu trữ DNA với các hệ thống lưu trữ khác</span></h2>
-<div class="figure-note"><span lang="en">Figure: density, retention time and read/write cost of DNA storage next to tape, HDD and flash.</span><span lang="vi">Hình: mật độ, thời gian lưu giữ và chi phí ghi/đọc của lưu trữ DNA đặt cạnh băng từ, HDD và flash.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/dna-storage" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
+<h2>Comparison between DNA storage and other storage systems</h2>
+<p>DNA storage trades very high density and a retention time of centuries against slow, expensive writing (synthesis) and reading (sequencing), which is why it suits archival data rather than hot data.</p>
+<!-- FIGURE: assets/figures/dna-storage-comparison.png | Density, retention time and read/write cost of DNA storage next to tape, HDD and flash. -->
 
-<h2><span lang="en">LLR calculation of LDPC codes for DNA storage</span><span lang="vi">Tính LLR của mã LDPC cho lưu trữ DNA</span></h2>
-<h3><span lang="en">System model</span><span lang="vi">Mô hình hệ thống</span></h3>
-<div class="figure-note"><span lang="en">Figure: encoding → synthesis → storage → sequencing → LLR computation → LDPC decoding.</span><span lang="vi">Hình: mã hoá → tổng hợp → lưu trữ → giải trình tự → tính LLR → giải mã LDPC.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/dna-storage" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
-<h3><span lang="en">Purpose</span><span lang="vi">Mục đích</span></h3>
+
+<h2>LLR calculation of LDPC codes for DNA storage</h2>
+<h3>System model</h3>
+<p>Encoding → synthesis → storage → sequencing → LLR computation → LDPC decoding. The LLR block is where the proposed strategies act.</p>
+<!-- FIGURE: assets/figures/dna-ldpc-system-model.png | System model of LDPC-coded DNA storage with LLR computation before decoding. -->
+
+<h3>Purpose</h3>
 <ul>
-  <li><span lang="en">The statistics of DNA storage channels have not yet been fully analysed.</span><span lang="vi">Thống kê của kênh lưu trữ DNA chưa được phân tích đầy đủ.</span></li>
-  <li><span lang="en">Decoding LDPC codes needs log-likelihood ratios (LLR) as the inputs of the variable nodes.</span><span lang="vi">Giải mã LDPC cần tỉ số hợp lý log (LLR) làm đầu vào cho các nút biến.</span></li>
-  <li><span lang="en">We propose two strategies: (S1) directly scaling the LLRs, and (S2) scaling the pairwise substitution error rates.</span><span lang="vi">Chúng tôi đề xuất hai chiến lược: (S1) co giãn trực tiếp LLR, và (S2) co giãn xác suất lỗi thay thế theo từng cặp.</span></li>
+  <li>The statistics of DNA storage channels have not yet been fully analysed.</li>
+  <li>Decoding LDPC codes needs log-likelihood ratios (LLR) as the inputs of the variable nodes.</li>
+  <li>We propose two strategies: (S1) directly scaling the LLRs, and (S2) scaling the pairwise substitution error rates.</li>
 </ul>
-<h3><span lang="en">Performance comparison</span><span lang="vi">So sánh hiệu năng</span></h3>
+<h3>Performance comparison</h3>
 <ul>
-  <li><span lang="en">Reading cost (R<sub>read</sub>) versus the number of reads needed for successful decoding.</span><span lang="vi">Chi phí đọc (R<sub>read</sub>) theo số lần đọc cần để giải mã thành công.</span></li>
-  <li><span lang="en">Over eight experiments, the proposed system shows a gain.</span><span lang="vi">Qua tám thí nghiệm, hệ thống đề xuất cho thấy có lợi ích.</span></li>
+  <li>Reading cost (R<sub>read</sub>) versus the number of reads needed for successful decoding.</li>
+  <li>Over eight experiments, the proposed system shows a gain.</li>
 </ul>
-<div class="figure-note"><span lang="en">Figure: reading cost versus number of reads for the baseline and the two proposed strategies.</span><span lang="vi">Hình: chi phí đọc theo số lần đọc cho phương án cơ sở và hai chiến lược đề xuất.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/dna-storage" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
+<!-- FIGURE: assets/figures/dna-ldpc-reading-cost.png | Reading cost versus number of reads for the baseline and the two proposed strategies. -->
 
-<h2><span lang="en">Related publications</span><span lang="vi">Công bố liên quan</span></h2>
-<p lang="en">See, for example, the theoretical framework for run-length-limited coding in composite DNA (IEEE Trans. Molecular, Biological, and Multi-Scale Communications, 2026), the LLR work for LDPC codes under the binary symmetric erasure channel in DNA storage (ATC 2022) and the one-indel error-correcting code (ATC 2023).</p>
-<p lang="vi">Xem ví dụ khung lý thuyết cho mã giới hạn độ dài chạy trong DNA tổ hợp (IEEE Trans. Molecular, Biological, and Multi-Scale Communications, 2026), công trình về LLR cho mã LDPC dưới kênh xoá đối xứng nhị phân trong lưu trữ DNA (ATC 2022) và mã sửa một lỗi chèn/xoá (ATC 2023).</p>
-<p><a class="link-html" href="journal-papers.html"><span lang="en">Journal papers</span><span lang="vi">Bài báo tạp chí</span></a> · <a class="link-html" href="conference-papers.html"><span lang="en">Conference papers</span><span lang="vi">Bài báo hội nghị</span></a></p>
+
+<h2>Related publications</h2>
+<p>See, for example, the theoretical framework for run-length-limited coding in composite DNA (IEEE Trans. Molecular, Biological, and Multi-Scale Communications, 2026), the LLR work for LDPC codes under the binary symmetric erasure channel in DNA storage (ATC 2022) and the one-indel error-correcting code (ATC 2023).</p>
+<p><a class="link-html" href="journal-papers.html">Journal papers</a> · <a class="link-html" href="conference-papers.html">Conference papers</a></p>
 
 <div class="footer-nav">
-  <a href="../index.html"><span lang="en">← Home</span><span lang="vi">← Trang chủ</span></a>
-  <a href="#top"><span lang="en">↑ Top</span><span lang="vi">↑ Đầu trang</span></a>
+  <a href="../index.html">← Home</a>
+  <a href="#top">↑ Top</a>
 </div>
 </article>
 </main>
 
 <footer>
-  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
-  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+  © 2026 AIIC Lab · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea
 </footer>
-
-<script>
-(function () {
-  var KEY = 'aiic-lang';
-  var root = document.documentElement;
-  function apply(lang) {
-    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
-    root.setAttribute('data-lang', lang);
-    root.setAttribute('lang', lang);
-    var t = root.getAttribute('data-title-' + lang);
-    if (t) { document.title = t; }
-    var btns = document.querySelectorAll('.lang-btn');
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
-    }
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved) { apply(saved); }
-  document.addEventListener('click', function (ev) {
-    var el = ev.target;
-    while (el && el !== document) {
-      if (el.classList && el.classList.contains('lang-btn')) {
-        apply(el.getAttribute('data-lang'));
-        return;
-      }
-      el = el.parentNode;
-    }
-  });
-})();
-</script>
 
 </body>
 </html>

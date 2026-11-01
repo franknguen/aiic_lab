@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en"
-      data-title-en="AIIC Lab — AI & Intelligent Communication Lab, Sejong University"
-      data-title-vi="AIIC Lab — Phòng thí nghiệm AI & Truyền thông thông minh, Đại học Sejong">
+<html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>AIIC Lab — AI & Intelligent Communication Lab, Sejong University</title>
-<meta name="description" content="AI & Intelligent Communication (AIIC) Lab, Prof. Sunghwan Kim, Department of Artificial Intelligence and Information Technology, Sejong University: next-generation communications (NOMA, RSMA, RIS, massive MIMO), error-correcting codes for DNA storage, quantum information. Phòng thí nghiệm AI & Truyền thông thông minh, Đại học Sejong."/>
+<meta name="description" content="AI & Intelligent Communication (AIIC) Lab, Prof. Sunghwan Kim, Department of Artificial Intelligence and Information Technology, Sejong University: next-generation communications (NOMA, RSMA, RIS, massive MIMO), error-correcting codes for DNA storage, quantum information."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
@@ -29,9 +27,6 @@ body{
   color:var(--text); -webkit-font-smoothing:antialiased;
 }
 
-/* ===== Bilingual: only the selected language is shown ===== */
-html[data-lang="vi"] [lang="en"]{ display:none; }
-html[data-lang="en"] [lang="vi"]{ display:none; }
 
 /* ===== Header ===== */
 header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
@@ -43,10 +38,6 @@ header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box
 nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
 nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
 nav a:hover{ background:rgba(255,255,255,.12); }
-.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
-.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
-.lang-btn:hover{ color:#fff; }
-.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
 @media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
 
 /* ===== Page container ===== */
@@ -92,7 +83,13 @@ article li{ margin-bottom:8px; }
 .card li{ margin-bottom:3px; }
 .card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
 .person{ display:flex; gap:14px; align-items:flex-start; }
-.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .avatar{ width:72px; height:72px; font-size:22px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+img.avatar, .person img.avatar{ object-fit:cover; object-position:center top; border-radius:14px; width:96px; height:120px; background:#eef1f7; box-shadow:0 4px 12px rgba(20,83,143,.25); }
+.hero img.avatar{ width:132px; height:164px; }
+figure{ margin:12px 0 18px; }
+figure img{ display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); background:#fff; }
+figcaption{ font-size:.88em; color:var(--muted); text-align:center; margin-top:6px; }
+.fig-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
 .person .who{ flex:1; min-width:0; }
 .person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
 .cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
@@ -153,23 +150,18 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
   <div class="header-inner">
     <div class="site-title"><a href="index.html">AIIC<span class="dot">·</span>Lab</a></div>
     <div class="site-tag">
-      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
-      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+      AI &amp; Intelligent Communication Lab · Sejong University
     </div>
     <nav>
       <ul>
-        <li><a href="index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
-        <li><a href="index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
-        <li><a href="index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
-        <li><a href="index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
-        <li><a href="index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
-        <li><a href="index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#members">Members</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#join">Join us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
-    </div>
   </div>
 </header>
 
@@ -179,96 +171,90 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
 <section class="hero">
   <div class="avatar" aria-hidden="true">AIIC</div>
   <div>
-    <h1><span lang="en">AI &amp; Intelligent Communication Lab</span><span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh</span></h1>
-    <p lang="en">The AIIC Lab. is led by <strong>Prof. Sunghwan Kim</strong> at the Department of Artificial
+    <h1>AI &amp; Intelligent Communication Lab</h1>
+    <p>The AIIC Lab is led by <strong>Prof. Sunghwan Kim</strong> at the Department of Artificial
        Intelligence and Information Technology, Sejong University (Seoul, Korea). We study next-generation
        wireless communications, error-correcting codes for DNA data storage, and quantum information —
        the mathematics of sending and keeping information reliably, from radio channels to DNA molecules
        and qubits.</p>
-    <p lang="vi">AIIC Lab. do <strong>GS. Sunghwan Kim</strong> phụ trách, thuộc Khoa Trí tuệ nhân tạo và Công nghệ
-       thông tin, Đại học Sejong (Seoul, Hàn Quốc). Nhóm nghiên cứu truyền thông không dây thế hệ mới, mã sửa
-       lỗi cho lưu trữ dữ liệu bằng DNA, và thông tin lượng tử — toán học của việc truyền và lưu giữ thông tin
-       một cách tin cậy, từ kênh vô tuyến tới phân tử DNA và qubit.</p>
     <div class="hero-chips">
-      <span class="chip"><span lang="en">Next-generation communications · NOMA · RSMA · RIS</span><span lang="vi">Truyền thông thế hệ mới · NOMA · RSMA · RIS</span></span>
-      <span class="chip"><span lang="en">DNA storage · ECC · LDPC</span><span lang="vi">Lưu trữ DNA · ECC · LDPC</span></span>
-      <span class="chip"><span lang="en">Quantum information · quantum codes</span><span lang="vi">Thông tin lượng tử · mã lượng tử</span></span>
-      <span class="chip"><span lang="en">AI-based communication · machine learning</span><span lang="vi">Truyền thông dựa trên AI · học máy</span></span>
+      <span class="chip">Next-generation communications · NOMA · RSMA · RIS</span>
+      <span class="chip">DNA storage · ECC · LDPC</span>
+      <span class="chip">Quantum information · quantum codes</span>
+      <span class="chip">AI-based communication · machine learning</span>
     </div>
   </div>
 </section>
 
 <!-- ===== TOC ===== -->
 <div class="toc-wrap" id="toc">
-  <h2><span lang="en">Contents</span><span lang="vi">Mục lục</span></h2>
+  <h2>Contents</h2>
   <ul>
-    <li><a href="#research"><span lang="en">Research fields</span><span lang="vi">Lĩnh vực nghiên cứu</span></a></li>
-    <li><a href="#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
-    <li><a href="#publications"><span lang="en">Publications</span><span lang="vi">Công bố khoa học</span></a></li>
-    <li><a href="#join"><span lang="en">Join us — benefits &amp; application</span><span lang="vi">Tuyển sinh — quyền lợi &amp; hồ sơ</span></a></li>
-    <li><a href="#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+    <li><a href="#research">Research fields</a></li>
+    <li><a href="#members">Members</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#join">Join us — benefits &amp; application</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
 
 <!-- ===== Research ===== -->
 <section class="entry" id="research">
-<h2><span lang="en">Research fields</span><span lang="vi">Lĩnh vực nghiên cứu</span></h2>
-<p lang="en">Three main topics, with AI and machine learning running through all of them. Click a card for the detailed page where one exists.</p>
-<p lang="vi">Ba chủ đề chính, với AI và học máy xuyên suốt cả ba. Bấm vào thẻ để xem trang chi tiết (nếu có).</p>
+<h2>Research fields</h2>
+<p>Three main topics, with AI and machine learning running through all of them. Click a card for the detailed page where one exists.</p>
 <div class="card-grid">
   <div class="card">
-    <h3><span lang="en">Next-generation communication technology</span><span lang="vi">Công nghệ truyền thông thế hệ mới</span></h3>
+    <h3>Next-generation communication technology</h3>
     <ul>
-      <li><span lang="en">Non-orthogonal multiple access (NOMA), rate-splitting multiple access (RSMA)</span><span lang="vi">Đa truy nhập không trực giao (NOMA), đa truy nhập chia tốc độ (RSMA)</span></li>
-      <li><span lang="en">Reconfigurable intelligent surfaces (RIS)</span><span lang="vi">Bề mặt thông minh cấu hình lại được (RIS)</span></li>
-      <li><span lang="en">5G/6G new radio access, OFDM, massive MIMO and its energy efficiency</span><span lang="vi">Truy nhập vô tuyến mới 5G/6G, OFDM, massive MIMO và hiệu suất năng lượng</span></li>
-      <li><span lang="en">Short-packet / URLLC, UAV and satellite links, visible light communication</span><span lang="vi">Gói ngắn / URLLC, liên kết UAV và vệ tinh, truyền thông ánh sáng khả kiến</span></li>
+      <li>Non-orthogonal multiple access (NOMA), rate-splitting multiple access (RSMA)</li>
+      <li>Reconfigurable intelligent surfaces (RIS)</li>
+      <li>5G/6G new radio access, OFDM, massive MIMO and its energy efficiency</li>
+      <li>Short-packet / URLLC, UAV and satellite links, visible light communication</li>
     </ul>
-    <div class="links"><a class="link-html" href="pages/next-generation-communications.html"><span lang="en">Read more</span><span lang="vi">Đọc thêm</span></a></div>
+    <div class="links"><a class="link-html" href="pages/next-generation-communications.html">Read more</a></div>
   </div>
   <div class="card">
-    <h3><span lang="en">DNA storage</span><span lang="vi">Lưu trữ DNA</span></h3>
+    <h3>DNA storage</h3>
     <ul>
-      <li><span lang="en">Error-correcting codes for data recovery</span><span lang="vi">Mã sửa lỗi để khôi phục dữ liệu</span></li>
-      <li><span lang="en">Insertion/deletion codes under GC-content and homopolymer-run constraints</span><span lang="vi">Mã chèn/xoá dưới ràng buộc hàm lượng GC và chuỗi lặp</span></li>
-      <li><span lang="en">LDPC code design and LLR calculation for the DNA channel</span><span lang="vi">Thiết kế mã LDPC và tính LLR cho kênh DNA</span></li>
-      <li><span lang="en">Databases on DNA</span><span lang="vi">Cơ sở dữ liệu trên DNA</span></li>
+      <li>Error-correcting codes for data recovery</li>
+      <li>Insertion/deletion codes under GC-content and homopolymer-run constraints</li>
+      <li>LDPC code design and LLR calculation for the DNA channel</li>
+      <li>Databases on DNA</li>
     </ul>
-    <div class="links"><a class="link-html" href="pages/dna-storage.html"><span lang="en">Read more</span><span lang="vi">Đọc thêm</span></a></div>
+    <div class="links"><a class="link-html" href="pages/dna-storage.html">Read more</a></div>
   </div>
   <div class="card">
-    <h3><span lang="en">Quantum information</span><span lang="vi">Thông tin lượng tử</span></h3>
+    <h3>Quantum information</h3>
     <ul>
-      <li><span lang="en">Quantum computing</span><span lang="vi">Tính toán lượng tử</span></li>
-      <li><span lang="en">Quantum error-correcting codes: stabilizer codes, additive codes over GF(4)</span><span lang="vi">Mã sửa lỗi lượng tử: mã stabilizer, mã cộng tính trên GF(4)</span></li>
-      <li><span lang="en">Quantum protocols: three-pass protocol, counterfactual secret sharing</span><span lang="vi">Giao thức lượng tử: giao thức ba lượt, chia sẻ bí mật phản thực</span></li>
+      <li>Quantum computing</li>
+      <li>Quantum error-correcting codes: stabilizer codes, additive codes over GF(4)</li>
+      <li>Quantum protocols: three-pass protocol, counterfactual secret sharing</li>
     </ul>
-    <div class="links"><a class="link-html" href="pages/journal-papers.html"><span lang="en">See publications</span><span lang="vi">Xem công bố</span></a></div>
+    <div class="links"><a class="link-html" href="pages/journal-papers.html">See publications</a></div>
   </div>
   <div class="card">
-    <h3><span lang="en">AI-based communication &amp; machine learning</span><span lang="vi">Truyền thông dựa trên AI &amp; học máy</span></h3>
+    <h3>AI-based communication &amp; machine learning</h3>
     <ul>
-      <li><span lang="en">Transformer-based error-correction decoders</span><span lang="vi">Bộ giải mã sửa lỗi dựa trên transformer</span></li>
-      <li><span lang="en">Semantic communication, federated learning</span><span lang="vi">Truyền thông ngữ nghĩa, học liên kết</span></li>
-      <li><span lang="en">TinyML and large models for 6G, quantum reinforcement learning</span><span lang="vi">TinyML và mô hình lớn cho 6G, học tăng cường lượng tử</span></li>
+      <li>Transformer-based error-correction decoders</li>
+      <li>Semantic communication, federated learning</li>
+      <li>TinyML and large models for 6G, quantum reinforcement learning</li>
     </ul>
-    <div class="links"><a class="link-html" href="pages/conference-papers.html"><span lang="en">See publications</span><span lang="vi">Xem công bố</span></a></div>
+    <div class="links"><a class="link-html" href="pages/conference-papers.html">See publications</a></div>
   </div>
 </div>
-<div class="back-to-toc"><a href="#toc"><span lang="en">↑ Contents</span><span lang="vi">↑ Mục lục</span></a></div>
+<div class="back-to-toc"><a href="#toc">↑ Contents</a></div>
 </section>
 
 <!-- ===== Members ===== -->
 <section class="entry" id="members">
-<h2><span lang="en">Members</span><span lang="vi">Thành viên</span></h2>
-<p lang="en">The lab moved from the University of Ulsan to Kyonggi University in 2024 and to Sejong University in March 2026. Current members and all alumni, with full profiles, are on the members page.</p>
-<p lang="vi">Lab chuyển từ Đại học Ulsan sang Đại học Kyonggi năm 2024 và về Đại học Sejong tháng 3/2026. Thành viên hiện tại và toàn bộ cựu thành viên, với hồ sơ đầy đủ, nằm ở trang thành viên.</p>
+<h2>Members</h2>
+<p>The lab moved from the University of Ulsan to Kyonggi University in 2024 and to Sejong University in March 2026. Current members and all alumni, with full profiles, are on the members page.</p>
 <div class="card-grid">
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">SK</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/sunghwan-kim.jpg">SK</div>
     <div class="who">
-      <div class="role"><span lang="en">Professor</span><span lang="vi">Giáo sư</span></div>
+      <div class="role">Professor</div>
       <h3>Sunghwan Kim</h3>
       <p>Channel coding (LDPC, QC-LDPC), next-generation wireless communications, DNA storage, quantum information</p>
     </div>
@@ -276,58 +262,57 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">KN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/khac-tuan-nguyen.jpg">KN</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. student</span><span lang="vi">Nghiên cứu sinh</span></div>
+      <div class="role">Ph.D. student</div>
       <h3>Khac-Tuan Nguyen</h3>
       <p>New 5G/6G technologies (NOMA, RIS)</p>
     </div>
   </div>
 </div><div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">DD</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/dang-hai-dang.jpg">DD</div>
     <div class="who">
-      <div class="role"><span lang="en">Joint MS/Ph.D. student</span><span lang="vi">Học viên MS/Ph.D. liên thông</span></div>
+      <div class="role">Joint MS/Ph.D. student</div>
       <h3>Dang Hai Dang</h3>
       <p>Constrained coding for DNA-based storage</p>
     </div>
   </div>
 </div><div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">TN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/truong-hai-nam.jpg">TN</div>
     <div class="who">
-      <div class="role"><span lang="en">Joint MS/Ph.D. student</span><span lang="vi">Học viên MS/Ph.D. liên thông</span></div>
+      <div class="role">Joint MS/Ph.D. student</div>
       <h3>Truong Hai Nam</h3>
       <p>Wireless communications</p>
     </div>
   </div>
 </div><div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">LG</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/laili-gita.jpg">LG</div>
     <div class="who">
-      <div class="role"><span lang="en">Master student</span><span lang="vi">Học viên thạc sĩ</span></div>
+      <div class="role">Master student</div>
       <h3>Laili Gita</h3>
       <p>Wireless communications</p>
     </div>
   </div>
 </div>
 </div>
-<p style="margin-top:14px"><a class="link-html" href="pages/members.html"><span lang="en">All members and alumni (7 doctors, 7 masters)</span><span lang="vi">Tất cả thành viên và cựu thành viên (7 tiến sĩ, 7 thạc sĩ)</span></a></p>
-<div class="back-to-toc"><a href="#toc"><span lang="en">↑ Contents</span><span lang="vi">↑ Mục lục</span></a></div>
+<p style="margin-top:14px"><a class="link-html" href="pages/members.html">All members and alumni (7 doctors, 7 masters)</a></p>
+<div class="back-to-toc"><a href="#toc">↑ Contents</a></div>
 </section>
 
 <!-- ===== Publications ===== -->
 <section class="entry" id="publications">
-<h2><span lang="en">Publications</span><span lang="vi">Công bố khoa học</span></h2>
+<h2>Publications</h2>
 <div class="pub-stats">
 <!-- STATS:START -->
-  <div class="stat"><b>158</b><span><span lang="en">international journal papers</span><span lang="vi">bài báo tạp chí quốc tế</span></span></div>
-  <div class="stat"><b>36</b><span><span lang="en">international conference papers</span><span lang="vi">bài báo hội nghị quốc tế</span></span></div>
-  <div class="stat"><b>2000–2026</b><span><span lang="en">years covered</span><span lang="vi">giai đoạn</span></span></div>
+  <div class="stat"><b>158</b><span>international journal papers</span></div>
+  <div class="stat"><b>36</b><span>international conference papers</span></div>
+  <div class="stat"><b>2000–2026</b><span>years covered</span></div>
 <!-- STATS:END -->
 </div>
-<p lang="en">Latest journal papers (numbering as on the original site):</p>
-<p lang="vi">Các bài báo tạp chí mới nhất (đánh số như trên trang gốc):</p>
+<p>Latest journal papers:</p>
 <!-- LATEST:START -->
 <ol class="pub-list">
 <li><span class="n">[158]</span>Khac-Tuan Nguyen, Thai-Hoc Vu and <span class="pi">Sunghwan Kim</span>, <span class="t">"Optical RIS for FSO systems: Theoretical analysis perspectives,"</span> accepted at IEEE Internet of Things Journal, July 2026.</li>
@@ -337,87 +322,51 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
 <li><span class="n">[154]</span>Khac-Tuan Nguyen and <span class="pi">Sunghwan Kim</span>, <span class="t">"Optical RIS-based coordinated FSO relaying networks,"</span> IEEE Internet of Things Journal, vol. 13, no. 10, pp. 21454-21469, May 2026.</li>
 </ol>
 <!-- LATEST:END -->
-<p style="margin-top:14px"><a class="link-html" href="pages/journal-papers.html"><span lang="en">All journal papers</span><span lang="vi">Tất cả bài báo tạp chí</span></a> · <a class="link-html" href="pages/conference-papers.html"><span lang="en">All conference papers</span><span lang="vi">Tất cả bài báo hội nghị</span></a> · <a class="link-ext" href="https://scholar.google.co.kr/citations?user=ljxAoR8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
-<div class="back-to-toc"><a href="#toc"><span lang="en">↑ Contents</span><span lang="vi">↑ Mục lục</span></a></div>
+<p style="margin-top:14px"><a class="link-html" href="pages/journal-papers.html">All journal papers</a> · <a class="link-html" href="pages/conference-papers.html">All conference papers</a> · <a class="link-ext" href="https://scholar.google.co.kr/citations?user=ljxAoR8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+<div class="back-to-toc"><a href="#toc">↑ Contents</a></div>
 </section>
 
 <!-- ===== Join ===== -->
 <section class="entry" id="join">
-<h2><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></h2>
-<p lang="en">We welcome motivated MS and Ph.D. candidates in communications, coding theory, DNA storage and quantum information. Benefits for new members:</p>
-<p lang="vi">Lab chào đón các ứng viên thạc sĩ và tiến sĩ có động lực trong truyền thông, lý thuyết mã, lưu trữ DNA và thông tin lượng tử. Quyền lợi cho thành viên mới:</p>
+<h2>Join us</h2>
+<p>We welcome motivated MS and Ph.D. candidates in communications, coding theory, DNA storage and quantum information. Benefits for new members:</p>
 <div class="benefits">
-  <div class="benefit"><span lang="en">No tuition fee</span><span lang="vi">Miễn học phí</span></div>
-  <div class="benefit"><span lang="en">Salary</span><span lang="vi">Có lương</span></div>
-  <div class="benefit"><span lang="en">Two incentives</span><span lang="vi">Hai khoản thưởng</span></div>
+  <div class="benefit">No tuition fee</div>
+  <div class="benefit">Salary</div>
+  <div class="benefit">Two incentives</div>
 </div>
-<p lang="en">Apply through the Sejong University Graduate School; an English certificate is required before the deadline or, failing that, a Letter of Verification of Research Capability signed by the professor and the Dean. For details, email Prof. Kim.</p>
-<p lang="vi">Nộp hồ sơ qua Trường Sau đại học, Đại học Sejong; cần chứng chỉ tiếng Anh trước hạn, nếu không thì cần Thư xác nhận năng lực nghiên cứu có chữ ký của giáo sư và Trưởng khoa. Chi tiết xin email cho GS. Kim.</p>
-<p><a class="link-html" href="pages/application.html"><span lang="en">Application information</span><span lang="vi">Thông tin tuyển sinh</span></a> · <a class="link-ext" href="https://en.sejong.ac.kr/eng/academics/en_Graduate_School_of_General_Studies.do" target="_blank" rel="noopener"><span lang="en">Sejong Graduate School</span><span lang="vi">Trường Sau đại học Sejong</span></a></p>
-<div class="back-to-toc"><a href="#toc"><span lang="en">↑ Contents</span><span lang="vi">↑ Mục lục</span></a></div>
+<p>Apply through the Sejong University Graduate School; an English certificate is required before the deadline or, failing that, a Letter of Verification of Research Capability signed by the professor and the Dean. For details, email Prof. Kim.</p>
+<p><a class="link-html" href="pages/application.html">Application information</a> · <a class="link-ext" href="https://en.sejong.ac.kr/eng/academics/en_Graduate_School_of_General_Studies.do" target="_blank" rel="noopener">Sejong Graduate School</a></p>
+<div class="back-to-toc"><a href="#toc">↑ Contents</a></div>
 </section>
 
 <!-- ===== Contact ===== -->
 <section class="entry" id="contact">
-<h2><span lang="en">Contact</span><span lang="vi">Liên hệ</span></h2>
+<h2>Contact</h2>
 <div class="card-grid">
   <div class="card">
     <h3>Prof. Sunghwan Kim</h3>
     <ul class="cv">
-      <li><span lang="en">Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span><span lang="vi">Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span></li>
+      <li>Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</li>
       <li>Email: <a class="link-ext" href="mailto:ks@sejong.ac.kr">ks@sejong.ac.kr</a></li>
       <li><a class="link-ext" href="https://scholar.google.co.kr/citations?user=ljxAoR8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
     </ul>
   </div>
   <div class="card">
-    <h3><span lang="en">Links</span><span lang="vi">Liên kết</span></h3>
+    <h3>Links</h3>
     <ul class="cv">
-      <li><a class="link-ext" href="https://en.sejong.ac.kr/" target="_blank" rel="noopener"><span lang="en">Sejong University (English)</span><span lang="vi">Đại học Sejong (tiếng Anh)</span></a></li>
-      <li><a class="link-ext" href="https://sites.google.com/site/nodoubt09/lab-information" target="_blank" rel="noopener"><span lang="en">Original lab site on Google Sites</span><span lang="vi">Trang gốc của lab trên Google Sites</span></a></li>
+      <li><a class="link-ext" href="https://en.sejong.ac.kr/" target="_blank" rel="noopener">Sejong University (English)</a></li>
     </ul>
   </div>
 </div>
-<div class="back-to-toc"><a href="#toc"><span lang="en">↑ Contents</span><span lang="vi">↑ Mục lục</span></a></div>
+<div class="back-to-toc"><a href="#toc">↑ Contents</a></div>
 </section>
 
 </main>
 
 <footer>
-  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
-  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+  © 2026 AIIC Lab · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea
 </footer>
-
-<script>
-(function () {
-  var KEY = 'aiic-lang';
-  var root = document.documentElement;
-  function apply(lang) {
-    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
-    root.setAttribute('data-lang', lang);
-    root.setAttribute('lang', lang);
-    var t = root.getAttribute('data-title-' + lang);
-    if (t) { document.title = t; }
-    var btns = document.querySelectorAll('.lang-btn');
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
-    }
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved) { apply(saved); }
-  document.addEventListener('click', function (ev) {
-    var el = ev.target;
-    while (el && el !== document) {
-      if (el.classList && el.classList.contains('lang-btn')) {
-        apply(el.getAttribute('data-lang'));
-        return;
-      }
-      el = el.parentNode;
-    }
-  });
-})();
-</script>
 
 </body>
 </html>

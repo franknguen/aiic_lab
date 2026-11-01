@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en"
-      data-title-en="Application information — AIIC Lab"
-      data-title-vi="Thông tin tuyển sinh — AIIC Lab">
+<html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -29,9 +27,6 @@ body{
   color:var(--text); -webkit-font-smoothing:antialiased;
 }
 
-/* ===== Bilingual: only the selected language is shown ===== */
-html[data-lang="vi"] [lang="en"]{ display:none; }
-html[data-lang="en"] [lang="vi"]{ display:none; }
 
 /* ===== Header ===== */
 header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
@@ -43,10 +38,6 @@ header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box
 nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
 nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
 nav a:hover{ background:rgba(255,255,255,.12); }
-.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
-.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
-.lang-btn:hover{ color:#fff; }
-.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
 @media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
 
 /* ===== Page container ===== */
@@ -92,7 +83,13 @@ article li{ margin-bottom:8px; }
 .card li{ margin-bottom:3px; }
 .card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
 .person{ display:flex; gap:14px; align-items:flex-start; }
-.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .avatar{ width:72px; height:72px; font-size:22px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+img.avatar, .person img.avatar{ object-fit:cover; object-position:center top; border-radius:14px; width:96px; height:120px; background:#eef1f7; box-shadow:0 4px 12px rgba(20,83,143,.25); }
+.hero img.avatar{ width:132px; height:164px; }
+figure{ margin:12px 0 18px; }
+figure img{ display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); background:#fff; }
+figcaption{ font-size:.88em; color:var(--muted); text-align:center; margin-top:6px; }
+.fig-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
 .person .who{ flex:1; min-width:0; }
 .person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
 .cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
@@ -153,105 +150,64 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
   <div class="header-inner">
     <div class="site-title"><a href="../index.html">AIIC<span class="dot">·</span>Lab</a></div>
     <div class="site-tag">
-      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
-      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+      AI &amp; Intelligent Communication Lab · Sejong University
     </div>
     <nav>
       <ul>
-        <li><a href="../index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
-        <li><a href="../index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
-        <li><a href="../index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
-        <li><a href="../index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
-        <li><a href="../index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
-        <li><a href="../index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#research">Research</a></li>
+        <li><a href="../index.html#members">Members</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#join">Join us</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
-    </div>
   </div>
 </header>
 
 <main id="top">
 <article>
-<h1><span lang="en">Application information</span><span lang="vi">Thông tin tuyển sinh</span></h1>
-<div class="meta"><span lang="en">Join us · from the original lab page</span><span lang="vi">Tuyển sinh · theo trang gốc của lab</span></div>
+<h1>Application information</h1>
+<div class="meta">Join us</div>
 
-<p class="lede" lang="en">The lab takes new MS, Ph.D. and joint MS/Ph.D. students every semester. Admission is through the Graduate School of Sejong University; the lab itself provides the funding. Write to Prof. Kim first.</p>
-<p class="lede" lang="vi">Lab nhận học viên thạc sĩ, nghiên cứu sinh và học viên MS/Ph.D. liên thông mỗi học kỳ. Tuyển sinh qua Trường Sau đại học của Đại học Sejong; kinh phí do lab cấp. Hãy viết thư cho GS. Kim trước.</p>
+<p class="lede">The lab takes new MS, Ph.D. and joint MS/Ph.D. students every semester. Admission is through the Graduate School of Sejong University; the lab itself provides the funding. Write to Prof. Kim first.</p>
 
-<h2><span lang="en">1. Benefits for new members</span><span lang="vi">1. Quyền lợi cho thành viên mới</span></h2>
+<h2>1. Benefits for new members</h2>
 <div class="benefits">
-  <div class="benefit"><span lang="en">No tuition fee</span><span lang="vi">Miễn học phí</span></div>
-  <div class="benefit"><span lang="en">Salary</span><span lang="vi">Có lương</span></div>
-  <div class="benefit"><span lang="en">Two incentives</span><span lang="vi">Hai khoản thưởng</span></div>
+  <div class="benefit">No tuition fee</div>
+  <div class="benefit">Salary</div>
+  <div class="benefit">Two incentives</div>
 </div>
-<p><span lang="en">Detailed information: email Prof. Kim at</span><span lang="vi">Thông tin chi tiết: email cho GS. Kim tại</span> <a class="link-ext" href="mailto:ks@sejong.ac.kr">ks@sejong.ac.kr</a>.</p>
+<p>Detailed information: email Prof. Kim at <a class="link-ext" href="mailto:ks@sejong.ac.kr">ks@sejong.ac.kr</a>.</p>
 
-<h2><span lang="en">2. Website for application</span><span lang="vi">2. Trang nộp hồ sơ</span></h2>
-<p><a class="link-html" href="https://en.sejong.ac.kr/eng/academics/en_Graduate_School_of_General_Studies.do" target="_blank" rel="noopener"><span lang="en">Sejong University — Graduate School (international admissions)</span><span lang="vi">Đại học Sejong — Trường Sau đại học (tuyển sinh quốc tế)</span></a></p>
+<h2>2. Website for application</h2>
+<p><a class="link-html" href="https://en.sejong.ac.kr/eng/academics/en_Graduate_School_of_General_Studies.do" target="_blank" rel="noopener">Sejong University — Graduate School (international admissions)</a></p>
 
-<h2><span lang="en">3. English certificate</span><span lang="vi">3. Chứng chỉ tiếng Anh</span></h2>
+<h2>3. English certificate</h2>
 <ul>
-  <li><span lang="en">If candidates submit an English certificate before the application deadline, they do not need to submit another one later and can receive their degree.</span><span lang="vi">Nếu ứng viên nộp chứng chỉ tiếng Anh trước hạn nộp hồ sơ thì không cần nộp thêm chứng chỉ nào sau này và có thể nhận bằng.</span></li>
-  <li><span lang="en">If candidates cannot submit an English test result before the deadline, they must submit an additional document: a “Letter of Verification of Research Capability” signed by both the professor and the Dean.</span><span lang="vi">Nếu ứng viên không thể nộp kết quả thi tiếng Anh trước hạn, họ phải nộp thêm một tài liệu: “Thư xác nhận năng lực nghiên cứu” có chữ ký của giáo sư và Trưởng khoa.</span></li>
-  <li><span lang="en">In that case the candidate must still submit a valid English certificate later in order to graduate and receive the degree.</span><span lang="vi">Trong trường hợp đó, ứng viên vẫn phải nộp chứng chỉ tiếng Anh hợp lệ sau này để tốt nghiệp và nhận bằng.</span></li>
+  <li>If candidates submit an English certificate before the application deadline, they do not need to submit another one later and can receive their degree.</li>
+  <li>If candidates cannot submit an English test result before the deadline, they must submit an additional document: a “Letter of Verification of Research Capability” signed by both the professor and the Dean.</li>
+  <li>In that case the candidate must still submit a valid English certificate later in order to graduate and receive the degree.</li>
 </ul>
 
-<h2><span lang="en">4. Department</span><span lang="vi">4. Khoa</span></h2>
-<p><span lang="en">Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea.</span><span lang="vi">Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc.</span></p>
+<h2>4. Department</h2>
+<p>Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea.</p>
 
-<h2><span lang="en">5. What to put in your first email</span><span lang="vi">5. Nên viết gì trong email đầu tiên</span></h2>
-<p lang="en">A short CV, your transcript, the topic you would like to work on (see the research fields), and any English test score you already have. Mentioning a paper of the lab you have read helps.</p>
-<p lang="vi">Một CV ngắn, bảng điểm, chủ đề bạn muốn làm (xem các lĩnh vực nghiên cứu), và điểm thi tiếng Anh nếu đã có. Nhắc tới một bài báo của lab mà bạn đã đọc sẽ là một lợi thế.</p>
-<div class="note"><h3><span lang="en">Note</span><span lang="vi">Lưu ý</span></h3>
-<p lang="en">Section 5 is practical advice added on this site; sections 1–4 are the rules as published on the original lab page.</p>
-<p lang="vi">Mục 5 là lời khuyên thực tế được thêm vào trên trang này; các mục 1–4 là quy định như công bố trên trang gốc của lab.</p></div>
+<h2>5. What to put in your first email</h2>
+<p>A short CV, your transcript, the topic you would like to work on (see the research fields), and any English test score you already have. Mentioning a paper of the lab you have read helps.</p>
+<div class="note"><h3>Note</h3>
+<p>Sections 1–4 are the lab's rules; section 5 is practical advice.</p></div>
 
 <div class="footer-nav">
-  <a href="../index.html"><span lang="en">← Home</span><span lang="vi">← Trang chủ</span></a>
-  <a href="#top"><span lang="en">↑ Top</span><span lang="vi">↑ Đầu trang</span></a>
+  <a href="../index.html">← Home</a>
+  <a href="#top">↑ Top</a>
 </div>
 </article>
 </main>
 
 <footer>
-  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
-  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+  © 2026 AIIC Lab · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea
 </footer>
-
-<script>
-(function () {
-  var KEY = 'aiic-lang';
-  var root = document.documentElement;
-  function apply(lang) {
-    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
-    root.setAttribute('data-lang', lang);
-    root.setAttribute('lang', lang);
-    var t = root.getAttribute('data-title-' + lang);
-    if (t) { document.title = t; }
-    var btns = document.querySelectorAll('.lang-btn');
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
-    }
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved) { apply(saved); }
-  document.addEventListener('click', function (ev) {
-    var el = ev.target;
-    while (el && el !== document) {
-      if (el.classList && el.classList.contains('lang-btn')) {
-        apply(el.getAttribute('data-lang'));
-        return;
-      }
-      el = el.parentNode;
-    }
-  });
-})();
-</script>
 
 </body>
 </html>

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en"
-      data-title-en="Next-generation communications — AIIC Lab"
-      data-title-vi="Truyền thông thế hệ mới — AIIC Lab">
+<html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -29,9 +27,6 @@ body{
   color:var(--text); -webkit-font-smoothing:antialiased;
 }
 
-/* ===== Bilingual: only the selected language is shown ===== */
-html[data-lang="vi"] [lang="en"]{ display:none; }
-html[data-lang="en"] [lang="vi"]{ display:none; }
 
 /* ===== Header ===== */
 header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
@@ -43,10 +38,6 @@ header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box
 nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
 nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
 nav a:hover{ background:rgba(255,255,255,.12); }
-.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
-.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
-.lang-btn:hover{ color:#fff; }
-.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
 @media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
 
 /* ===== Page container ===== */
@@ -92,7 +83,13 @@ article li{ margin-bottom:8px; }
 .card li{ margin-bottom:3px; }
 .card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
 .person{ display:flex; gap:14px; align-items:flex-start; }
-.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .avatar{ width:72px; height:72px; font-size:22px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+img.avatar, .person img.avatar{ object-fit:cover; object-position:center top; border-radius:14px; width:96px; height:120px; background:#eef1f7; box-shadow:0 4px 12px rgba(20,83,143,.25); }
+.hero img.avatar{ width:132px; height:164px; }
+figure{ margin:12px 0 18px; }
+figure img{ display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); background:#fff; }
+figcaption{ font-size:.88em; color:var(--muted); text-align:center; margin-top:6px; }
+.fig-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
 .person .who{ flex:1; min-width:0; }
 .person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
 .cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
@@ -153,124 +150,87 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
   <div class="header-inner">
     <div class="site-title"><a href="../index.html">AIIC<span class="dot">·</span>Lab</a></div>
     <div class="site-tag">
-      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
-      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+      AI &amp; Intelligent Communication Lab · Sejong University
     </div>
     <nav>
       <ul>
-        <li><a href="../index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
-        <li><a href="../index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
-        <li><a href="../index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
-        <li><a href="../index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
-        <li><a href="../index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
-        <li><a href="../index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#research">Research</a></li>
+        <li><a href="../index.html#members">Members</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#join">Join us</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
-    </div>
   </div>
 </header>
 
 <main id="top">
 <article>
-<h1><span lang="en">Next-generation communications</span><span lang="vi">Truyền thông thế hệ mới</span></h1>
-<div class="meta"><span lang="en">Research field · from the original lab page</span><span lang="vi">Lĩnh vực nghiên cứu · theo trang gốc của lab</span></div>
+<h1>Next-generation communications</h1>
+<div class="meta">Research field</div>
 
-<p class="lede" lang="en">Radio access for 5G, 6G and beyond: how many users can share one channel, how a base station with hundreds of antennas spends its power, and how a wall of tunable reflectors can reshape the channel itself.</p>
-<p class="lede" lang="vi">Truy nhập vô tuyến cho 5G, 6G và xa hơn: bao nhiêu người dùng có thể chia sẻ một kênh, một trạm gốc hàng trăm ăng-ten tiêu tốn công suất ra sao, và một bức tường gồm các phần tử phản xạ điều khiển được có thể định hình lại chính kênh truyền như thế nào.</p>
+<p class="lede">Radio access for 5G, 6G and beyond: how many users can share one channel, how a base station with hundreds of antennas spends its power, and how a wall of tunable reflectors can reshape the channel itself.</p>
 
-<h2><span lang="en">Specific topics</span><span lang="vi">Các chủ đề cụ thể</span></h2>
+<h2>Specific topics</h2>
 <ul>
-  <li><span lang="en">5G / 6G communication technology</span><span lang="vi">Công nghệ truyền thông 5G / 6G</span></li>
-  <li><span lang="en">Non-orthogonal multiple access (NOMA) and rate-splitting multiple access (RSMA)</span><span lang="vi">Đa truy nhập không trực giao (NOMA) và đa truy nhập chia tốc độ (RSMA)</span></li>
-  <li><span lang="en">Reconfigurable intelligent surfaces (RIS / IRS), including optical RIS for free-space optical links</span><span lang="vi">Bề mặt thông minh cấu hình lại được (RIS / IRS), kể cả RIS quang cho liên kết quang không gian tự do</span></li>
-  <li><span lang="en">OFDM, MIMO and massive MIMO</span><span lang="vi">OFDM, MIMO và massive MIMO</span>
+  <li>5G / 6G communication technology</li>
+  <li>Non-orthogonal multiple access (NOMA) and rate-splitting multiple access (RSMA)</li>
+  <li>Reconfigurable intelligent surfaces (RIS / IRS), including optical RIS for free-space optical links</li>
+  <li>OFDM, MIMO and massive MIMO
     <ul>
-      <li><span lang="en">Basics of MIMO:</span><span lang="vi">Cơ bản về MIMO:</span> <a class="link-ext" href="https://en.wikipedia.org/wiki/MIMO" target="_blank" rel="noopener"><span lang="en">Wikipedia (properties, history, references)</span><span lang="vi">Wikipedia (tính chất, lịch sử, tài liệu)</span></a></li>
-      <li><span lang="en">Basics of massive MIMO:</span><span lang="vi">Cơ bản về massive MIMO:</span> <a class="link-ext" href="https://www.avnet.com/wps/portal/abacus/solutions/markets/communications/5g-solutions/understanding-massive-mimo-technology/" target="_blank" rel="noopener"><span lang="en">Avnet — Understanding massive MIMO technology</span><span lang="vi">Avnet — Understanding massive MIMO technology</span></a></li>
+      <li>Basics of MIMO: <a class="link-ext" href="https://en.wikipedia.org/wiki/MIMO" target="_blank" rel="noopener">Wikipedia (properties, history, references)</a></li>
+      <li>Basics of massive MIMO: <a class="link-ext" href="https://www.avnet.com/wps/portal/abacus/solutions/markets/communications/5g-solutions/understanding-massive-mimo-technology/" target="_blank" rel="noopener">Avnet — Understanding massive MIMO technology</a></li>
     </ul>
   </li>
-  <li><span lang="en">Short-packet and ultra-reliable low-latency communication (URLLC), UAV and satellite links, THz channels</span><span lang="vi">Truyền gói ngắn và truyền thông siêu tin cậy độ trễ thấp (URLLC), liên kết UAV và vệ tinh, kênh THz</span></li>
+  <li>Short-packet and ultra-reliable low-latency communication (URLLC), UAV and satellite links, THz channels</li>
 </ul>
 
-<h2><span lang="en">In plain words</span><span lang="vi">Nói một cách đơn giản</span></h2>
-<p lang="en"><strong>NOMA</strong> lets several users share the same time and frequency slot by giving them different power levels; the receiver peels the strong signal off first, then decodes the weak one. <strong>RSMA</strong> goes one step further: each user's message is split into a common part that everybody decodes and a private part that only its owner decodes, which handles interference more gracefully than either orthogonal access or NOMA. A <strong>RIS</strong> is a flat panel of many small elements whose phase shifts can be set by software, so a signal bouncing off it can be steered towards a user without any power amplifier on the panel.</p>
-<p lang="vi"><strong>NOMA</strong> cho nhiều người dùng chia sẻ cùng một khe thời gian – tần số bằng cách cấp cho họ các mức công suất khác nhau; máy thu bóc tín hiệu mạnh trước rồi mới giải mã tín hiệu yếu. <strong>RSMA</strong> đi xa hơn một bước: thông điệp của mỗi người dùng được tách thành phần chung mà mọi người đều giải mã và phần riêng chỉ chủ nhân giải mã, nhờ đó xử lý nhiễu mềm dẻo hơn cả truy nhập trực giao lẫn NOMA. <strong>RIS</strong> là một tấm phẳng gồm rất nhiều phần tử nhỏ mà độ dịch pha có thể đặt bằng phần mềm, nên tín hiệu phản xạ trên đó có thể được lái về phía người dùng mà không cần bộ khuếch đại công suất nào trên tấm.</p>
+<h2>In plain words</h2>
+<p><strong>NOMA</strong> lets several users share the same time and frequency slot by giving them different power levels; the receiver peels the strong signal off first, then decodes the weak one. <strong>RSMA</strong> goes one step further: each user's message is split into a common part that everybody decodes and a private part that only its owner decodes, which handles interference more gracefully than either orthogonal access or NOMA. A <strong>RIS</strong> is a flat panel of many small elements whose phase shifts can be set by software, so a signal bouncing off it can be steered towards a user without any power amplifier on the panel.</p>
 
-<h2><span lang="en">Conventional cellular massive MIMO with four cells</span><span lang="vi">Hệ thống massive MIMO tế bào thông thường với bốn cell</span></h2>
-<div class="figure-note"><span lang="en">Figure: a conventional cellular massive MIMO system with four cells, each base station serving many single-antenna users on the same resource.</span><span lang="vi">Hình: hệ thống massive MIMO tế bào thông thường với bốn cell, mỗi trạm gốc phục vụ nhiều người dùng một ăng-ten trên cùng tài nguyên.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/next-generation-communications" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
+<h2>Conventional cellular massive MIMO with four cells</h2>
+<p>A conventional cellular massive MIMO system with four cells: each base station carries a large antenna array and serves many single-antenna users on the same time–frequency resource, so inter-cell interference and pilot contamination set the limit.</p>
+<!-- FIGURE: assets/figures/massive-mimo-four-cell.png | A conventional cellular massive MIMO system with four cells. -->
 
-<h2><span lang="en">Research trends of conventional massive MIMO systems</span><span lang="vi">Xu hướng nghiên cứu massive MIMO thông thường</span></h2>
+
+<h2>Research trends of conventional massive MIMO systems</h2>
 <ul>
-  <li><span lang="en">Most massive MIMO research has focused on improving channel quality, sum spectral efficiency (SE) or fairness between users.</span><span lang="vi">Phần lớn nghiên cứu massive MIMO tập trung vào cải thiện chất lượng kênh, tổng hiệu suất phổ (SE) hoặc sự công bằng giữa người dùng.</span></li>
-  <li><span lang="en">None of these works demonstrates an efficient way to spend the power resource.</span><span lang="vi">Chưa công trình nào trong số đó chỉ ra cách tiêu tốn tài nguyên công suất một cách hiệu quả.</span></li>
+  <li>Most massive MIMO research has focused on improving channel quality, sum spectral efficiency (SE) or fairness between users.</li>
+  <li>None of these works demonstrates an efficient way to spend the power resource.</li>
 </ul>
 
-<h2><span lang="en">Recent result of the lab for massive MIMO systems</span><span lang="vi">Kết quả gần đây của lab về hệ thống massive MIMO</span></h2>
+<h2>Recent results of the lab for massive MIMO systems</h2>
 <ul>
-  <li><span lang="en">Based on the general definition of system energy efficiency (EE), we propose a formulation representing the EE of a cellular massive MIMO system.</span><span lang="vi">Dựa trên định nghĩa tổng quát về hiệu suất năng lượng (EE) của hệ thống, chúng tôi đề xuất một công thức biểu diễn EE của hệ thống massive MIMO tế bào.</span></li>
-  <li><span lang="en">This EE formulation is then used to form a maximisation problem with constraints on the minimum rate of every user in the system and on the power used for pilot and data signals.</span><span lang="vi">Công thức EE này được dùng để lập bài toán cực đại hoá với ràng buộc về tốc độ tối thiểu của mọi người dùng trong hệ thống và về công suất dành cho tín hiệu pilot và dữ liệu.</span></li>
-  <li><span lang="en">The minimum user rate guarantees a certain quality for every user along with efficient power consumption.</span><span lang="vi">Ràng buộc tốc độ tối thiểu đảm bảo một chất lượng nhất định cho mọi người dùng, đồng thời tiêu thụ công suất hiệu quả.</span></li>
-  <li><span lang="en">Two iterative algorithms are proposed to solve the EE maximisation problem.</span><span lang="vi">Hai thuật toán lặp được đề xuất để giải bài toán cực đại hoá EE.</span></li>
+  <li>Based on the general definition of system energy efficiency (EE), we propose a formulation representing the EE of a cellular massive MIMO system.</li>
+  <li>This EE formulation is then used to form a maximisation problem with constraints on the minimum rate of every user in the system and on the power used for pilot and data signals.</li>
+  <li>The minimum user rate guarantees a certain quality for every user along with efficient power consumption.</li>
+  <li>Two iterative algorithms are proposed to solve the EE maximisation problem.</li>
 </ul>
 
-<h2><span lang="en">Performance of the proposed massive MIMO systems</span><span lang="vi">Hiệu năng của hệ thống massive MIMO đề xuất</span></h2>
+<h2>Performance of the proposed massive MIMO systems</h2>
 <ul>
-  <li><span lang="en">System power summation</span><span lang="vi">Tổng công suất hệ thống</span></li>
-  <li><span lang="en">System sum rate</span><span lang="vi">Tổng tốc độ hệ thống</span></li>
+  <li>System power summation</li>
+  <li>System sum rate</li>
 </ul>
-<div class="figure-note"><span lang="en">Figures: total system power and system sum rate of the proposed scheme versus the conventional one.</span><span lang="vi">Hình: tổng công suất và tổng tốc độ hệ thống của phương án đề xuất so với phương án thông thường.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/next-generation-communications" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
+<!-- FIGURE: assets/figures/massive-mimo-power.png | Total system power of the proposed scheme versus the conventional one. -->
+<!-- FIGURE: assets/figures/massive-mimo-sum-rate.png | System sum rate of the proposed scheme versus the conventional one. -->
 
-<h2><span lang="en">Related publications</span><span lang="vi">Công bố liên quan</span></h2>
-<p lang="en">Recent work on this topic by lab members appears in the journal list, for example optical RIS for free-space optical systems (2026), covert joint radar–communication with NOMA (2026), short-packet communications (2026) and RSMA-aided UAV-to-ground links (GLOBECOM 2023).</p>
-<p lang="vi">Các công trình gần đây của thành viên lab về chủ đề này nằm trong danh sách bài báo tạp chí, ví dụ RIS quang cho hệ thống quang không gian tự do (2026), radar – truyền thông kết hợp bí mật với NOMA (2026), truyền gói ngắn (2026) và liên kết UAV – mặt đất dùng RSMA (GLOBECOM 2023).</p>
-<p><a class="link-html" href="journal-papers.html"><span lang="en">Journal papers</span><span lang="vi">Bài báo tạp chí</span></a> · <a class="link-html" href="conference-papers.html"><span lang="en">Conference papers</span><span lang="vi">Bài báo hội nghị</span></a></p>
+
+<h2>Related publications</h2>
+<p>Recent work on this topic by lab members appears in the journal list, for example optical RIS for free-space optical systems (2026), covert joint radar–communication with NOMA (2026), short-packet communications (2026) and RSMA-aided UAV-to-ground links (GLOBECOM 2023).</p>
+<p><a class="link-html" href="journal-papers.html">Journal papers</a> · <a class="link-html" href="conference-papers.html">Conference papers</a></p>
 
 <div class="footer-nav">
-  <a href="../index.html"><span lang="en">← Home</span><span lang="vi">← Trang chủ</span></a>
-  <a href="#top"><span lang="en">↑ Top</span><span lang="vi">↑ Đầu trang</span></a>
+  <a href="../index.html">← Home</a>
+  <a href="#top">↑ Top</a>
 </div>
 </article>
 </main>
 
 <footer>
-  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
-  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+  © 2026 AIIC Lab · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea
 </footer>
-
-<script>
-(function () {
-  var KEY = 'aiic-lang';
-  var root = document.documentElement;
-  function apply(lang) {
-    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
-    root.setAttribute('data-lang', lang);
-    root.setAttribute('lang', lang);
-    var t = root.getAttribute('data-title-' + lang);
-    if (t) { document.title = t; }
-    var btns = document.querySelectorAll('.lang-btn');
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
-    }
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved) { apply(saved); }
-  document.addEventListener('click', function (ev) {
-    var el = ev.target;
-    while (el && el !== document) {
-      if (el.classList && el.classList.contains('lang-btn')) {
-        apply(el.getAttribute('data-lang'));
-        return;
-      }
-      el = el.parentNode;
-    }
-  });
-})();
-</script>
 
 </body>
 </html>

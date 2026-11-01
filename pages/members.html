@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en"
-      data-title-en="Members — AIIC Lab"
-      data-title-vi="Thành viên — AIIC Lab">
+<html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -29,9 +27,6 @@ body{
   color:var(--text); -webkit-font-smoothing:antialiased;
 }
 
-/* ===== Bilingual: only the selected language is shown ===== */
-html[data-lang="vi"] [lang="en"]{ display:none; }
-html[data-lang="en"] [lang="vi"]{ display:none; }
 
 /* ===== Header ===== */
 header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
@@ -43,10 +38,6 @@ header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box
 nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
 nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
 nav a:hover{ background:rgba(255,255,255,.12); }
-.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
-.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
-.lang-btn:hover{ color:#fff; }
-.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
 @media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
 
 /* ===== Page container ===== */
@@ -92,7 +83,13 @@ article li{ margin-bottom:8px; }
 .card li{ margin-bottom:3px; }
 .card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
 .person{ display:flex; gap:14px; align-items:flex-start; }
-.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .avatar{ width:72px; height:72px; font-size:22px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+img.avatar, .person img.avatar{ object-fit:cover; object-position:center top; border-radius:14px; width:96px; height:120px; background:#eef1f7; box-shadow:0 4px 12px rgba(20,83,143,.25); }
+.hero img.avatar{ width:132px; height:164px; }
+figure{ margin:12px 0 18px; }
+figure img{ display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--border); background:#fff; }
+figcaption{ font-size:.88em; color:var(--muted); text-align:center; margin-top:6px; }
+.fig-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
 .person .who{ flex:1; min-width:0; }
 .person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
 .cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
@@ -153,305 +150,263 @@ main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
   <div class="header-inner">
     <div class="site-title"><a href="../index.html">AIIC<span class="dot">·</span>Lab</a></div>
     <div class="site-tag">
-      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
-      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+      AI &amp; Intelligent Communication Lab · Sejong University
     </div>
     <nav>
       <ul>
-        <li><a href="../index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
-        <li><a href="../index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
-        <li><a href="../index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
-        <li><a href="../index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
-        <li><a href="../index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
-        <li><a href="../index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#research">Research</a></li>
+        <li><a href="../index.html#members">Members</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#join">Join us</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
-      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
-    </div>
   </div>
 </header>
 
 <main id="top">
 <article>
-<h1><span lang="en">Members</span><span lang="vi">Thành viên</span></h1>
-<div class="meta"><span lang="en">Members · from the original lab pages</span><span lang="vi">Thành viên · theo các trang gốc của lab</span></div>
+<h1>Members</h1>
+<div class="meta">Professor, current students and alumni</div>
 
-<p class="lede" lang="en">One professor, four current graduate students, and fourteen alumni — seven doctors and seven masters — most of them from Viet Nam, trained at the University of Ulsan before the lab moved to Sejong University in 2026.</p>
-<p class="lede" lang="vi">Một giáo sư, bốn học viên cao học hiện tại, và mười bốn cựu thành viên — bảy tiến sĩ và bảy thạc sĩ — phần lớn đến từ Việt Nam, được đào tạo tại Đại học Ulsan trước khi lab chuyển về Đại học Sejong năm 2026.</p>
-<p><span lang="en">Jump to</span><span lang="vi">Đến mục</span>: <a class="link-ext" href="#professor"><span lang="en">Professor</span><span lang="vi">Giáo sư</span></a> · <a class="link-ext" href="#phd"><span lang="en">Ph.D. students</span><span lang="vi">Nghiên cứu sinh</span></a> · <a class="link-ext" href="#ms"><span lang="en">MS students</span><span lang="vi">Học viên thạc sĩ</span></a> · <a class="link-ext" href="#alumni-doctor"><span lang="en">Alumni — doctors</span><span lang="vi">Cựu thành viên — tiến sĩ</span></a> · <a class="link-ext" href="#alumni-master"><span lang="en">Alumni — masters</span><span lang="vi">Cựu thành viên — thạc sĩ</span></a></p>
-<h2 id="professor"><span lang="en">Professor</span><span lang="vi">Giáo sư</span></h2>
+<p class="lede">One professor, four current graduate students, and fourteen alumni — seven doctors and seven masters — most of them from Viet Nam, trained at the University of Ulsan before the lab moved to Sejong University in 2026.</p>
+<p>Jump to: <a class="link-ext" href="#professor">Professor</a> · <a class="link-ext" href="#phd">Ph.D. students</a> · <a class="link-ext" href="#ms">MS students</a> · <a class="link-ext" href="#alumni-doctor">Alumni — doctors</a> · <a class="link-ext" href="#alumni-master">Alumni — masters</a></p>
+<h2 id="professor">Professor</h2>
 <div class="card-grid">
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">SK</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/sunghwan-kim.jpg">SK</div>
     <div class="who">
-      <div class="role"><span lang="en">Professor</span><span lang="vi">Giáo sư</span></div>
+      <div class="role">Professor</div>
       <h3>Sunghwan Kim</h3>
     </div>
   </div>
   <ul class="cv"><li>1995.03 – 1999.02: Undergraduate student, Seoul National University</li><li>1999.03 – 2001.02: MS student, Seoul National University</li><li>2001.03 – 2005.08: PhD student, Seoul National University</li><li>2005.10 – 2007.04: Post-Doc., Georgia Institute of Technology</li><li>2007.05 – 2011.02: Senior Engineer, Samsung Electronics</li><li>2011.03 – 2024.09: Full Professor, University of Ulsan</li><li>2024.09 – 2026.02: Full Professor, Kyonggi University</li><li>2026.03 – present: Full Professor, Sejong University</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Channel coding (LDPC, QC-LDPC), next-generation wireless communications, DNA storage, quantum information</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Cycling</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:ks@sejong.ac.kr">ks@sejong.ac.kr</a></li><li><a class="link-ext" href="https://scholar.google.co.kr/citations?user=ljxAoR8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Channel coding (LDPC, QC-LDPC), next-generation wireless communications, DNA storage, quantum information</li><li><span class="k">Hobby:</span> Cycling</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:ks@sejong.ac.kr">ks@sejong.ac.kr</a></li><li><a class="link-ext" href="https://scholar.google.co.kr/citations?user=ljxAoR8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li></ul>
 </div>
 </div>
-<h2 id="phd"><span lang="en">Ph.D. students</span><span lang="vi">Nghiên cứu sinh</span></h2>
+<h2 id="phd">Ph.D. students</h2>
 <div class="card-grid">
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">KN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/khac-tuan-nguyen.jpg">KN</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. student</span><span lang="vi">Nghiên cứu sinh</span></div>
+      <div class="role">Ph.D. student</div>
       <h3>Khac-Tuan Nguyen</h3>
     </div>
   </div>
   <ul class="cv"><li>2015.09 – 2021.04: Undergraduate student, Posts &amp; Telecommunications Institute of Technology, Ha Noi Campus, Viet Nam</li><li>2020.10 – 2021.04: R&amp;D at HADTECH company</li><li>2021.04 – 2021.09: Research Assistant, Posts &amp; Telecommunications Institute of Technology, Ha Noi Campus</li><li>2021.09 – 2023.08: MS student, University of Ulsan</li><li>2023.09 – present: Ph.D. student, University of Ulsan</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> New 5G/6G technologies (NOMA, RIS)</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Long story, movie, music and running</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:khactuan97ht@gmail.com">khactuan97ht@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> New 5G/6G technologies (NOMA, RIS)</li><li><span class="k">Hobby:</span> Long story, movie, music and running</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:khactuan97ht@gmail.com">khactuan97ht@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">DD</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/dang-hai-dang.jpg">DD</div>
     <div class="who">
-      <div class="role"><span lang="en">Joint MS/Ph.D. student</span><span lang="vi">Học viên MS/Ph.D. liên thông</span></div>
+      <div class="role">Joint MS/Ph.D. student</div>
       <h3>Dang Hai Dang</h3>
     </div>
   </div>
   <ul class="cv"><li>2020.10 – 2024.04: Undergraduate student, University of Information Technology, Vietnam National University – Ho Chi Minh City</li><li>2024.01 – 2024.04: Data Intern, Gene Solutions</li><li>2024.09 – 2026.08: Combined MS/PhD student, University of Ulsan</li><li>2026.09 – present: Joint MS/PhD student, Sejong University</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Constrained coding for DNA-based storage</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Sportsmetrics, chess</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:haidangel29@gmail.com">haidangel29@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Constrained coding for DNA-based storage</li><li><span class="k">Hobby:</span> Sportsmetrics, chess</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:haidangel29@gmail.com">haidangel29@gmail.com</a></li></ul>
 </div>
 </div>
-<h2 id="ms"><span lang="en">MS students</span><span lang="vi">Học viên thạc sĩ</span></h2>
+<h2 id="ms">MS students</h2>
 <div class="card-grid">
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">TN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/truong-hai-nam.jpg">TN</div>
     <div class="who">
-      <div class="role"><span lang="en">Joint MS/Ph.D. student</span><span lang="vi">Học viên MS/Ph.D. liên thông</span></div>
+      <div class="role">Joint MS/Ph.D. student</div>
       <h3>Truong Hai Nam</h3>
     </div>
   </div>
   <ul class="cv"><li>2021.09 – 2025.12: Undergraduate student, University of Engineering and Technology, Vietnam National University</li><li>2025.12 – 2026.08: PA engineer, Development Team, Samsung Display Vietnam</li><li>2026.09 – present: Joint MS/Ph.D. student, Sejong University</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Wireless communications</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Chess, cycling, trekking</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:nam.truong.eng@gmail.com">nam.truong.eng@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Wireless communications</li><li><span class="k">Hobby:</span> Chess, cycling, trekking</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:nam.truong.eng@gmail.com">nam.truong.eng@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">LG</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/laili-gita.jpg">LG</div>
     <div class="who">
-      <div class="role"><span lang="en">Master student</span><span lang="vi">Học viên thạc sĩ</span></div>
+      <div class="role">Master student</div>
       <h3>Laili Gita</h3>
     </div>
   </div>
   <ul class="cv"><li>2018.09 – 2022.09: Student, Universitas Indonesia</li><li>2022.09 – 2026.09: NPO access engineer, Nokia, Indonesia</li><li>2026.09 – present: Master student, Sejong University</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Wireless communications</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Running, hiking</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:lailigita.2604@gmail.com">lailigita.2604@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Wireless communications</li><li><span class="k">Hobby:</span> Running, hiking</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:lailigita.2604@gmail.com">lailigita.2604@gmail.com</a></li></ul>
 </div>
 </div>
-<h2 id="alumni-doctor"><span lang="en">Alumni — doctors</span><span lang="vi">Cựu thành viên — tiến sĩ</span></h2>
+<h2 id="alumni-doctor">Alumni — doctors</h2>
 <div class="card-grid">
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">HW</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/he-wang.jpg">HW</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. 2018</span><span lang="vi">Tiến sĩ 2018</span></div>
+      <div class="role">Ph.D. 2018</div>
       <h3>He Wang</h3>
     </div>
   </div>
   <ul class="cv"><li>2009.9 – 2013.8: BS, Harbin University of Science and Technology</li><li>2013.9 – 2015.8: MS, University of Ulsan</li><li>2015.9 – 2018.8: Ph.D., University of Ulsan</li><li>2018.9 – present: Company CEO</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Visible light communications</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Running</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:wh865293932@163.com">wh865293932@163.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Visible light communications</li><li><span class="k">Hobby:</span> Running</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:wh865293932@163.com">wh865293932@163.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">DN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/duc-manh-nguyen.jpg">DN</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. 2020</span><span lang="vi">Tiến sĩ 2020</span></div>
+      <div class="role">Ph.D. 2020</div>
       <h3>Duc Manh Nguyen</h3>
     </div>
   </div>
   <ul class="cv"><li>2007.9 – 2012.6: Undergraduate student, School of Electronics &amp; Telecommunications, Hanoi University of Science &amp; Technology</li><li>2012.9 – 2014.6: Software Engineer, Samsung Vietnam Mobile R&amp;D Center</li><li>2014.7 – 2015.2: System Engineer, Alcatel Network System Viet Nam, VNPT Technology</li><li>2015.3 – 2020.2: Combined MS/PhD student, University of Ulsan</li><li>2020.3 – present: Digital IC / SoC design engineer, Korea</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Quantum computing, quantum error correction codes</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Soccer, music, history</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:nguyenmanhduc18@gmail.com">nguyenmanhduc18@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Quantum computing, quantum error correction codes</li><li><span class="k">Hobby:</span> Soccer, music, history</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:nguyenmanhduc18@gmail.com">nguyenmanhduc18@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">HD</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/hieu-trong-dao.jpg">HD</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. 2021</span><span lang="vi">Tiến sĩ 2021</span></div>
+      <div class="role">Ph.D. 2021</div>
       <h3>Hieu Trong Dao</h3>
     </div>
   </div>
   <ul class="cv"><li>2009.9 – 2014.6: Undergraduate student, School of Electronics &amp; Telecommunications, Hanoi University of Science &amp; Technology</li><li>2014.6 – 2015.9: Java/Android software engineer, Samsung Vietnam Mobile R&amp;D Center</li><li>2015.9 – 2016.9: Telecommunication Engineer, Viettel Group</li><li>2016.9 – 2021.08: Combined MS/PhD student, University of Ulsan</li><li>2021.9 – present: Researcher in a Korean company</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> 5G communications (MIMO, modulation)</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Football, swimming, pop music, technology news</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:hieu.dtvt10@gmail.com">hieu.dtvt10@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> 5G communications (MIMO, modulation)</li><li><span class="k">Hobby:</span> Football, swimming, pop music, technology news</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:hieu.dtvt10@gmail.com">hieu.dtvt10@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">ML</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/manh-tran-le.jpg">ML</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. 2022</span><span lang="vi">Tiến sĩ 2022</span></div>
+      <div class="role">Ph.D. 2022</div>
       <h3>Manh Tran Le</h3>
     </div>
   </div>
   <ul class="cv"><li>2010.9 – 2015.1: Undergraduate student, Posts &amp; Telecommunications Institute of Technology, Hanoi Campus</li><li>2015.9 – 2016.10: Telecoms engineer, Viettel Global and Viettel Network, Viettel Group</li><li>2017.3 – 2022.2: Combined MS/PhD student, University of Ulsan</li><li>2022.6 – present: Lecturer and researcher, Vietnam National University</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> 5G communication, visible light communications, and signal processing</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Soccer, science</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:manh288@gmail.com">manh288@gmail.com</a></li><li><a class="link-ext" href="https://scholar.google.com.vn/citations?hl=vi&amp;user=tsJ3J9AAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> 5G communication, visible light communications, and signal processing</li><li><span class="k">Hobby:</span> Soccer, science</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:manh288@gmail.com">manh288@gmail.com</a></li><li><a class="link-ext" href="https://scholar.google.com.vn/citations?hl=vi&amp;user=tsJ3J9AAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">Google Scholar</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">XL</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/xiaozhou-lu.jpg">XL</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. 2024</span><span lang="vi">Tiến sĩ 2024</span></div>
+      <div class="role">Ph.D. 2024</div>
       <h3>Xiaozhou Lu (陆小舟)</h3>
     </div>
   </div>
   <ul class="cv"><li>2013.9 – 2016.7: Student, Yangzhou Polytechnic College of Electrical and Automotive Engineering, China</li><li>2016.9 – 2018.7: Undergraduate student, Electrical and Electronic Engineering, University of Ulsan</li><li>2018.9 – 2024.2: Combined MS/PhD student, University of Ulsan</li><li>2024.4 – present: Professor, Liaoning University of Technology</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Channel codes: DNA storage, LDPC codes</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Cooking and fitness</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:lxz160928@gmail.com">lxz160928@gmail.com</a></li><li><a class="link-ext" href="https://ieeexplore.ieee.org/author/37088507062" target="_blank" rel="noopener">IEEE Xplore author page</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Channel codes: DNA storage, LDPC codes</li><li><span class="k">Hobby:</span> Cooking and fitness</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:lxz160928@gmail.com">lxz160928@gmail.com</a></li><li><a class="link-ext" href="https://ieeexplore.ieee.org/author/37088507062" target="_blank" rel="noopener">IEEE Xplore author page</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">HK</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/huong-thi-khuat.jpg">HK</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. 2024</span><span lang="vi">Tiến sĩ 2024</span></div>
+      <div class="role">Ph.D. 2024</div>
       <h3>Huong Thi Khuat</h3>
     </div>
   </div>
   <ul class="cv"><li>2012.9 – 2017.6: Undergraduate student, E.E. Engineering Department, Military Technical Academy (Le Quy Don University), Viet Nam</li><li>2017.6 – 2018.8: Quality process staff, Samsung Display Vietnam</li><li>2019.3 – 2024.8: Combined MS/PhD student, University of Ulsan</li><li>2024.9 – present: Lecturer, Posts and Telecommunications Institute of Technology (PTIT), Hanoi</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Channel codes, LDPC codes, DNA storage</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Music, cooking</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:khuathuong090887@gmail.com">khuathuong090887@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Channel codes, LDPC codes, DNA storage</li><li><span class="k">Hobby:</span> Music, cooking</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:khuathuong090887@gmail.com">khuathuong090887@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">TV</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/thai-hoc-vu.jpg">TV</div>
     <div class="who">
-      <div class="role"><span lang="en">Ph.D. 2025</span><span lang="vi">Tiến sĩ 2025</span></div>
+      <div class="role">Ph.D. 2025</div>
       <h3>Thai-Hoc Vu</h3>
     </div>
   </div>
   <ul class="cv"><li>2014.9 – 2019.12: Undergraduate student, Posts &amp; Telecommunications Institute of Technology, Ho Chi Minh Campus, Viet Nam</li><li>2019.1 – 2020.2: R&amp;D Engineer, Saigontourist Cable Television company, Ho Chi Minh City, Viet Nam</li><li>2020.3 – 2025.2: Combined MS/PhD student, University of Ulsan</li><li>2025.4 – 2025.10: Post-Doc, Kyonggi University</li><li>2025.10 – present: Post-Doc</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> New 5G/6G technologies, cognitive radio, energy harvesting, URLLC, IRS/RIS, UAV, satellite, machine learning</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Movie, music, sports, and science</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:vuthaihoc1995@gmail.com">vuthaihoc1995@gmail.com</a></li><li><a class="link-ext" href="https://sites.google.com/site/vuthaihoc1995/" target="_blank" rel="noopener">Homepage</a></li><li><a class="link-ext" href="https://scholar.google.com.vn/citations?user=qUIEy3sAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> New 5G/6G technologies, cognitive radio, energy harvesting, URLLC, IRS/RIS, UAV, satellite, machine learning</li><li><span class="k">Hobby:</span> Movie, music, sports, and science</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:vuthaihoc1995@gmail.com">vuthaihoc1995@gmail.com</a></li><li><a class="link-ext" href="https://sites.google.com/site/vuthaihoc1995/" target="_blank" rel="noopener">Homepage</a></li><li><a class="link-ext" href="https://scholar.google.com.vn/citations?user=qUIEy3sAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li></ul>
 </div>
 </div>
-<h2 id="alumni-master"><span lang="en">Alumni — masters</span><span lang="vi">Cựu thành viên — thạc sĩ</span></h2>
+<h2 id="alumni-master">Alumni — masters</h2>
 <div class="card-grid">
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">TK</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/taesoo-kim.jpg">TK</div>
     <div class="who">
-      <div class="role"><span lang="en">MS 2016</span><span lang="vi">Thạc sĩ 2016</span></div>
+      <div class="role">MS 2016</div>
       <h3>Taesoo Kim</h3>
     </div>
   </div>
   <ul class="cv"><li>2014.3 – 2016.2: MS student, University of Ulsan</li><li>2016.3 – present: Working in a Korean company</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Data hiding</li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Data hiding</li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">FK</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/fatema-tuz-zohra-khanam.jpg">FK</div>
     <div class="who">
-      <div class="role"><span lang="en">MS 2017</span><span lang="vi">Thạc sĩ 2017</span></div>
+      <div class="role">MS 2017</div>
       <h3>Fatema-Tuz-Zohra Khanam</h3>
     </div>
   </div>
   <ul class="cv"><li>2007.12 – 2012.12: BS, EE Engineering, Chittagong University of Engineering and Technology (CUET), Bangladesh</li><li>2013.01 – 2013.06: Teaching Assistant, EE Engineering, Premier University, Chittagong, Bangladesh</li><li>2015.03 – 2017.09: MS student, Electronic Engineering, University of Ulsan, South Korea</li><li>2017.09 – present: Working in Australia</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Data hiding</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Travelling, reading books, listening to music</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:fatemakhanam07@gmail.com">fatemakhanam07@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Data hiding</li><li><span class="k">Hobby:</span> Travelling, reading books, listening to music</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:fatemakhanam07@gmail.com">fatemakhanam07@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">MJ</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/muhammad-awais-jadoon.jpg">MJ</div>
     <div class="who">
-      <div class="role"><span lang="en">MS 2017</span><span lang="vi">Thạc sĩ 2017</span></div>
+      <div class="role">MS 2017</div>
       <h3>Muhammad Awais Jadoon</h3>
     </div>
   </div>
   <ul class="cv"><li>2008.10 – 2012.8: BS, Telecommunication Engineering, University of Engineering and Technology, Peshawar, Pakistan</li><li>2015.3 – 2017.09: MS student, University of Ulsan</li><li>2017.09 – 2019.03: Start-up company</li><li>2019.03 – present: PhD student in Italy</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Cooperative communications, network coding, machine learning</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Hiking, reading tech blogs, socializing, cricket</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:mawaisjadoon@gmail.com">mawaisjadoon@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Cooperative communications, network coding, machine learning</li><li><span class="k">Hobby:</span> Hiking, reading tech blogs, socializing, cricket</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:mawaisjadoon@gmail.com">mawaisjadoon@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">TN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/tuong-minh-nguyen.jpg">TN</div>
     <div class="who">
-      <div class="role"><span lang="en">MS 2021</span><span lang="vi">Thạc sĩ 2021</span></div>
+      <div class="role">MS 2021</div>
       <h3>Tuong Minh Nguyen</h3>
     </div>
   </div>
   <ul class="cv"><li>2012 – 2016: Ho Chi Minh City University of Technology, Department of Telecommunications Engineering</li><li>2017 – 2019: VLSI verification engineer, Renesas</li><li>2019.08 – 2021.08: MS student, University of Ulsan</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Channel codes, LDPC codes</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Learning English, MOOCs and education</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:nguyenminhtuongtuong@gmail.com">nguyenminhtuongtuong@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Channel codes, LDPC codes</li><li><span class="k">Hobby:</span> Learning English, MOOCs and education</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:nguyenminhtuongtuong@gmail.com">nguyenminhtuongtuong@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">NT</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/ngo-giang-tran.jpg">NT</div>
     <div class="who">
-      <div class="role"><span lang="en">MS 2023</span><span lang="vi">Thạc sĩ 2023</span></div>
+      <div class="role">MS 2023</div>
       <h3>Ngo-Giang Tran</h3>
     </div>
   </div>
   <ul class="cv"><li>2014.09 – 2019.12: Undergraduate student, Thai Nguyen University of Technology, Viet Nam</li><li>2020.03 – 2023.08: MS student, University of Ulsan</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Visible light communication</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Sports</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:tranngogiang96@gmail.com">tranngogiang96@gmail.com</a></li><li><a class="link-ext" href="https://scholar.google.com.vn/citations?user=LRU10j8AAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener">Google Scholar</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Visible light communication</li><li><span class="k">Hobby:</span> Sports</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:tranngogiang96@gmail.com">tranngogiang96@gmail.com</a></li><li><a class="link-ext" href="https://scholar.google.com.vn/citations?user=LRU10j8AAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener">Google Scholar</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">DN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/dang-trac-nguyen.jpg">DN</div>
     <div class="who">
-      <div class="role"><span lang="en">MS 2024</span><span lang="vi">Thạc sĩ 2024</span></div>
+      <div class="role">MS 2024</div>
       <h3>Dang Trac Nguyen</h3>
     </div>
   </div>
   <ul class="cv"><li>2017.9 – 2022.4: Undergraduate student, Ton Duc Thang University, Viet Nam</li><li>2022.9 – 2024.8: MS student, University of Ulsan</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Semantic communication, transformer, federated learning</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Listening to classic &amp; folk music</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:tracng417@gmail.com">tracng417@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Semantic communication, transformer, federated learning</li><li><span class="k">Hobby:</span> Listening to classic &amp; folk music</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:tracng417@gmail.com">tracng417@gmail.com</a></li></ul>
 </div>
 <div class="card">
   <div class="person">
-    <div class="avatar" aria-hidden="true">TN</div>
+    <div class="avatar" aria-hidden="true" data-photo="assets/members/thi-lan-anh-nguyen.jpg">TN</div>
     <div class="who">
-      <div class="role"><span lang="en">MS 2025</span><span lang="vi">Thạc sĩ 2025</span></div>
+      <div class="role">MS 2025</div>
       <h3>Thi Lan Anh Nguyen</h3>
     </div>
   </div>
   <ul class="cv"><li>2016.9 – 2021.9: Undergraduate student, Hanoi University of Science and Technology, Viet Nam</li><li>2021.2 – 2022.8: Engineer, Samsung Viet Nam</li><li>2022.9 – 2025.2: MS student, University of Ulsan</li></ul>
-  <ul class="cv"><li><span class="k"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span>:</span> Satellite communication</li><li><span class="k"><span lang="en">Hobby</span><span lang="vi">Sở thích</span>:</span> Listening to music</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:lananhnguyen0907@gmail.com">lananhnguyen0907@gmail.com</a></li></ul>
+  <ul class="cv"><li><span class="k">Research:</span> Satellite communication</li><li><span class="k">Hobby:</span> Listening to music</li><li><span class="k">Email:</span> <a class="link-ext" href="mailto:lananhnguyen0907@gmail.com">lananhnguyen0907@gmail.com</a></li></ul>
 </div>
 </div>
-<div class="note"><h3><span lang="en">Photos</span><span lang="vi">Ảnh</span></h3>
-<p lang="en">Member photos are shown on the <a class="link-ext" href="https://sites.google.com/site/nodoubt09/members" target="_blank" rel="noopener">original lab site</a>; this page uses initials until the photos are added to <code>assets/members/</code> (see README).</p>
-<p lang="vi">Ảnh thành viên có trên <a class="link-ext" href="https://sites.google.com/site/nodoubt09/members" target="_blank" rel="noopener">trang gốc của lab</a>; trang này dùng chữ cái đầu cho tới khi ảnh được thêm vào <code>assets/members/</code> (xem README).</p></div>
 
 <div class="footer-nav">
-  <a href="../index.html"><span lang="en">← Home</span><span lang="vi">← Trang chủ</span></a>
-  <a href="#top"><span lang="en">↑ Top</span><span lang="vi">↑ Đầu trang</span></a>
+  <a href="../index.html">← Home</a>
+  <a href="#top">↑ Top</a>
 </div>
 </article>
 </main>
 
 <footer>
-  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
-  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+  © 2026 AIIC Lab · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea
 </footer>
-
-<script>
-(function () {
-  var KEY = 'aiic-lang';
-  var root = document.documentElement;
-  function apply(lang) {
-    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
-    root.setAttribute('data-lang', lang);
-    root.setAttribute('lang', lang);
-    var t = root.getAttribute('data-title-' + lang);
-    if (t) { document.title = t; }
-    var btns = document.querySelectorAll('.lang-btn');
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
-    }
-    try { localStorage.setItem(KEY, lang); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved) { apply(saved); }
-  document.addEventListener('click', function (ev) {
-    var el = ev.target;
-    while (el && el !== document) {
-      if (el.classList && el.classList.contains('lang-btn')) {
-        apply(el.getAttribute('data-lang'));
-        return;
-      }
-      el = el.parentNode;
-    }
-  });
-})();
-</script>
 
 </body>
 </html>
