@@ -1,0 +1,784 @@
+{
+ "source": "https://sites.google.com/site/nodoubt09/publications",
+ "fetched": "2026-11-01",
+ "journal": [
+  [
+   158,
+   "Khac-Tuan Nguyen, Thai-Hoc Vu and Sunghwan Kim, \"Optical RIS for FSO systems: Theoretical analysis perspectives,\"accepted at IEEE Internet of Things Journal, July 2026."
+  ],
+  [
+   157,
+   "Dang Hai Dang and Sunghwan Kim, \"A theoretical framework for run-length-limited coding in composite DNA,\"accepted at IEEE Transactions on Molecular, Biological, and Multi-Scale Communications, July 2026."
+  ],
+  [
+   156,
+   "Thai-Hoc Vu, Daniel Benevides da Costa, Thien Huynh-The, and Sunghwan Kim, \"Robust covertness in joint radar and multicast-unicast communication with non-orthogonal multiple access,\"IEEE Transactions on Vehicular Technology, vol. 75, no. 6, pp. 11786-11791, Jun. 2026."
+  ],
+  [
+   155,
+   "Thai-Hoc Vu, Ming Zeng, Sunghwan Kim, H. Vincent Poor, and Quoc-Viet Pham, \"Short-packet communications: Recent advances and research challenges,\"IEEE Network, vol. 40, no. 4, pp. 268-275, Jun. 2026."
+  ],
+  [
+   154,
+   "Khac-Tuan Nguyen and Sunghwan Kim, \"Optical RIS-based coordinated FSO relaying networks,\"IEEE Internet of Things Journal, vol. 13, no. 10, pp. 21454-21469, May 2026."
+  ],
+  [
+   153,
+   "Thai-Hoc Vu, Ngo Hoang Tu, Thien Huynh-The, Miroslav Voznak, Kyungchun Lee, Sunghwan Kim, and Quoc-Viet Pham, \"Integration of TinyML and LargeML: A survey of 6G and beyond,\"IEEE Internet of Things Journal, vol. 13, no. 10, pp. 20558-20582, May 2026."
+  ],
+  [
+   152,
+   "Manh Le-Tran, Khac-Tuan Nguyen, and Sunghwan Kim, \"FRFT-OFDM with index modulation for indoor visible light communication systems,\"IEEE Communications Letters, vol. 30, pp. 1766-1770, Apr. 2026."
+  ],
+  [
+   151,
+   "Nomi Lae, Shehbaz Tariq, Saw Nang Paing, Jason William Setiawan, Sunghwan Kim, Trung Q. Duong, and Hyundong Shin, \"Counterfactual quantum secret sharing,\"IEEE Transactions on Communications, vol. 73, no. 10, pp. 9196-9206, Oct. 2025."
+  ],
+  [
+   150,
+   "Lan Anh Nguyen, Thai-Hoc Vu, and Sunghwan Kim, \"Enhancing covertness in hybrid active-passive STAR-RIS-based RSMA systems,\"IEEE Transactions on Vehicular Technology, vol. 74, no. 10, pp. 16568-16573, Oct. 2025."
+  ],
+  [
+   149,
+   "Thai-Hoc Vu, Khac-Tuan Nguyen, Daniel Benevides da Costa, Hyundong Shin, and Sunghwan Kim, \"Aerial STAR-RIS-based symbiotic systems with Semi-NOMA transmission: Performance analysis and optimization,\"IEEE Internet of Things Journal, vol. 12, no. 18, pp. 38043-38058, Sept. 2025."
+  ],
+  [
+   148,
+   "Thai-Hoc Vu, Anh-Tu Le, Thien Huynh-The, Daniel Benevides da Costa, and Sunghwan Kim, \"A new look for outage and ergodic improvements in coordinated IoT paradigms with hybrid multiple access,\"IEEE Transactions on Vehicular Technology, vol. 74, no. 8, pp. 13284-13289, Aug. 2025."
+  ],
+  [
+   147,
+   "Thai-Hoc Vu, Daniel Benevides da Costa, Sunghwan Kim, and Quoc-Viet Pham, \"Outage, capacity, and error performance of downlink RSMA-based systems: Analysis and resource optimization,\"IEEE Transactions on Communications, vol. 73, no. 8, pp. 6868-6883, Aug. 2025."
+  ],
+  [
+   146,
+   "Seong-Joon Park, Hee-Youl Kwak, Sang-Hyo Kim, Sunghwan Kim, Yongjune Kim, and Jong-Seon No, \"Multiple-masks error correction code transformer for short block codes,\"IEEE Journal on Selected Areas in Communications, vol. 43, no. 7, pp. 2518-2529, July 2025."
+  ],
+  [
+   145,
+   "Dang-Trac Nguyen and Sunghwan Kim, \"U-shaped error correction code transformers,\"IEEE Transactions on Cognitive Communications and Networking, vol. 11, no. 3, pp. 1466-1481, June 2025."
+  ],
+  [
+   144,
+   "Thi-Huong Khuat and Sunghwan Kim, \"Design of codes for one insertion and at most two consecutive deletion errors,\"IEEE Transactions on Communications, vol. 73, no. 5, pp. 2891-2905, May 2025."
+  ],
+  [
+   143,
+   "Khac-Tuan Nguyen, Thai-Hoc Vu, Hyundong Shin, and Sunghwan Kim, \"Performance analysis of active RIS and passive RIS-aided MISO systems over Nakagami-m fading channel with imperfect CSI,\"IEEE Transactions on Vehicular Technology, vol. 74, no. 3, pp. 4334-4348, Mar. 2025."
+  ],
+  [
+   142,
+   "Thai-Hoc Vu, Senthil Kumar Jagatheesaperumal, Minh-Duong Nguyen, Nguyen Van Huynh, Sunghwan Kim, and Quoc-Viet Pham, \"Applications of generative AI (GAI) for mobile and wireless networking: A survey,\"IEEE Internet of Things Journal, vol. 12, no. 2, pp. 1266-1290, Jan. 2025."
+  ],
+  [
+   141,
+   "Thai-Hoc Vu, Tan N. Nguyen, Tien-Tung Nguyen, and Sunghwan Kim, \"Hybrid active-passive STAR-RIS-based NOMA systems: Energy/rate-reliability trade-offs and rate adaptation,\"IEEE Wireless Communications Letters, vol. 14, no. 1, pp. 238-242, Jan. 2025."
+  ],
+  [
+   140,
+   "Shehbaz Tariq, Brian E. Arfeto, Uman Khalid, Sunghwan Kim, Trung Q. Duong, and Hyundong Shin, \"Deep quantum-transformer networks for multi-modal beam prediction in ISAC systems,\"IEEE Internet of Things Journal, vol. 11, no. 18, pp. 29387–29401, Sept. 2024."
+  ],
+  [
+   139,
+   "Thai-Hoc Vu, Quoc-Viet Pham, Tien-Tung Nguyen, Daniel Benevides da Costa, and Sunghwan Kim, \"Enhancing RIS-aided two-way full-duplex communication with non-orthogonal multiple access,\"IEEE Internet of Things Journal, vol. 11, no. 11, pp. 19963-19977, June 2024."
+  ],
+  [
+   138,
+   "Thai-Hoc Vu, Quoc-Viet Pham, and Sunghwan Kim, \"On performance of downlink THz-based rate-splitting multiple-access (RSMA): Is it always better than NOMA?,\"IEEE Transactions on Vehicular Technology, vol. 73, no. 3, pp. 4435-4440, Mar. 2024."
+  ],
+  [
+   137,
+   "Thai-Hoc Vu, Anand Jee, Daniel Benevides da Costa, and Sunghwan Kim, \"STAR-RIS empowered NOMA systems with caching and SWIPT,\"IEEE Open Journal of the Communications Society, vol. 5, pp. 379-396, Dec. 2023."
+  ],
+  [
+   136,
+   "Thai-Hoc Vu, Quoc-Viet Pham, Daniel Benevides da Costa, and Sunghwan Kim, \"Rate-splitting multiple access-assisted THz-based short-packet communications,\"IEEE Wireless Communications Letters, vol. 12, no. 12, pp. 2218-2222, Dec. 2023."
+  ],
+  [
+   135,
+   "Xiaozhou Lu and Sunghwan Kim, \"New construction of balanced codes based on weights of data for DNA storage,\"IEEE Transactions on Emerging Topics in Computing, vol. 11, no. 4, pp. 973-984, Oct.-Dec. 2023."
+  ],
+  [
+   134,
+   "Khac-Tuan Nguyen, Thai-Hoc Vu, and Sunghwan Kim, \"A unified framework analysis for reconfigurable intelligent surface-aided coordinated NOMA systems,\"IEEE Transactions on Vehicular Technology, vol. 72, no. 11, pp. 15115-15120, Nov. 2023."
+  ],
+  [
+   133,
+   "Thi-Huong Khuat and Sunghwan Kim, \"Novel q-ary code design for one edit or adjacent transposition error,\"IEEE Open Journal of the Communications Society, vol. 4, pp. 2830-2837, Oct. 2023."
+  ],
+  [
+   132,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Quoc-Viet Pham, Daniel Benevides da Costa, and Sunghwan Kim, \"STAR-RIS-enabled short-packet NOMA systems,\"IEEE Transactions on Vehicular Technology, vol. 72, no. 10, pp. 13764-13769, Oct. 2023."
+  ],
+  [
+   131,
+   "Khac-Tuan Nguyen, Thai-Hoc Vu, and Sunghwan Kim, \"Performance analysis and deep learning design of short-packet communication in multi-RIS aided multi-antenna wireless systems,\"IEEE Internet of Things Journal, vol. 10, no. 19, pp. 17265-17281, Oct. 2023."
+  ],
+  [
+   130,
+   "Xiaozhou Lu and Sunghwan Kim, \"Weakly mutually uncorrelated codes with a maximum run length constraint for DNA storage,\"Computers in Biology and Medicine, vol. 165, no. 107439, pp. 1-9, Oct. 2023."
+  ],
+  [
+   129,
+   "Seong-Joon Park, Sunghwan Kim, Jaeho Jeong, Albert No, Jong-Seon No, and Hosung Park, \"Reducing cost in DNA-based data storage by sequence analysis-aided soft information decoding of variable-length reads,\"Bioinformatics, vol. 39, no. 9, pp. 1-8, Sept. 2023."
+  ],
+  [
+   128,
+   "Thi-Huong Khuat, Hosung Park, and Sunghwan Kim, \"New binary code design to correct one deletion and one insertion error,\"IEEE Transactions on Communications, vol. 71, no. 7, pp. 3807-3820, July 2023."
+  ],
+  [
+   127,
+   "Thai-Hoc Vu, Tien-Tung Nguyen, Quoc-Viet Pham, Daniel Benevides da Costa, and Sunghwan Kim, \"A novel partial decode-and-amplify NOMA-inspired relaying protocol for uplink short-packet communications,\"IEEE Wireless Communications Letters, vol. 12, no. 7, pp. 1244-1248, July 2023."
+  ],
+  [
+   126,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Quoc-Viet Pham, Daniel Benevides da Costa, and Sunghwan Kim, \"Short-packet communications for UAV-based NOMA systems under imperfect CSI and SIC,\"IEEE Transactions on Cognitive Communications and Networking, vol. 9, no. 2, pp. 463-478, Apr. 2023."
+  ],
+  [
+   125,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Quoc-Viet Pham, Daniel Benevides da Costa, and Sunghwan Kim, \"Hybrid long- and short-packet based NOMA systems with joint power allocation and beamforming design,\"IEEE Transactions on Vehicular Technology, vol. 72, no. 3, pp. 4079-4084, Mar. 2023."
+  ],
+  [
+   124,
+   "Thai-Hoc Vu and Sunghwan Kim, \"Performance analysis of full-duplex two-way RIS-based systems with imperfect CSI and discrete phase-shift design,\"IEEE Communications Letters, vol. 27, no. 2, pp. 512-516, Feb. 2023."
+  ],
+  [
+   123,
+   "Sanghoon Kang, Yunfei Gao, Jaeho Jeong, Seong-Joon Park, Jae-Won Kim, Jong-Seon No, Hahyeon Jeon, Jeong Wook Lee, Sunghwan Kim, Hosung Park, and Albert No, \"Generative adversarial networks for DNA storage channel simulator,\"IEEE Access, vol. 11, pp. 3781-3793, Jan. 2023."
+  ],
+  [
+   122,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Tien-Tung Nguyen, Daniel Benevides da Costa, and Sunghwan Kim, \"Performance analysis of short-packet NOMA-based CDRT networks over Nakagami-m fading channels,\"IEEE Transactions on Vehicular Technology, vol. 71, no. 12, pp. 12928-12942, Dec. 2022."
+  ],
+  [
+   121,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Daniel Benevides da Costa, and Sunghwan Kim, \"Reconfigurable intelligent surface-aided cognitive NOMA networks: Performance analysis and deep learning evaluation,\"IEEE Transactions on Wireless Communications, vol. 21, no. 12, pp. 10662-10677, Dec. 2022."
+  ],
+  [
+   120,
+   "Minh-Tuong Nguyen, Thai-Hoc Vu, and Sunghwan Kim, \"Performance analysis of wireless powered cooperative NOMA-based CDRT IoT networks,\"IEEE Systems Journal, vol. 16, no. 4, pp. 6501-6512, Dec. 2022."
+  ],
+  [
+   119,
+   "Khac-Tuan Nguyen, Thai-Hoc Vu, and Sunghwan Kim, \"Exploiting reconfigurable intelligent surface-based uplink/downlink wireless systems,\"IEEE Access, vol. 10, pp. 91059-91072, Aug. 2022."
+  ],
+  [
+   118,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Tien-Tung Nguyen, and Sunghwan Kim, \"Performance analysis and deep learning design of wireless powered cognitive NOMA IoT short-packet communications with imperfect CSI and SIC,\"IEEE Internet of Things Journal, vol. 9, no. 13, pp. 10464-10479, July 2022."
+  ],
+  [
+   117,
+   "Manh Le-Tran and Sunghwan Kim, \"Performance analysis of multi-hop underwater wireless optical communication systems over exponential-generalized gamma turbulence channels,\"IEEE Transactions on Vehicular Technology, vol. 71, no. 6, pp. 6214-6227, June 2022."
+  ],
+  [
+   116,
+   "Manh Le-Tran and Sunghwan Kim, \"Performance analysis of dual-hop FSO cooperative systems over F turbulence with pointing errors,\"Photonics, vol. 9, no. 437, pp. 1-10, June 2022."
+  ],
+  [
+   115,
+   "Minh-Tuong Nguyen, Thai-Hoc Vu, and Sunghwan Kim, \"A general framework for secrecy performance analysis via quantifier elimination,\"IEEE Communications Letters, vol. 26, no. 6, pp. 1216-1220, June 2022."
+  ],
+  [
+   114,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Tien-Tung Nguyen, Vo Nguyen Quoc Bao, and Sunghwan Kim, \"Short-packet communications in NOMA-CDRT IoT networks with cochannel interference and imperfect SIC,\"IEEE Transactions on Vehicular Technology, vol. 71, no. 5, pp. 5552-5557, May 2022."
+  ],
+  [
+   113,
+   "Giang N. Tran and Sunghwan Kim, \"Performance evaluation of short packet communications in NOMA VLC systems with imperfect CSI,\"IEEE Access, vol. 10, pp. 49781-49793, May 2022."
+  ],
+  [
+   112,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Daniel Benevides da Costa, and Sunghwan Kim, \"Intelligent reflecting surface-aided short-packet non-orthogonal multiple access systems,\"IEEE Transactions on Vehicular Technology, vol. 71, no. 4, pp. 4500-4505, Apr. 2022."
+  ],
+  [
+   111,
+   "Thai-Hoc Vu, Toan-Van Nguyen, and Sunghwan Kim, \"Wireless powered cognitive NOMA-based IoT relay networks: Performance analysis and deep learning evaluation,\"IEEE Internet of Things Journal, vol. 9, no. 5, pp. 3913-3929, Mar. 2022."
+  ],
+  [
+   110,
+   "Thai-Hoc Vu, Toan-Van Nguyen, and Sunghwan Kim, \"Cooperative NOMA-enabled SWIPT IoT networks with imperfect SIC: Performance analysis and deep learning evaluation,\"IEEE Internet of Things Journal, vol. 9, no. 3, pp. 2253-2266, Feb. 2022."
+  ],
+  [
+   109,
+   "Giang N. Tran and Sunghwan Kim, \"Performance analysis of short packets in NOMA VLC systems,\"IEEE Access, vol. 10, pp. 6505-6517, Jan. 2022."
+  ],
+  [
+   108,
+   "Manh Le-Tran, Thai-Hoc Vu, and Sunghwan Kim, \"Performance analysis of optical backhauled cooperative NOMA visible light communication,\"IEEE Transactions on Vehicular Technology, vol. 70, no. 12, pp. 12932-12945, Dec. 2021."
+  ],
+  [
+   107,
+   "Thai-Hoc Vu, Toan-Van Nguyen, Daniel Benevides da Costa, and Sunghwan Kim, \"Performance analysis and deep learning design of underlay cognitive NOMA-based CDRT networks with imperfect SIC and co-channel interference,\"IEEE Transactions on Communications, vol. 69, no. 12, pp. 8159-8174, Dec. 2021."
+  ],
+  [
+   106,
+   "Thi-Huong Khuat and Sunghwan Kim, \"A quaternary code correcting a burst of at most two deletion or insertion errors in DNA storage,\"Entropy, vol. 23, no. 1592, pp. 1-17, Nov. 2021."
+  ],
+  [
+   105,
+   "Jaeho Jeong, Seong-Joon Park, Jae-Won Kim, Jong-Seon No, Ha Hyeon Jeon, Jeong Wook Lee, Albert No, Sunghwan Kim, and Hosung Park, \"Cooperative sequence clustering and decoding for DNA storage system with fountain codes,\"Bioinformatics, vol. 37, no. 19, pp. 3136-3143, Oct. 2021."
+  ],
+  [
+   104,
+   "Hieu Trong Dao and Sunghwan Kim, \"Power allocation for energy efficiency maximization in massive MIMO systems,\"IEEE Transactions on Vehicular Technology, vol. 70, no. 10, pp. 10570-10579, Oct. 2021."
+  ],
+  [
+   103,
+   "Xiaozhou Lu and Sunghwan Kim, \"Design of nonbinary error correction codes with a maximum run-length constraint to correct a single insertion or deletion error for DNA storage,\"IEEE Access, vol. 9, pp. 135354-135363, Sept. 2021."
+  ],
+  [
+   102,
+   "Thai-Hoc Vu and Sunghwan Kim, \"Performance evaluation of power-beacon-assisted wireless-powered NOMA IoT-based systems,\"IEEE Internet of Things Journal, vol. 8, no. 14, pp. 11655-11665, July 2021."
+  ],
+  [
+   101,
+   "Manh Le-Tran and Sunghwan Kim, \"Performance analysis of dual-hop mixed power line communication/free-space optical cooperative systems,\"Photonics, vol. 8, no. 230, pp. 1-11, June 2021."
+  ],
+  [
+   100,
+   "Manh Le-Tran and Sunghwan Kim, \"Deep learning-assisted index estimator for generalized LED index modulation OFDM in visible light communication,\"Photonics, vol. 8, no. 168, pp. 1-11, May 2021."
+  ],
+  [
+   99,
+   "Hieu Trong Dao and Sunghwan Kim, \"Power allocation and user-AP connection in distributed massive MIMO systems,\"IEEE Communications Letters, vol. 25, no. 2, pp. 565-569, Feb. 2021."
+  ],
+  [
+   98,
+   "Mohammed H. Alsharif, Mahmoud A. M. Albreem, Ahmad A. A. Solyman, and Sunghwan Kim, \"Toward 6G communication networks: Terahertz frequency challenges and open research issues,\"Computers, Materials & Continua, vol. 66, no. 3, pp. 2831-2842, Dec. 2020."
+  ],
+  [
+   97,
+   "Manh Le-Tran and Sunghwan Kim, \"Superposed constellation design for spatial multiplexing visible light communication systems,\"Optics Express, vol. 28, no. 25, pp. 38293-38303, Dec. 2020."
+  ],
+  [
+   96,
+   "Manh Le-Tran and Sunghwan Kim, \"Enhanced multi-level multi-pulse modulation for MIMO visible light communication,\"IEEE Access, vol. 8, pp. 210116-210126, Nov. 2020."
+  ],
+  [
+   95,
+   "Manh Le-Tran and Sunghwan Kim, \"Deep learning-based collaborative constellation design for visible light communication,\"IEEE Communications Letters, vol. 24, no. 11, pp. 2522-2526, Nov. 2020."
+  ],
+  [
+   94,
+   "Naeem Ahmad Jan, Saad Hassan Kiani, Daniyal Ali Sehrai, Muhammad Rizwan Anjum, Amjad Iqbal, Mujeeb Abdullah, and Sunghwan Kim, \"Design of a compact monopole antenna for UWB applications,\"Computers, Materials & Continua, vol. 66, no. 1, pp. 35-44, Oct. 2020."
+  ],
+  [
+   93,
+   "Hieu Trong Dao and Sunghwan Kim, \"Power allocation for multiple user-type massive MIMO systems,\"IEEE Transactions on Vehicular Technology, vol. 69, no. 10, pp. 10965-10974, Oct. 2020."
+  ],
+  [
+   92,
+   "Zaiwar Ali, Sadia Khaf, Ziaul Haq Abbas, Ghulam Abbas, Fazal Muhammad, and Sunghwan Kim, \"A deep learning approach for mobility-aware and energy-efficient resource allocation in MEC,\"IEEE Access, vol. 8, pp. 179530-179546, Oct. 2020."
+  ],
+  [
+   91,
+   "Muhammad Qasim, Muhammad Sajid Haroon, Muhammad Imran, Fazal Muhammad, and Sunghwan Kim, \"5G cellular networks: Coverage analysis in the presence of inter-cell interference and intentional jammers,\"Electronics, vol. 9, no. 1538, pp. 1-19, Sept. 2020."
+  ],
+  [
+   90,
+   "Xiaozhou Lu, Jaeho Jeong, Jae-Won Kim, Jong-Seon No, Hosung Park, Albert No, and Sunghwan Kim, \"Error rate-based log-likelihood ratio processing for low-density parity-check codes in DNA storage,\"IEEE Access, vol. 8, pp. 162892-162902, Sept. 2020."
+  ],
+  [
+   89,
+   "Arun Kumar, Mahmoud A. Albreem, Manoj Gupta, Mohammed H. Alsharif, and Sunghwan Kim, \"Future 5G network based smart hospitals: Hybrid detection technique for latency improvement,\"IEEE Access, vol. 8, pp. 153240-153249, Aug. 2020."
+  ],
+  [
+   88,
+   "Arif Ullah, Ziaul Haq Abbas, Fazal Muhammad, Ghulam Abbas, and Sunghwan Kim, \"Uplink performance analysis of user-centric small cell aided dense HCNets with uplink-downlink decoupling,\"IEEE Access, vol. 8, pp. 148460-148474, Aug. 2020."
+  ],
+  [
+   87,
+   "Amjad Iqbal, Ahsan Altaf, Mujeeb Abdullah, Mohammad Alibakhshikenari, Ernesto Limiti, and Sunghwan Kim, \"Modified U-shaped resonator as decoupling structure in MIMO antenna,\"Electronics, vol. 9, no. 1321, pp. 1-13, Aug. 2020."
+  ],
+  [
+   86,
+   "Faisal Mehmood Shah, Sarmad Maqsood, Zohaib Mehmood Shah, Fazal Muhammad, and Sunghwan Kim, \"Multilevel LVDC distribution system with voltage unbalancing and disturbance rejection control topology,\"IEEE Access, vol. 8, pp. 133787-133801, July 2020."
+  ],
+  [
+   85,
+   "Naeem Ahmad Jan, Saad Hassan Kiani, Fazal Muhammad, Daniyal Ali Sehrai, Amjad Iqbal, Muhammad Tufail, and Sunghwan Kim, \"V-shaped monopole antenna with Chichena Itzia inspired defected ground structure for UWB applications,\"Computers, Materials & Continua, vol. 65, no. 1, pp. 19-32, July 2020."
+  ],
+  [
+   84,
+   "Daniyal Ali Sehrai, Fazal Muhammad, Saad Hassan Kiani, Ziaul Haq Abbas, Muhammad Tufail, and Sunghwan Kim, \"Gain-enhanced metamaterial based antenna for 5G communication standards,\"Computers, Materials & Continua, vol. 64, no. 3, pp. 1587-1599, July 2020."
+  ],
+  [
+   83,
+   "Hieu Trong Dao and Sunghwan Kim, \"Effective channel gain-based access point selection in cell-free massive MIMO systems,\"IEEE Access, vol. 8, pp. 108127-108132, June 2020."
+  ],
+  [
+   82,
+   "Muhammad Sajid Haroon, Fazal Muhammad, Ghulam Abbas, Ziaul Haq Abbas, Ahmad Kamal Hassan, Muhammad Waqas, and Sunghwan Kim, \"Interference management in ultra-dense 5G networks with excessive drone usage,\"IEEE Access, vol. 8, pp. 102155-102164, June 2020."
+  ],
+  [
+   81,
+   "Muhammad Tanveer, Ghulam Abbas, Ziaul Haq Abbas, Muhammad Waqas, Fazal Muhammad, and Sunghwan Kim, \"S6AE: Securing 6LoWPAN using authenticated encryption scheme,\"Sensors, vol. 20, no. 2707, pp. 1-23, May 2020."
+  ],
+  [
+   80,
+   "Hammad Zafar, Ziaul Haq Abbas, Ghulam Abbas, Fazal Muhammad, Muhammad Tufail, and Sunghwan Kim, \"An effective fairness scheme for named data networking,\"Electronics, vol. 9, no. 749, pp. 1-15, May 2020."
+  ],
+  [
+   79,
+   "Mohammed H. Alsharif, Anabi Hilary Kelechi, Mahmoud A. Albreem, Shehzad Ashraf Chaudhry, M. Sultan Zia, and Sunghwan Kim, \"Sixth generation (6G) wireless networks: Vision, research activities, challenges and potential solutions,\"Symmetry, vol. 12, no. 676, pp. 1-21, Apr. 2020."
+  ],
+  [
+   78,
+   "Duc Manh Nguyen and Sunghwan Kim, \"A novel construction for quantum stabilizer codes based on binary formalism,\"International Journal of Modern Physics B, vol. 34, no. 8, 2050059, pp. 1-19, Apr. 2020."
+  ],
+  [
+   77,
+   "Manh Le Tran and Sunghwan Kim, \"Orientation-induced link-blocked receiver for MIMO visible light communication,\"Optics Express, vol. 28, no. 8, pp. 12157-12173, Apr. 2020."
+  ],
+  [
+   76,
+   "Mahmoud A. Albreem, Mohammed H. Alsharif, and Sunghwan Kim, \"A low complexity near-optimal iterative linear detector for massive MIMO in realistic radio channels of 5G communication systems,\"Entropy, vol. 22, no. 388, pp. 1-15, Mar. 2020."
+  ],
+  [
+   75,
+   "Bilal Khan, Rashid Naseem, Fazal Muhammad, Ghulam Abbas, and Sunghwan Kim, \"An empirical evaluation of machine learning techniques for chronic kidney disease prophecy,\"IEEE Access, vol. 8, pp. 55012-55022, Mar. 2020."
+  ],
+  [
+   74,
+   "Muhammad Sajid Haroon, Fazal Muhammad, Ziaul Haq Abbas, Ghulam Abbas, Nisar Ahmed, and Sunghwan Kim, \"Proactive uplink interference management for nonuniform heterogeneous cellular networks,\"IEEE Access, vol. 8, pp. 55501-55512, Mar. 2020."
+  ],
+  [
+   73,
+   "Rafia Ghoul, Jing He, Sana Djaidja, Mohammed A. A. Al-qaness, and Sunghwan Kim, \"PDTR: Probabilistic and deterministic tree-based routing for wireless sensor networks,\"Sensors, vol. 20, no. 1697, pp. 1-22, Mar. 2020."
+  ],
+  [
+   72,
+   "Sarmad Maqsood, Umer Javed, Muhammad Mohsin Riaz, Muhammad Muzammil, Fazal Muhammad, and Sunghwan Kim, \"Multiscale image matting based multi-focus image fusion technique,\"Electronics, vol. 9, no. 472, pp. 1-16, Mar. 2020."
+  ],
+  [
+   71,
+   "Duc Manh Nguyen and Sunghwan Kim, \"Quantum stabilizer codes based on a new construction of self-orthogonal trace-inner product codes over GF(4),\"International Journal of Modern Physics B, vol. 34, no. 5, 2050017, pp. 1-15, Feb. 2020."
+  ],
+  [
+   70,
+   "Mahmoud A. Albreem, Mohammed H. Alsharif, and Sunghwan Kim, \"A robust hybrid iterative linear detector for massive MIMO uplink systems,\"Symmetry, vol. 12, no. 306, pp. 1-12, Feb. 2020."
+  ],
+  [
+   69,
+   "Fazal Muhammad, Farman Ali, Usman Habib, Muhammad Usman, Imran Khan, and Sunghwan Kim, \"Time domain equalization and digital back-propagation method-based receiver for fiber optic communication systems,\"International Journal of Optics, vol. 2020, 3146374, pp. 1-13, Feb. 2020."
+  ],
+  [
+   68,
+   "Ahmed A. Ewees, Mohamed Abd Elaziz, Mohammed A. A. Al-qaness, Hassan A. Khalil, and Sunghwan Kim, \"Improved artificial bee colony using sine-cosine algorithm for multi-level thresholding image segmentation,\"IEEE Access, vol. 8, pp. 26304-26315, Feb. 2020."
+  ],
+  [
+   67,
+   "Ahmed Talat Sahlol, Mohamed Abd Elaziz, Mohammed A. A. Al-qaness, and Sunghwan Kim, \"Handwritten arabic optical character recognition approach based on hybrid whale optimization algorithm with neighborhood rough set,\"IEEE Access, vol. 8, pp. 23011-23021, Feb. 2020."
+  ],
+  [
+   66,
+   "Amjad Iqbal, Amor Smida, Abdullah J. Alazemi, Mohamed I. Waly, Nazih Khaddaj Mallat, and Sunghwan Kim, \"Wideband circularly polarized MIMO antenna for high data wearable biotelemetric devices,\"IEEE Access, vol. 8, pp. 17935-17944, Jan. 2020."
+  ],
+  [
+   65,
+   "Amor Smida, Amjad Iqbal, Abdullah J. Alazemi, Mohamed I. Waly, Ridah Ghayoula, and Sunghwan Kim, \"Wideband wearable antenna for biomedical telemetry applications,\"IEEE Access, vol. 8, pp. 15687-15694, Jan. 2020."
+  ],
+  [
+   64,
+   "Mahmoud A. Albreem, Mohammed H. Alsharif, and Sunghwan Kim, \"Impact of stair and diagonal matrices in iterative linear massive MIMO uplink detectors for 5G wireless networks,\"Symmetry, vol. 12, no. 71, pp. 1-8, Jan. 2020."
+  ],
+  [
+   63,
+   "Fazal Muhammad, Muhammad Sajid Haroon, Ziaul Haq Abbas, Ghulam Abbas, and Sunghwan Kim, \"Uplink interference management for HetNets stressed by clustered wide-band jammers,\"IEEE Access, vol. 7, pp. 182679-182690, Dec. 2019."
+  ],
+  [
+   62,
+   "Ziaul Haq Abbas, Ghulam Abbas, Muhammad Sajid Haroon, Fazal Muhammad, and Sunghwan Kim, \"Proactive uplink interference mitigation in HetNets stressed by uniformly distributed wideband jammers,\"Electronics, vol. 8, no. 1496, pp. 1-18, Dec. 2019."
+  ],
+  [
+   61,
+   "Manh Le Tran and Sunghwan Kim, \"Effective receiver design for MIMO visible light communication with quadrichromatic LEDs,\"Electronics, vol. 8, no. 1383, pp. 1-10, Nov. 2019."
+  ],
+  [
+   60,
+   "Farman Ali, Shabbir Ahmad, Fazal Muhammad, Ziaul Haq Abbas, Usman Habib, and Sunghwan Kim, \"Adaptive equalization for dispersion mitigation in multi-channel optical communication networks,\"Electronics, vol. 8, no. 1364, pp. 1-15, Nov. 2019."
+  ],
+  [
+   59,
+   "Dalal AL-Alimi, Yuxiang Shao, Ruyi Feng, Amjad Iqbal, Mohammed A. A. Al-qaness, Mohamed Abd Elaziz, and Sunghwan Kim, \"Multi-scale geospatial object detection based on shallow-deep feature extraction,\"Remote Sensing, vol. 11, no. 2525, pp. 1-19, Oct. 2019."
+  ],
+  [
+   58,
+   "Aaqif Afzaal Abbasi, Mohammed A. A. Al-qaness, Mohamed Abd Elaziz, Amjad Iqbal, Ammar Hawbani, Ahmed A. Ewees, Sameen Javed, and Sunghwan Kim, \"Phantom: Towards vendor-agnostic resource consolidation in cloud environments,\"Electronics, vol. 8, no. 1183, pp. 1-16, Oct. 2019."
+  ],
+  [
+   57,
+   "Duc Manh Nguyen and Sunghwan Kim, \"New construction of binary and nonbinary quantum stabilizer codes based on symmetric matrices,\"International Journal of Modern Physics B, vol. 33, no. 24, 1950274, pp. 1-16, Oct. 2019."
+  ],
+  [
+   56,
+   "Mujeeb Abdullah, Saad Hassan Kiani, Lway Faisal Abdulrazak, Amjad Iqbal, M. A. Bashir, Shafiullah Khan, and Sunghwan Kim, \"High-performance multiple-input multiple-output antenna system for 5G mobile terminals,\"Electronics, vol. 8, no. 1090, pp. 1-16, Sept. 2019."
+  ],
+  [
+   55,
+   "Manh Le Tran and Sunghwan Kim, \"Joint power allocation and orientation for uniform illuminance in indoor visible light communication,\"Optics Express, vol. 27, no. 20, pp. 28575-28587, Sept. 2019."
+  ],
+  [
+   54,
+   "Manh Le Tran and Sunghwan Kim, \"Receiver-oriented spatial modulation in visible light communication system,\"IEEE Access, vol. 7, pp. 129666-129677, Sept. 2019."
+  ],
+  [
+   53,
+   "Muhammad Awais Jadoon and Sunghwan Kim, \"Learning‑based relay selection for cooperative networks with space–time network coding,\"Wireless Personal Communications, vol. 108, pp. 907-920, Sept. 2019."
+  ],
+  [
+   52,
+   "Amjad Iqbal, Amor Smida, Lway Faisal Abdulrazak, Omar A. Saraereh, Nazih Khaddaj Mallat, Issa Elfergani, and Sunghwan Kim, \"Low-profile frequency reconfigurable antenna for heterogeneous wireless systems,\"Electronics, vol. 8, no. 976, pp. 1-11, Aug. 2019."
+  ],
+  [
+   51,
+   "Aaqif Afzaal Abbasi, Mohammed A. A. Al-qaness, Mohamed Abd Elaziz, Hassan A. Khalil, and Sunghwan Kim, \"Bouncer: A resource-aware admission control scheme for cloud services,\"Electronics, vol. 8, no. 928, pp. 1-15, Aug. 2019."
+  ],
+  [
+   50,
+   "Amjad Iqbal, Abdul Basir, Amor Smida, Nazih Khaddaj Mallat, Issa Elfergani, Jonathan Rodriguez, and Sunghwan Kim, \"Electromagnetic bandgap backed millimeter-wave MIMO antenna for wearable applications,\"IEEE Access, vol. 7, pp. 111135-111144, Aug. 2019."
+  ],
+  [
+   49,
+   "Duc Manh Nguyen and Sunghwan Kim, \"The fog on: Generalized teleportation by means of discrete-time quantum walks on N-lines and N-cycles,\"Modern Physics Letters B, vol. 33, no. 23, 1950270, pp.1-8, Aug. 2019."
+  ],
+  [
+   48,
+   "Manh Le Tran and Sunghwan Kim, \"Novel bit mapping for generalized spatial modulation in VLC systems,\"IEEE Photonics Technology Letters, vol. 31, no. 15, pp. 1257-1260, Aug. 2019."
+  ],
+  [
+   47,
+   "Mohammed A. A. Al-qaness, Mohamed Abd Elaziz, Sunghwan Kim, Ahmed A. Ewees, Aaqif Afzaal Abbasi, Yousif A. Alhaj, and Ammar Hawbani, \"Channel state information from pure communication to sense and track human motion: A survey,\"Sensors, vol. 19, no. 3329, pp. 1-27, July 2019."
+  ],
+  [
+   46,
+   "Mohammed H. Alsharif, Sunghwan Kim, and Nuri Kuruoglu, \"Energy harvesting techniques for wireless sensor networks/radio-frequency identification: A review,\"Symmetry, vol. 11, no. 865, pp. 1-24, July 2019."
+  ],
+  [
+   45,
+   "Duc Manh Nguyen and Sunghwan Kim, \"Multi-bits transfer based on the quantum three-stage protocol with quantum error correction codes,\"International Journal of Theoretical Physics, vol. 58, pp. 2043-2053, June 2019."
+  ],
+  [
+   44,
+   "Hieu Trong Dao and Sunghwan Kim, \"Multiple-symbol non-coherent detection for differential QAM modulation in uplink massive MIMO systems,\"Electronics, vol. 8, no. 693, pp. 1-9, June 2019."
+  ],
+  [
+   43,
+   "Muhammad Awais, Mohsin Raza, Kamran Ali, Zulfiqar Ali, Muhammad Irfan, Omer Chughtai, Imran Khan, Sunghwan Kim, and Masood Ur Rehman, \"An internet of things based bed-egress alerting paradigm using wearable sensors in elderly care environment,\"Sensors, vol. 19, no. 2498, pp. 1-17, May 2019."
+  ],
+  [
+   42,
+   "Qazi Salman Khalid, Muhammad Arshad, Shahid Maqsood, Mirza Jahanzaib, Abdur Rehman Babar, Imran Khan, Jabir Mumtaz, and Sunghwan Kim, \"Hybrid particle swarm algorithm for products scheduling problem in cellular manufacturing system,\"Symmetry, vol. 11, no. 729, pp. 1-22, May 2019."
+  ],
+  [
+   41,
+   "Omar A. Saraereh, Imran Khan, Qais Alsafasfeh, Salem Alemaishat, and Sunghwan Kim, \"Low-complexity channel estimation in 5G massive MIMO-OFDM systems,\"Symmetry, vol. 11, no. 713, pp. 1-17, May 2019."
+  ],
+  [
+   40,
+   "Amjad Iqbal, Amor Smida, Nazih Khaddaj Mallat, Ridha Ghayoula, Issa Elfergani, Jonathan Rodriguez, and Sunghwan Kim, \"Frequency and pattern reconfigurable antenna for emerging wireless communication systems,\"Electronics, vol. 8, no. 407, pp. 1-12, Apr. 2019."
+  ],
+  [
+   39,
+   "Amjad Iqbal, Amor Smida, Nazih Khaddaj Mallat, Mohammad Tariqul Islam, and Sunghwan Kim, \"A compact UWB antenna with independently controllable notch bands,\"Sensors, vol. 19, no. 1411, pp. 1-12, Mar. 2019."
+  ],
+  [
+   38,
+   "Qais Alsafasfeh, Omar A. Saraereh, Imran Khan, and Sunghwan Kim, \"Solar PV grid power flow analysis,\"Sustainability, vol. 11, no. 1744, pp. 1-25, Mar. 2019."
+  ],
+  [
+   37,
+   "Qais Alsafasfeh, Omar A. Saraereh, Imran Khan, and Sunghwan Kim, \"LS-solar-PV system impact on line protection,\"Electronics, vol. 8, no. 226, pp. 1-17, Feb. 2019."
+  ],
+  [
+   36,
+   "Muhammad Umer Farooq, Qazi Salman, Muhammad Arshad, Imran Khan, Rehman Akhtar, and Sunghwan Kim, \"An artificial bee colony algorithm based on a multi-objective framework for supplier integration,\"Applied Sciences, vol. 9, no. 588, pp. 1-14, Feb. 2019."
+  ],
+  [
+   35,
+   "Duc Manh Nguyen and Sunghwan Kim, \"Quantum key distribution protocol based on modified generalization of Deutsch-Jozsa algorithm in d-level quantum system,\"International Journal of Theoretical Physics, vol. 58, pp. 71-82, Jan. 2019."
+  ],
+  [
+   34,
+   "He Wang and Sunghwan Kim, \"Design of polar codes for run-length limited codes in visible light communications,\"IEEE Photonics Technology Letters, vol. 31, no. 1, pp. 27-30, Jan. 2019."
+  ],
+  [
+   33,
+   "Manh Le Tran and Sunghwan Kim, \"Layered adaptive collaborative constellation for MIMO visible light communication,\"IEEE Access, vol. 6, pp. 74895-74907, Dec. 2018."
+  ],
+  [
+   32,
+   "Imran Khan, Mohammad Haseeb Zafar, Majid Ashraf, and Sunghwan Kim, \"Computationally efficient channel estimation in 5G massive multiple-input multiple-output systems,\"Electronics, vol. 7, no. 382, pp. 1-12, Nov. 2018."
+  ],
+  [
+   31,
+   "Duc Manh Nguyen and Sunghwan Kim, \"New constructions of quantum stabilizer codes based on difference sets,\"Symmetry, vol. 10, iss. 655, pp. 1-13, Nov. 2018."
+  ],
+  [
+   30,
+   "Hieu Trong Dao and Sunghwan Kim, \"Disjoint pilot power and data power allocation in multi-cell multi-user massive MIMO systems,\"IEEE Access, vol. 6, pp. 66513-66521, Oct. 2018."
+  ],
+  [
+   29,
+   "He Wang and Sunghwan Kim, \"Adaptive puncturing method for dimming in visible light communication with polar codes,\"IEEE Photonics Technology Letters, vol. 30, no. 20, pp. 1780-1783, Oct. 2018."
+  ],
+  [
+   28,
+   "Manh Le Tran, Sunghwan Kim, Thomas Ketseoglou, and Ender Ayanoglu, \"LED selection and MAP detection for generalized LED index modulation,\"IEEE Photonics Technology Letters, vol. 30, no. 19, pp. 1695-1698, Oct. 2018."
+  ],
+  [
+   27,
+   "Hieu Trong Dao and Sunghwan Kim, \"Worst cell based pilot allocation in massive MIMO systems,\"Electronics, vol. 7, no. 197, pp. 1-11, Sept. 2018."
+  ],
+  [
+   26,
+   "He Wang and Sunghwan Kim, \"Decoding of polar codes for intersymbol interference in visible-light communication,\"IEEE Photonics Technology Letters, vol. 30, no. 12, pp. 1111-1114, June 2018."
+  ],
+  [
+   25,
+   "Duc Manh Nguyen and Sunghwan Kim, \"Quantum stabilizer codes construction from Hermitian self-orthogonal codes over GF(4),\"Journal of Communications and Networks, vol. 20, no. 3, pp. 309-315, June 2018."
+  ],
+  [
+   24,
+   "Hieu Trong Dao and Sunghwan Kim, \"Pilot power allocation for maximising the sum rate in massive MIMO systems,\"IET Communications, vol. 12, iss. 11, pp. 1367-1372, June 2018."
+  ],
+  [
+   23,
+   "Hieu Trong Dao and Sunghwan Kim, \"Vertex graph-coloring-based pilot assignment with location-based channel estimation for massive MIMO systems,\"IEEE Access, vol. 6, pp. 4599-4607, Jan. 2018."
+  ],
+  [
+   22,
+   "He Wang and Sunghwan Kim, \"Soft convolutional codes decoding algorithm for concatenated codes in visible light communication,\"Wireless Personal Communications, vol. 97, iss. 4, pp. 6357-6367, Dec. 2017."
+  ],
+  [
+   21,
+   "He Wang and Sunghwan Kim, \"Dimming control systems with polar codes in visible light communication,\"IEEE Photonics Technology Letters, vol. 29, no. 19, pp. 1651-1654, Oct. 2017."
+  ],
+  [
+   20,
+   "Duc Manh Nguyen and Sunghwan Kim, \"Minimal-entanglement entanglement-assisted quantum error correction codes from modified circulant matrices,\"Symmetry, vol. 9, iss. 122, pp. 1-8, July 2017."
+  ],
+  [
+   19,
+   "Muhammad Awais Jadoon and Sunghwan Kim, \"Relay selection algorithm for wireless cooperative networks: a learning-based approach,\"IET Communications, vol. 11, iss. 7, pp. 1061-1066, May 2017."
+  ],
+  [
+   18,
+   "Sunghwan Kim, \"Reversible data-hiding systems with modiﬁed fluctuation functions and Reed-Solomon codes for encrypted image recovery, \"Symmetry, vol. 9, no. 5, pp. 1-18, Apr. 2017."
+  ],
+  [
+   17,
+   "Fatema-Tus-Zohra Khanam and Sunghwan Kim, \"Enhanced joint and separable reversible data hiding in encrypted images with high payload, \"Symmetry, vol. 9, no. 50, pp. 1-20, Mar. 2017."
+  ],
+  [
+   16,
+   "He Wang and Sunghwan Kim, \"Bit-level soft run-length limited decoding algorithm for visible light communication,\"IEEE Photonics Technology Letters, vol. 28, no. 3, pp. 237-240, Feb. 2016."
+  ],
+  [
+   15,
+   "He Wang and Sunghwan Kim, \"Soft-input soft-output run-length limited decoding for visible light communication,\"IEEE Photonics Technology Letters, vol. 28, no. 3, pp. 225-228, Feb. 2016."
+  ],
+  [
+   14,
+   "Sunghwan Kim, Sungoh Kwon, and Seokhoon Yoon, \"Concatenated codes using Reed–Muller codes and bit-extension codes for a wiretap channel,\"IET Communications, vol. 9, iss. 12, pp. 1437-1441, Oct. 2015."
+  ],
+  [
+   13,
+   "Sunghwan Kim, \"Adaptive FEC codes suitable for variable dimming values in visible light communication,\"IEEE Photonics Technology Letters, vol. 27, no. 9, pp. 967-969, May 2015."
+  ],
+  [
+   12,
+   "He Wang and Sunghwan Kim, \"New RLL decoding algorithm for multiple candidates in visible light communication,\"IEEE Photonics Technology Letters, vol. 27, no. 1, pp. 15-17, Jan. 2015."
+  ],
+  [
+   11,
+   "Sunghwan Kim, Giang Kien Nguyen, Tiep Minh Hoang, and Hyundong Shin, \"Concatenated coding and hybrid automatic repeat request for wiretap channels,\"IET Communications, vol. 8, iss. 8, pp. 1211-1216, May 2014."
+  ],
+  [
+   10,
+   "Sunghwan Kim, \"New codes with finite length for a wiretap channel,\"Wireless Personal Communications, vol. 75, iss. 1, pp. 601-608, Mar. 2014."
+  ],
+  [
+   9,
+   "Sunghwan Kim and Sung-Yoon Jung, \"Modified Reed–Muller coding scheme made from the bent function for dimmable visible light communications,\"IEEE Photonics Technology Letters, vol. 25, no. 1, pp. 11-13, Jan. 2013."
+  ],
+  [
+   8,
+   "Seokhoon Yoon, Abul K. Azad, Hoon Oh, and Sunghwan Kim, \"AURP: An AUV-aided underwater routing protocol for underwater acoustic sensor networks,\"Sensors, vol. 12, no. 2, pp. 1827–1845, Feb. 2012."
+  ],
+  [
+   7,
+   "Sunghwan Kim and Sung-Yoon Jung, \"Novel FEC coding scheme for dimmable visible light communication based on the modified Reed-Muller codes, \"IEEE Photonics Technology Letters, vol. 23, no. 20, pp. 1514-1516, Oct. 2011."
+  ],
+  [
+   6,
+   "Sung-Yoon Jung and Sunghwan Kim, \"Channel estimation and LDPC code puncturing schemes based on incremental pilots for OFDM,\"ETRI Journal, vol. 32, no. 4, pp. 603-606, Aug. 2010."
+  ],
+  [
+   5,
+   "Song-Nam Hong, Sunghwan Kim, Dong-Joon Shin, and Inkyu Lee, \"Quasi-cyclic low-density parity-check codes for space-time bit-interleaved coded modulation,\"IEEE Communications Letters, vol. 12, no. 10, pp. 767-769, Oct. 2008."
+  ],
+  [
+   4,
+   "Sunghwan Kim, Min-Ho Jang, Jong-Seon No, Song-Nam Hong, and Dong-Joon Shin, \"Sequential message-passing decoding of LDPC codes by partitioning check nodes,\"IEEE Transactions on Communications, vol. 56, no. 7, pp. 1025-1031, July 2008."
+  ],
+  [
+   3,
+   "Sunghwan Kim, Jong-Seon No, Habong Chung, and Dong-Joon Shin, \"Quasi-cyclic low-density parity-check codes with girth larger than 12,\"IEEE Transactions on Information Theory, vol. 53, no. 8, pp. 2885-2891, Aug. 2007."
+  ],
+  [
+   2,
+   "Sunghwan Kim, Jong-Seon No, Habong Chung, and Dong-Joon Shin, \"On the girth of Tanner’s (3,5) quasi-cyclic LDPC codes,\"IEEE Transactions on Information Theory, vol. 52, no. 4, pp. 1739-1744, Apr. 2006."
+  ],
+  [
+   1,
+   "Sunghwan Kim, Gang-Mi Gil, and Jong-Seon No, \"New classes of bent functions and generalized bent functions,\"IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, vol. E87-A, no. 2 pp. 480-488, Feb. 2004."
+  ]
+ ],
+ "conference": [
+  [
+   36,
+   "Khac-Tuan Nguyen and Sunghwan Kim, \"Bit error rate of RIS-enabled MISO systems with discrete phase shift,\"in Proc. RIVF, Ho Chi Minh City, Vietnam, Dec. 2025."
+  ],
+  [
+   35,
+   "Thai-Hoc Vu, Daniel Benevides da Costa, Quoc-Viet Pham, and Sunghwan Kim, \"A novel paradigm shift for next-generation: Symbiotic backscatter rate-splitting multiple access systems,\"in Proc. ICCE, Danang, Vietnam, Aug. 2024."
+  ],
+  [
+   34,
+   "Shehbaz Tariq, Abdurrahman Wachid Shaffar, Wook Park, Sunghwan Kim, and Hyundong Shin, \"Multi-agent quantum reinforcement learning for digital twin placement in 6G multi-tier systems,\"in Proc. EAI INISCOM, Danang, Vietnam, Feb. 2024."
+  ],
+  [
+   33,
+   "Dang-Trac Nguyen and Sunghwan Kim, \"DRF-ECCT: Dynamic reliability filter for error correction code transformer,\"in Proc. ICGHIT, Hanoi, Vietnam, Jan. 2024."
+  ],
+  [
+   32,
+   "Thai-Hoc Vu, Daniel Benevides da Costa, Quoc-Viet Pham, and Sunghwan Kim, \"Performance analysis of RSMA-aided UAV-to-ground communications,\"in Proc. GLOBECOM, Kuala Lumpur, Malaysia, Dec. 2023."
+  ],
+  [
+   31,
+   "Thi-Huong Khuat and Sunghwan Kim, \"One indel or one-deletion and one-insertion error-correcting code,\"in Proc. ATC, Da Nang, Vietnam, Oct. 2023."
+  ],
+  [
+   30,
+   "Thai-Hoc Vu, Khac-Tuan Nguyen, Quoc-Viet Pham, Thien Huynh-The, Daniel Benevides da Costa, Vo Nguyen Quoc Bao, Sunghwan Kim, \"Outage performance of THz-aided NOMA systems with spherical stochastic model,\"in Proc. SSP, Hanoi, Vietnam, July 2023."
+  ],
+  [
+   29,
+   "Giang Ngo Tran, Sang Quang Nguyen, Minh Tuan Nguyen, and Sunghwan Kim, \"Optimal power allocation for non-orthogonal multiple access visible light communications with short packet and imperfect channel information,\"in Proc. ATC, Hanoi, Vietnam, Oct. 2022."
+  ],
+  [
+   28,
+   "Sang Quang Nguyen, Thai-Hoc Vu, and Sunghwan Kim, \"Residual transceiver hardware impairment and imperfect interference cancellation with two way-enabled RIS systems,\"in Proc. ATC, Hanoi, Vietnam, Oct. 2022."
+  ],
+  [
+   27,
+   "Xiaozhou Lu and Sunghwan Kim, \"Log-likelihood ratio for low-density parity-check codes under binary symmetric erasure channel in DNA storage,\"in Proc. ATC, Hanoi, Vietnam, Oct. 2022."
+  ],
+  [
+   26,
+   "Khac-Tuan Nguyen, Thai-Hoc Vu, Thi-Huong Khuat, Hai-Chau Le, and Sunghwan Kim, \"Performance analysis of uplink MISO systems with RIS selections and MRC/SC configurations,\"in Proc. ICCE, Nha Trang, Vietnam, July 2022."
+  ],
+  [
+   25,
+   "Thai-Hoc Vu, Trung Q. Duong, Thi-Huong Khuat, Tien Hoa Nguyen, and Sunghwan Kim, \"Short-packet communication for cooperative UAV-based MIMO systems with rate splitting multiple access,\"in Proc. ICCE, Nha Trang, Vietnam, July 2022."
+  ],
+  [
+   24,
+   "Thai-Hoc Vu and Sunghwan Kim, \"Outage performance of rate splitting multiple access-based cooperative MIMO UAV networks,\"in Proc. ASCC, Jeju Island, Korea, May 2022."
+  ],
+  [
+   23,
+   "Hieu Trong Dao and Sunghwan Kim, \"Pilot power allocation for enhancing channel estimation quality in multi-cell multi-user massive MIMO systems,\"in Proc. APCC, Ho Chi Minh City, Vietnam, Nov. 2019."
+  ],
+  [
+   22,
+   "Mohammed A. A. Al-qaness, Mohamed Abd Elaziz, Ammar Hawbani, Aaqif Afaal Abbasi, Liang Zhao, and Sunghwan Kim, \"Real-time traffic congestion analysis based on collected tweets,\"in Proc. IUCC, Shenyang, China, Oct. 2019."
+  ],
+  [
+   21,
+   "Aaqif Afaal Abbasi, Sidra Sltana, Mohammed A. A. Al-qaness, Ammar Hawbani, Sameen Javed, and Sunghwan Kim, \"Lightweight virtual machine mapping for data centers,\"in Proc. DSCI, Shenyang, China, Oct. 2019."
+  ],
+  [
+   20,
+   "Manh Le Tran and Sunghwan Kim, \"Multilayer collaborative constellation for MIMO visible light communication,\"in Proc. ATC, Hanoi, Vietnam, Oct. 2019."
+  ],
+  [
+   19,
+   "Duc Manh Nguyen and Sunghwan Kim, \"A quantum three pass protocol with phase estimation for many bits transfer,\"in Proc. ATC, Hanoi, Vietnam, Oct. 2019."
+  ],
+  [
+   18,
+   "Manh Le Tran and Sunghwan Kim, \"Generalized LED index modulation with simplified maximum a posteriori detection and improved LED mapping for MIMO visible light communication,\"in Proc. ICEVLC, Seoul, Korea, Mar. 2019."
+  ],
+  [
+   17,
+   "Duc Manh Nguyen and Sunghwan Kim, \"Application of additive codes over GF(4) on quantum error correction codes,\"in Proc. FICTA, Da Nang, Vietnam, Nov. 2018."
+  ],
+  [
+   16,
+   "Manh Le Tran and Sunghwan Kim, \"Improved generalized LED index modulation for visible light communication,\"in Proc. FICTA, Da Nang, Vietnam, Nov. 2018."
+  ],
+  [
+   15,
+   "He Wang and Sunghwan Kim, \"A Study on soft run-length limited codes in visible light communication,\"in Proc. ICCNT, Zurich, Switzerland, Sept. 2017."
+  ],
+  [
+   14,
+   "Duc Manh Nguyen and Sunghwan Kim, \"A study on quantum stabilizer codes with Length 7,\"in Proc. IFOST, Ulsan, Korea, May 2017."
+  ],
+  [
+   13,
+   "Duc Manh Nguyen and Sunghwan Kim, \"Construction and complement circuit of a quantum stabilizer Code with length 7,\"in Proc. ICUFN, Vienna, Austria, July 2016."
+  ],
+  [
+   12,
+   "Fatema-Tuz-Zohra Khanam, Kyoung-Young Song, and Sunghwan Kim, \"A modified reversible data hiding in encrypted image using enhanced measurement functions,\"in Proc. ICUFN, Vienna, Austria, July 2016."
+  ],
+  [
+   11,
+   "He Wang and Sunghwan Kim, \"Novel soft decoding algorithm of RLL codes for secure physical-layer visible light communications,\"in Proc. FiCloud, Rome, Italy, Aug. 2015."
+  ],
+  [
+   10,
+   "Taesoo Kim and Sunghwan Kim, \"Efficient transmission of reversible data hiding in encryption images by using Reed-Solomon codes\", in Proc. FiCloud, Rome, Italy, Aug. 2015."
+  ],
+  [
+   9,
+   "He Wang and Sunghwan Kim, \"Novel decoding of run-length limited codes for visible light communication,\"in Proc. CSCC, Santorini Island, Greece, July 2014."
+  ],
+  [
+   8,
+   "Sung-Yoon Jung and Sunghwan Kim, \"Punctured pilots for OFDMA communications,\"in Proc. IEEE MWSCAS, Seoul, Korea, Aug. 2011."
+  ],
+  [
+   7,
+   "Sang Hyun Lee, Ankit Ghiya, Sriram Vishwanath, Sung Soo Hwang, and Sunghwan Kim, \"Structured dirty-paper coding using low-density lattices,\"in Proc. ICASSP, Dallas, TX., Mar. 2010"
+  ],
+  [
+   6,
+   "Sunghwan Kim, Jong-Seon No, Habong Chung, and Dong-Joon Shin, \"Cycle analysis and construction of protographs for QC LDPC codes with girth larger than 12,\"in Proc. ISIT, Nice, France, June 2007."
+  ],
+  [
+   5,
+   "Sunghwan Kim, Min-Ho Jang, Jong-Seon No, Song-Nam Hong, and Dong-Joon Shin, \"Analysis of complexity and convergence speed of sequential schedules for decoding LDPC codes,\"in Proc. ISITA, Seoul Korea, Nov. 2006."
+  ],
+  [
+   4,
+   "Sunghwan Kim, Jong-Seon No, Habong Chung, and Dong-Joon Shin, \"Girth analysis of Tanner's (3, 5) QC LDPC codes, \"in Proc. ISIT, Adelaide, Australia, Sept. 2005."
+  ],
+  [
+   3,
+   "Sunghwan Kim, Gang-Mi Gil, Kyung-Hee Kim and Jong-Seon No, \"Generalized bent functions constructed from partial spreads,\"in Proc. ISIT, Lausanne, Switzerland, July 2002."
+  ],
+  [
+   2,
+   "Sunghwan Kim and Jae Hong Lee, \"Performance of iterative multiuser detection with a partial PIC detector and serially concatenated codes,\"in Proc. IEEE VTC-Fall, Atlantic City, NJ, Oct. 2001."
+  ],
+  [
+   1,
+   "Hyundong Shin, Sunghwan Kim, and Jae Hong Lee, \"Turbo decoding in a Rayleigh fading channel with estimated channel state information,\"in Proc. IEEE VTC-Fall, Boston, MA, Sept. 2000."
+  ]
+ ]
+}

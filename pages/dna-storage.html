@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en"
+      data-title-en="DNA storage — AIIC Lab"
+      data-title-vi="Lưu trữ DNA — AIIC Lab">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DNA storage — AIIC Lab</title>
+<meta name="description" content="AIIC Lab research field: error-correcting codes, constrained codes and LDPC decoding for DNA data storage."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --accent:  #14538f;   /* chip blue */
+  --accent2: #2a9d8f;   /* teal */
+  --text:    #1f2937;
+  --muted:   #5f6b7a;
+  --border:  #e6e6e6;
+  --shadow:  0 10px 28px rgba(36,49,66,.08);
+  --radius:  20px;
+  --max-w:   min(1100px, calc(100vw - 44px));
+}
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; scroll-padding-top:92px; }
+body{
+  margin:0; background:#f0f2f5;
+  font-family:"Inter",Arial,sans-serif; font-size:17px; line-height:1.75;
+  color:var(--text); -webkit-font-smoothing:antialiased;
+}
+
+/* ===== Bilingual: only the selected language is shown ===== */
+html[data-lang="vi"] [lang="en"]{ display:none; }
+html[data-lang="en"] [lang="vi"]{ display:none; }
+
+/* ===== Header ===== */
+header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
+.header-inner{ max-width:var(--max-w); margin:0 auto; padding:12px 6px; display:flex; flex-wrap:wrap; align-items:center; gap:6px 18px; }
+.site-title{ font-size:24px; font-weight:800; letter-spacing:2px; }
+.site-title a{ color:#fff; text-decoration:none; }
+.site-title .dot{ color:var(--accent2); }
+.site-tag{ font-size:.82em; color:rgba(255,255,255,.65); font-weight:400; margin-right:auto; }
+nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
+nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
+nav a:hover{ background:rgba(255,255,255,.12); }
+.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
+.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
+.lang-btn:hover{ color:#fff; }
+.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
+@media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
+
+/* ===== Page container ===== */
+main{ max-width:var(--max-w); margin:0 auto; padding:0 6px 40px; }
+
+/* ===== Hero ===== */
+.hero{ background:#fff; border-radius:var(--radius); margin:26px auto 22px; padding:28px 30px; box-shadow:var(--shadow); border:1px solid rgba(230,230,230,.7); display:flex; gap:26px; align-items:center; flex-wrap:wrap; position:relative; overflow:hidden; }
+.hero::before{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+.avatar{ flex:0 0 auto; width:108px; height:108px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:800; letter-spacing:1px; box-shadow:0 8px 24px rgba(20,83,143,.35); }
+.hero h1{ font-size:clamp(1.4rem,3vw,2rem); margin:0 0 8px; letter-spacing:-.02em; }
+.hero p{ margin:0 0 10px; color:var(--muted); max-width:70ch; }
+.hero-chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+.chip{ font-size:.8em; font-weight:700; color:var(--accent); background:rgba(20,83,143,.08); border:1px solid rgba(20,83,143,.18); padding:4px 12px; border-radius:999px; }
+
+/* ===== TOC ===== */
+.toc-wrap{ background:#eef1f7; border-radius:var(--radius); padding:22px 26px 26px; margin:20px auto 26px; box-shadow:0 12px 32px rgba(20,33,61,.10); }
+.toc-wrap h2{ font-size:clamp(1.3rem,2vw,1.6rem); color:#374151; margin:0 0 14px; letter-spacing:-.02em; }
+.toc-wrap ul{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px 20px; list-style:none; padding:0; margin:0; }
+@media(max-width:640px){ .toc-wrap ul{ grid-template-columns:1fr; } }
+.toc-wrap a{ display:block; color:var(--accent); text-decoration:none; padding:10px 14px; border-radius:13px; background:rgba(255,255,255,.70); border:1px solid rgba(55,65,81,.12); font-size:1rem; font-weight:700; transition:transform .15s,background .15s; }
+.toc-wrap a:hover{ transform:translateY(-2px); background:rgba(255,255,255,.95); }
+
+/* ===== Section cards ===== */
+.entry, article{ background:#fff; border-radius:var(--radius); padding:24px 28px; margin:22px auto; box-shadow:var(--shadow); border:1px solid rgba(230,230,230,.7); position:relative; overflow:hidden; }
+.entry::before, article::before{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+.entry h2, article h1{ font-size:clamp(1.2rem,2vw,1.6rem); color:var(--text); margin:0 0 18px; letter-spacing:-.025em; line-height:1.3; }
+.entry h2::after, article h1::after{ content:""; display:block; width:56px; height:3px; margin-top:8px; border-radius:999px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+.entry > p, article > p{ color:var(--muted); font-size:.95em; margin:0 0 16px; }
+article h2{ font-size:1.18rem; color:var(--accent); margin:30px 0 10px; letter-spacing:-.01em; }
+article h3{ font-size:1rem; margin:20px 0 6px; color:var(--text); }
+article p{ margin:0 0 14px; }
+article ul, article ol{ margin:0 0 14px; padding-left:1.3rem; }
+article li{ margin-bottom:8px; }
+.meta{ color:var(--muted); font-size:.88em; margin-bottom:10px; }
+.lede{ font-size:1.02em; color:#374151; border-left:3px solid var(--accent2); padding:4px 0 4px 16px; margin:0 0 24px; }
+
+/* ===== Topic / member cards ===== */
+.card-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin:4px 0 6px; }
+.card{ background:rgba(250,250,252,.9); border:1px solid rgba(31,41,55,.07); border-radius:14px; padding:14px 16px; box-shadow:0 3px 10px rgba(36,49,66,.05); display:flex; flex-direction:column; gap:6px; }
+.card h3{ margin:0; font-size:1.02rem; line-height:1.4; color:var(--text); }
+.card p{ margin:0; font-size:.91em; color:var(--muted); line-height:1.6; }
+.card ul{ margin:2px 0 0; padding-left:1.2rem; font-size:.91em; color:var(--muted); }
+.card li{ margin-bottom:3px; }
+.card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
+.person{ display:flex; gap:14px; align-items:flex-start; }
+.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .who{ flex:1; min-width:0; }
+.person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
+.cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
+.cv li{ margin-bottom:2px; padding-left:0; }
+.cv .k{ color:var(--text); font-weight:600; }
+.badge{ font-size:.78em; font-weight:700; color:#0f5132; background:rgba(25,135,84,.12); border:1px solid rgba(25,135,84,.3); padding:2px 10px; border-radius:999px; }
+
+/* ===== Links ===== */
+.link-html{ color:#0057b7; font-weight:700; text-decoration:underline; text-underline-offset:2px; }
+.link-html:hover{ color:#003d8f; }
+.link-ext{ color:#555; font-size:.93em; font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+.link-ext:hover{ color:var(--text); }
+
+/* ===== Publications ===== */
+.pub-year{ font-size:1rem; color:var(--accent); margin:22px 0 8px; padding-bottom:4px; border-bottom:1px dashed rgba(31,41,55,.18); }
+.pub-list{ list-style:none; padding:0; margin:0; }
+.pub-list li{ padding:8px 12px 8px 60px; margin-bottom:6px; position:relative; background:rgba(250,250,252,.9); border:1px solid rgba(31,41,55,.07); border-radius:12px; font-size:.93em; line-height:1.6; }
+.pub-list .n{ position:absolute; left:12px; top:8px; width:42px; color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums; }
+.pub-list .t{ font-weight:600; color:var(--text); }
+.pub-list .pi{ color:var(--text); font-weight:600; }
+.pub-stats{ display:flex; flex-wrap:wrap; gap:10px; margin:0 0 14px; }
+.stat{ background:rgba(20,83,143,.06); border:1px solid rgba(20,83,143,.15); border-radius:14px; padding:10px 18px; min-width:150px; }
+.stat b{ display:block; font-size:1.5rem; color:var(--accent); line-height:1.2; }
+.stat span{ font-size:.85em; color:var(--muted); }
+
+/* ===== Callouts ===== */
+.note{ background:rgba(234,179,8,.1); border:1px solid rgba(234,179,8,.3); padding:13px 16px; border-radius:12px; margin:12px 0; font-size:.93em; line-height:1.65; }
+.note h3{ margin:0 0 6px; font-size:.78rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); }
+.figure-note{ background:rgba(20,83,143,.05); border:1px dashed rgba(20,83,143,.3); border-radius:12px; padding:10px 14px; margin:10px 0 16px; font-size:.9em; color:var(--muted); }
+.benefits{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:8px 0 14px; }
+.benefit{ background:linear-gradient(135deg, rgba(20,83,143,.07), rgba(42,157,143,.07)); border:1px solid rgba(20,83,143,.15); border-radius:14px; padding:14px 16px; text-align:center; font-weight:700; color:var(--accent); }
+.tbl-wrap{ overflow-x:auto; margin:8px 0 16px; }
+table{ border-collapse:collapse; width:100%; font-size:.92em; }
+th,td{ border:1px solid var(--border); padding:7px 10px; text-align:left; vertical-align:top; }
+th{ background:#eef1f7; }
+
+/* ===== Back / footer nav ===== */
+.back-to-toc{ margin-top:1.1rem; padding-top:.9rem; border-top:1px dashed rgba(31,41,55,.18); text-align:right; }
+.back-to-toc a, .footer-nav a{ display:inline-block; color:var(--accent); font-weight:700; font-size:.88em; text-decoration:none; padding:5px 13px; background:rgba(20,83,143,.07); border-radius:999px; transition:background .15s; }
+.back-to-toc a:hover, .footer-nav a:hover{ background:rgba(20,83,143,.14); }
+.footer-nav{ margin-top:30px; padding-top:16px; border-top:1px dashed rgba(31,41,55,.18); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+footer{ background:#14213d; color:rgba(255,255,255,.75); text-align:center; padding:22px 16px; font-size:.9em; margin-top:30px; }
+footer a{ color:#8fd3cb; text-decoration:none; font-weight:600; }
+footer a:hover{ text-decoration:underline; }
+/* ==== house-format v1 — bilingual-personal-site skill, scripts/house-format.css. Prose is justified on every page.
+     Do not edit this block in a page: edit the skill's copy, re-run apply_format.py; check_site.py fails a page whose
+     block differs. ==== */
+main p, main li, main blockquote, main dd, main .art-desc, main .art-quote{ text-align:justify; text-justify:inter-word; hyphens:auto; }
+main .refs li, main .art-links li, main .songlist li, main .toc-wrap li, main .listen p, main .pair li, main .result li, main table p, main table li{ text-align:left; hyphens:manual; }
+main .poem-credit, main .video-cap, main figcaption p, main figcaption li{ text-align:center; hyphens:manual; }
+main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
+/* ==== /house-format ==== */
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="site-title"><a href="../index.html">AIIC<span class="dot">·</span>Lab</a></div>
+    <div class="site-tag">
+      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
+      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
+        <li><a href="../index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
+        <li><a href="../index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
+        <li><a href="../index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
+        <li><a href="../index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
+        <li><a href="../index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<article>
+<h1><span lang="en">DNA storage</span><span lang="vi">Lưu trữ DNA</span></h1>
+<div class="meta"><span lang="en">Research field · from the original lab page</span><span lang="vi">Lĩnh vực nghiên cứu · theo trang gốc của lab</span></div>
+
+<p class="lede" lang="en">DNA can store data at a density no silicon memory approaches, and keeps it for centuries — but writing and reading it (synthesis and sequencing) introduce substitutions, insertions and deletions. Error-correcting codes designed for this channel are what make DNA a storage medium rather than a curiosity.</p>
+<p class="lede" lang="vi">DNA có thể lưu dữ liệu với mật độ mà không bộ nhớ silicon nào sánh được, và giữ được hàng thế kỷ — nhưng việc ghi và đọc (tổng hợp và giải trình tự) sinh ra lỗi thay thế, chèn và xoá. Mã sửa lỗi thiết kế riêng cho kênh này là thứ biến DNA từ một điều thú vị thành một phương tiện lưu trữ.</p>
+
+<h2><span lang="en">Specific topics on ECC for DNA storage</span><span lang="vi">Các chủ đề cụ thể về ECC cho lưu trữ DNA</span></h2>
+<ul>
+  <li><span lang="en">Error-correcting codes (ECC) converted from classical codes for DNA storage</span><span lang="vi">Mã sửa lỗi (ECC) chuyển từ các mã cổ điển sang cho lưu trữ DNA</span></li>
+  <li><span lang="en">New designs of insertion/deletion codes that satisfy the GC-content and homopolymer-run constraints</span><span lang="vi">Thiết kế mới cho mã chèn/xoá thoả ràng buộc về hàm lượng GC và độ dài chuỗi lặp (homopolymer run)</span></li>
+  <li><span lang="en">LDPC code design for DNA storage</span><span lang="vi">Thiết kế mã LDPC cho lưu trữ DNA</span></li>
+  <li><span lang="en">Run-length-limited and constrained coding for composite DNA</span><span lang="vi">Mã giới hạn độ dài chạy và mã ràng buộc cho DNA tổ hợp (composite DNA)</span></li>
+</ul>
+<p><span lang="en">Basics of DNA storage:</span><span lang="vi">Cơ bản về lưu trữ DNA:</span> <a class="link-ext" href="https://en.wikipedia.org/wiki/DNA_digital_data_storage" target="_blank" rel="noopener"><span lang="en">Wikipedia (properties, history, references)</span><span lang="vi">Wikipedia (tính chất, lịch sử, tài liệu)</span></a></p>
+
+<h2><span lang="en">In plain words</span><span lang="vi">Nói một cách đơn giản</span></h2>
+<p lang="en">A file is turned into a long string over the four bases A, C, G, T, cut into short strands, synthesised, and later sequenced back. Two constraints make strands easier to synthesise and read: the share of G and C bases should stay near one half (<em>GC content</em>), and the same base should not repeat too many times in a row (<em>homopolymer run</em>). A code for DNA storage therefore has to correct errors <em>and</em> respect these constraints at the same time.</p>
+<p lang="vi">Một tập tin được chuyển thành chuỗi dài trên bốn ba-zơ A, C, G, T, cắt thành các đoạn ngắn, tổng hợp, rồi sau này giải trình tự trở lại. Hai ràng buộc giúp đoạn DNA dễ tổng hợp và dễ đọc hơn: tỉ lệ ba-zơ G và C nên giữ gần một nửa (<em>hàm lượng GC</em>), và cùng một ba-zơ không nên lặp lại quá nhiều lần liên tiếp (<em>homopolymer run</em>). Vì vậy mã cho lưu trữ DNA phải vừa sửa lỗi <em>vừa</em> thoả các ràng buộc đó cùng lúc.</p>
+
+<h2><span lang="en">Comparison between DNA storage and other storage systems</span><span lang="vi">So sánh lưu trữ DNA với các hệ thống lưu trữ khác</span></h2>
+<div class="figure-note"><span lang="en">Figure: density, retention time and read/write cost of DNA storage next to tape, HDD and flash.</span><span lang="vi">Hình: mật độ, thời gian lưu giữ và chi phí ghi/đọc của lưu trữ DNA đặt cạnh băng từ, HDD và flash.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/dna-storage" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
+
+<h2><span lang="en">LLR calculation of LDPC codes for DNA storage</span><span lang="vi">Tính LLR của mã LDPC cho lưu trữ DNA</span></h2>
+<h3><span lang="en">System model</span><span lang="vi">Mô hình hệ thống</span></h3>
+<div class="figure-note"><span lang="en">Figure: encoding → synthesis → storage → sequencing → LLR computation → LDPC decoding.</span><span lang="vi">Hình: mã hoá → tổng hợp → lưu trữ → giải trình tự → tính LLR → giải mã LDPC.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/dna-storage" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
+<h3><span lang="en">Purpose</span><span lang="vi">Mục đích</span></h3>
+<ul>
+  <li><span lang="en">The statistics of DNA storage channels have not yet been fully analysed.</span><span lang="vi">Thống kê của kênh lưu trữ DNA chưa được phân tích đầy đủ.</span></li>
+  <li><span lang="en">Decoding LDPC codes needs log-likelihood ratios (LLR) as the inputs of the variable nodes.</span><span lang="vi">Giải mã LDPC cần tỉ số hợp lý log (LLR) làm đầu vào cho các nút biến.</span></li>
+  <li><span lang="en">We propose two strategies: (S1) directly scaling the LLRs, and (S2) scaling the pairwise substitution error rates.</span><span lang="vi">Chúng tôi đề xuất hai chiến lược: (S1) co giãn trực tiếp LLR, và (S2) co giãn xác suất lỗi thay thế theo từng cặp.</span></li>
+</ul>
+<h3><span lang="en">Performance comparison</span><span lang="vi">So sánh hiệu năng</span></h3>
+<ul>
+  <li><span lang="en">Reading cost (R<sub>read</sub>) versus the number of reads needed for successful decoding.</span><span lang="vi">Chi phí đọc (R<sub>read</sub>) theo số lần đọc cần để giải mã thành công.</span></li>
+  <li><span lang="en">Over eight experiments, the proposed system shows a gain.</span><span lang="vi">Qua tám thí nghiệm, hệ thống đề xuất cho thấy có lợi ích.</span></li>
+</ul>
+<div class="figure-note"><span lang="en">Figure: reading cost versus number of reads for the baseline and the two proposed strategies.</span><span lang="vi">Hình: chi phí đọc theo số lần đọc cho phương án cơ sở và hai chiến lược đề xuất.</span> <a class="link-ext" href="https://sites.google.com/site/nodoubt09/research-field/dna-storage" target="_blank" rel="noopener"><span lang="en">View the figure on the original page</span><span lang="vi">Xem hình trên trang gốc</span></a></div>
+
+<h2><span lang="en">Related publications</span><span lang="vi">Công bố liên quan</span></h2>
+<p lang="en">See, for example, the theoretical framework for run-length-limited coding in composite DNA (IEEE Trans. Molecular, Biological, and Multi-Scale Communications, 2026), the LLR work for LDPC codes under the binary symmetric erasure channel in DNA storage (ATC 2022) and the one-indel error-correcting code (ATC 2023).</p>
+<p lang="vi">Xem ví dụ khung lý thuyết cho mã giới hạn độ dài chạy trong DNA tổ hợp (IEEE Trans. Molecular, Biological, and Multi-Scale Communications, 2026), công trình về LLR cho mã LDPC dưới kênh xoá đối xứng nhị phân trong lưu trữ DNA (ATC 2022) và mã sửa một lỗi chèn/xoá (ATC 2023).</p>
+<p><a class="link-html" href="journal-papers.html"><span lang="en">Journal papers</span><span lang="vi">Bài báo tạp chí</span></a> · <a class="link-html" href="conference-papers.html"><span lang="en">Conference papers</span><span lang="vi">Bài báo hội nghị</span></a></p>
+
+<div class="footer-nav">
+  <a href="../index.html"><span lang="en">← Home</span><span lang="vi">← Trang chủ</span></a>
+  <a href="#top"><span lang="en">↑ Top</span><span lang="vi">↑ Đầu trang</span></a>
+</div>
+</article>
+</main>
+
+<footer>
+  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
+  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+</footer>
+
+<script>
+(function () {
+  var KEY = 'aiic-lang';
+  var root = document.documentElement;
+  function apply(lang) {
+    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    var t = root.getAttribute('data-title-' + lang);
+    if (t) { document.title = t; }
+    var btns = document.querySelectorAll('.lang-btn');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
+    }
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  if (saved) { apply(saved); }
+  document.addEventListener('click', function (ev) {
+    var el = ev.target;
+    while (el && el !== document) {
+      if (el.classList && el.classList.contains('lang-btn')) {
+        apply(el.getAttribute('data-lang'));
+        return;
+      }
+      el = el.parentNode;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en"
+      data-title-en="International conference papers — AIIC Lab"
+      data-title-vi="Bài báo hội nghị quốc tế — AIIC Lab">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>International conference papers — AIIC Lab</title>
+<meta name="description" content="AIIC Lab, Sejong University — international conference papers of Prof. Sunghwan Kim and the lab members."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --accent:  #14538f;   /* chip blue */
+  --accent2: #2a9d8f;   /* teal */
+  --text:    #1f2937;
+  --muted:   #5f6b7a;
+  --border:  #e6e6e6;
+  --shadow:  0 10px 28px rgba(36,49,66,.08);
+  --radius:  20px;
+  --max-w:   min(1100px, calc(100vw - 44px));
+}
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; scroll-padding-top:92px; }
+body{
+  margin:0; background:#f0f2f5;
+  font-family:"Inter",Arial,sans-serif; font-size:17px; line-height:1.75;
+  color:var(--text); -webkit-font-smoothing:antialiased;
+}
+
+/* ===== Bilingual: only the selected language is shown ===== */
+html[data-lang="vi"] [lang="en"]{ display:none; }
+html[data-lang="en"] [lang="vi"]{ display:none; }
+
+/* ===== Header ===== */
+header{ position:sticky; top:0; z-index:100; background:#14213d; color:#fff; box-shadow:0 4px 18px rgba(0,0,0,.18); }
+.header-inner{ max-width:var(--max-w); margin:0 auto; padding:12px 6px; display:flex; flex-wrap:wrap; align-items:center; gap:6px 18px; }
+.site-title{ font-size:24px; font-weight:800; letter-spacing:2px; }
+.site-title a{ color:#fff; text-decoration:none; }
+.site-title .dot{ color:var(--accent2); }
+.site-tag{ font-size:.82em; color:rgba(255,255,255,.65); font-weight:400; margin-right:auto; }
+nav ul{ list-style:none; display:flex; flex-wrap:wrap; gap:2px 6px; margin:0; padding:0; }
+nav a{ display:block; color:rgba(255,255,255,.88); text-decoration:none; font-size:15px; font-weight:600; padding:7px 13px; border-radius:999px; transition:background .15s; }
+nav a:hover{ background:rgba(255,255,255,.12); }
+.lang-switch{ display:flex; gap:3px; background:rgba(255,255,255,.12); padding:3px; border-radius:999px; flex:0 0 auto; }
+.lang-btn{ border:0; background:transparent; color:rgba(255,255,255,.8); font:inherit; font-size:13px; font-weight:700; letter-spacing:.04em; padding:4px 12px; border-radius:999px; cursor:pointer; transition:background .15s,color .15s; }
+.lang-btn:hover{ color:#fff; }
+.lang-btn[aria-pressed="true"]{ background:#fff; color:#14213d; }
+@media(max-width:640px){ .site-title{ font-size:19px; letter-spacing:1px; } .site-tag{ display:none; } nav a{ font-size:14px; padding:6px 10px; } }
+
+/* ===== Page container ===== */
+main{ max-width:var(--max-w); margin:0 auto; padding:0 6px 40px; }
+
+/* ===== Hero ===== */
+.hero{ background:#fff; border-radius:var(--radius); margin:26px auto 22px; padding:28px 30px; box-shadow:var(--shadow); border:1px solid rgba(230,230,230,.7); display:flex; gap:26px; align-items:center; flex-wrap:wrap; position:relative; overflow:hidden; }
+.hero::before{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+.avatar{ flex:0 0 auto; width:108px; height:108px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:#fff; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:800; letter-spacing:1px; box-shadow:0 8px 24px rgba(20,83,143,.35); }
+.hero h1{ font-size:clamp(1.4rem,3vw,2rem); margin:0 0 8px; letter-spacing:-.02em; }
+.hero p{ margin:0 0 10px; color:var(--muted); max-width:70ch; }
+.hero-chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+.chip{ font-size:.8em; font-weight:700; color:var(--accent); background:rgba(20,83,143,.08); border:1px solid rgba(20,83,143,.18); padding:4px 12px; border-radius:999px; }
+
+/* ===== TOC ===== */
+.toc-wrap{ background:#eef1f7; border-radius:var(--radius); padding:22px 26px 26px; margin:20px auto 26px; box-shadow:0 12px 32px rgba(20,33,61,.10); }
+.toc-wrap h2{ font-size:clamp(1.3rem,2vw,1.6rem); color:#374151; margin:0 0 14px; letter-spacing:-.02em; }
+.toc-wrap ul{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px 20px; list-style:none; padding:0; margin:0; }
+@media(max-width:640px){ .toc-wrap ul{ grid-template-columns:1fr; } }
+.toc-wrap a{ display:block; color:var(--accent); text-decoration:none; padding:10px 14px; border-radius:13px; background:rgba(255,255,255,.70); border:1px solid rgba(55,65,81,.12); font-size:1rem; font-weight:700; transition:transform .15s,background .15s; }
+.toc-wrap a:hover{ transform:translateY(-2px); background:rgba(255,255,255,.95); }
+
+/* ===== Section cards ===== */
+.entry, article{ background:#fff; border-radius:var(--radius); padding:24px 28px; margin:22px auto; box-shadow:var(--shadow); border:1px solid rgba(230,230,230,.7); position:relative; overflow:hidden; }
+.entry::before, article::before{ content:""; position:absolute; inset:0 0 auto 0; height:4px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+.entry h2, article h1{ font-size:clamp(1.2rem,2vw,1.6rem); color:var(--text); margin:0 0 18px; letter-spacing:-.025em; line-height:1.3; }
+.entry h2::after, article h1::after{ content:""; display:block; width:56px; height:3px; margin-top:8px; border-radius:999px; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+.entry > p, article > p{ color:var(--muted); font-size:.95em; margin:0 0 16px; }
+article h2{ font-size:1.18rem; color:var(--accent); margin:30px 0 10px; letter-spacing:-.01em; }
+article h3{ font-size:1rem; margin:20px 0 6px; color:var(--text); }
+article p{ margin:0 0 14px; }
+article ul, article ol{ margin:0 0 14px; padding-left:1.3rem; }
+article li{ margin-bottom:8px; }
+.meta{ color:var(--muted); font-size:.88em; margin-bottom:10px; }
+.lede{ font-size:1.02em; color:#374151; border-left:3px solid var(--accent2); padding:4px 0 4px 16px; margin:0 0 24px; }
+
+/* ===== Topic / member cards ===== */
+.card-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin:4px 0 6px; }
+.card{ background:rgba(250,250,252,.9); border:1px solid rgba(31,41,55,.07); border-radius:14px; padding:14px 16px; box-shadow:0 3px 10px rgba(36,49,66,.05); display:flex; flex-direction:column; gap:6px; }
+.card h3{ margin:0; font-size:1.02rem; line-height:1.4; color:var(--text); }
+.card p{ margin:0; font-size:.91em; color:var(--muted); line-height:1.6; }
+.card ul{ margin:2px 0 0; padding-left:1.2rem; font-size:.91em; color:var(--muted); }
+.card li{ margin-bottom:3px; }
+.card .links{ margin-top:auto; padding-top:6px; display:flex; flex-wrap:wrap; gap:6px 14px; font-size:.9em; }
+.person{ display:flex; gap:14px; align-items:flex-start; }
+.person .avatar{ width:64px; height:64px; font-size:20px; box-shadow:0 4px 12px rgba(20,83,143,.3); }
+.person .who{ flex:1; min-width:0; }
+.person .role{ font-size:.82em; font-weight:700; color:var(--accent2); text-transform:uppercase; letter-spacing:.06em; }
+.cv{ list-style:none; padding:0; margin:6px 0 0; font-size:.9em; color:var(--muted); }
+.cv li{ margin-bottom:2px; padding-left:0; }
+.cv .k{ color:var(--text); font-weight:600; }
+.badge{ font-size:.78em; font-weight:700; color:#0f5132; background:rgba(25,135,84,.12); border:1px solid rgba(25,135,84,.3); padding:2px 10px; border-radius:999px; }
+
+/* ===== Links ===== */
+.link-html{ color:#0057b7; font-weight:700; text-decoration:underline; text-underline-offset:2px; }
+.link-html:hover{ color:#003d8f; }
+.link-ext{ color:#555; font-size:.93em; font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+.link-ext:hover{ color:var(--text); }
+
+/* ===== Publications ===== */
+.pub-year{ font-size:1rem; color:var(--accent); margin:22px 0 8px; padding-bottom:4px; border-bottom:1px dashed rgba(31,41,55,.18); }
+.pub-list{ list-style:none; padding:0; margin:0; }
+.pub-list li{ padding:8px 12px 8px 60px; margin-bottom:6px; position:relative; background:rgba(250,250,252,.9); border:1px solid rgba(31,41,55,.07); border-radius:12px; font-size:.93em; line-height:1.6; }
+.pub-list .n{ position:absolute; left:12px; top:8px; width:42px; color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums; }
+.pub-list .t{ font-weight:600; color:var(--text); }
+.pub-list .pi{ color:var(--text); font-weight:600; }
+.pub-stats{ display:flex; flex-wrap:wrap; gap:10px; margin:0 0 14px; }
+.stat{ background:rgba(20,83,143,.06); border:1px solid rgba(20,83,143,.15); border-radius:14px; padding:10px 18px; min-width:150px; }
+.stat b{ display:block; font-size:1.5rem; color:var(--accent); line-height:1.2; }
+.stat span{ font-size:.85em; color:var(--muted); }
+
+/* ===== Callouts ===== */
+.note{ background:rgba(234,179,8,.1); border:1px solid rgba(234,179,8,.3); padding:13px 16px; border-radius:12px; margin:12px 0; font-size:.93em; line-height:1.65; }
+.note h3{ margin:0 0 6px; font-size:.78rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); }
+.figure-note{ background:rgba(20,83,143,.05); border:1px dashed rgba(20,83,143,.3); border-radius:12px; padding:10px 14px; margin:10px 0 16px; font-size:.9em; color:var(--muted); }
+.benefits{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:8px 0 14px; }
+.benefit{ background:linear-gradient(135deg, rgba(20,83,143,.07), rgba(42,157,143,.07)); border:1px solid rgba(20,83,143,.15); border-radius:14px; padding:14px 16px; text-align:center; font-weight:700; color:var(--accent); }
+.tbl-wrap{ overflow-x:auto; margin:8px 0 16px; }
+table{ border-collapse:collapse; width:100%; font-size:.92em; }
+th,td{ border:1px solid var(--border); padding:7px 10px; text-align:left; vertical-align:top; }
+th{ background:#eef1f7; }
+
+/* ===== Back / footer nav ===== */
+.back-to-toc{ margin-top:1.1rem; padding-top:.9rem; border-top:1px dashed rgba(31,41,55,.18); text-align:right; }
+.back-to-toc a, .footer-nav a{ display:inline-block; color:var(--accent); font-weight:700; font-size:.88em; text-decoration:none; padding:5px 13px; background:rgba(20,83,143,.07); border-radius:999px; transition:background .15s; }
+.back-to-toc a:hover, .footer-nav a:hover{ background:rgba(20,83,143,.14); }
+.footer-nav{ margin-top:30px; padding-top:16px; border-top:1px dashed rgba(31,41,55,.18); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+footer{ background:#14213d; color:rgba(255,255,255,.75); text-align:center; padding:22px 16px; font-size:.9em; margin-top:30px; }
+footer a{ color:#8fd3cb; text-decoration:none; font-weight:600; }
+footer a:hover{ text-decoration:underline; }
+/* ==== house-format v1 — bilingual-personal-site skill, scripts/house-format.css. Prose is justified on every page.
+     Do not edit this block in a page: edit the skill's copy, re-run apply_format.py; check_site.py fails a page whose
+     block differs. ==== */
+main p, main li, main blockquote, main dd, main .art-desc, main .art-quote{ text-align:justify; text-justify:inter-word; hyphens:auto; }
+main .refs li, main .art-links li, main .songlist li, main .toc-wrap li, main .listen p, main .pair li, main .result li, main table p, main table li{ text-align:left; hyphens:manual; }
+main .poem-credit, main .video-cap, main figcaption p, main figcaption li{ text-align:center; hyphens:manual; }
+main code, main pre, main kbd, main samp, main a{ hyphens:manual; }
+/* ==== /house-format ==== */
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="site-title"><a href="../index.html">AIIC<span class="dot">·</span>Lab</a></div>
+    <div class="site-tag">
+      <span lang="en">AI &amp; Intelligent Communication Lab · Sejong University</span>
+      <span lang="vi">Phòng thí nghiệm AI &amp; Truyền thông thông minh · Đại học Sejong</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html"><span lang="en">Home</span><span lang="vi">Trang chủ</span></a></li>
+        <li><a href="../index.html#research"><span lang="en">Research</span><span lang="vi">Nghiên cứu</span></a></li>
+        <li><a href="../index.html#members"><span lang="en">Members</span><span lang="vi">Thành viên</span></a></li>
+        <li><a href="../index.html#publications"><span lang="en">Publications</span><span lang="vi">Công bố</span></a></li>
+        <li><a href="../index.html#join"><span lang="en">Join us</span><span lang="vi">Tuyển sinh</span></a></li>
+        <li><a href="../index.html#contact"><span lang="en">Contact</span><span lang="vi">Liên hệ</span></a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language / Ngôn ngữ">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="vi" aria-pressed="false">VI</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<article>
+<h1><span lang="en">International conference papers</span><span lang="vi">Bài báo hội nghị quốc tế</span></h1>
+<div class="meta"><span lang="en">Publications · updated 1 Nov 2026 from the original lab site</span><span lang="vi">Công bố · cập nhật 01/11/2026 từ trang gốc của lab</span></div>
+<p class="lede" lang="en">36 papers at international conferences (ISIT, GLOBECOM, ICASSP, VTC, ATC, ICCE and others), numbered as on the original lab site and grouped by year, newest first.</p>
+<p class="lede" lang="vi">36 bài báo tại các hội nghị quốc tế (ISIT, GLOBECOM, ICASSP, VTC, ATC, ICCE…), đánh số như trên trang gốc của lab và xếp theo năm, mới nhất trước.</p>
+<p><span lang="en">Jump to year</span><span lang="vi">Đến năm</span>: <a class="link-ext" href="#y2025">2025</a> · <a class="link-ext" href="#y2024">2024</a> · <a class="link-ext" href="#y2023">2023</a> · <a class="link-ext" href="#y2022">2022</a> · <a class="link-ext" href="#y2019">2019</a> · <a class="link-ext" href="#y2018">2018</a> · <a class="link-ext" href="#y2017">2017</a> · <a class="link-ext" href="#y2016">2016</a> · <a class="link-ext" href="#y2015">2015</a> · <a class="link-ext" href="#y2014">2014</a> · <a class="link-ext" href="#y2011">2011</a> · <a class="link-ext" href="#y2010">2010</a> · <a class="link-ext" href="#y2007">2007</a> · <a class="link-ext" href="#y2006">2006</a> · <a class="link-ext" href="#y2005">2005</a> · <a class="link-ext" href="#y2002">2002</a> · <a class="link-ext" href="#y2001">2001</a> · <a class="link-ext" href="#y2000">2000</a></p>
+<p><span lang="en">See also</span><span lang="vi">Xem thêm</span>: <a class="link-html" href="journal-papers.html"><span lang="en">International journal papers</span><span lang="vi">Bài báo tạp chí quốc tế</span></a></p>
+<!-- PUBS:START (generated by tools/build_publications.py from tools/publications.json; do not edit by hand) -->
+<h2 class="pub-year" id="y2025">2025</h2><ol class="pub-list">
+<li><span class="n">[36]</span>Khac-Tuan Nguyen and <span class="pi">Sunghwan Kim</span>, &quot;Bit error rate of RIS-enabled MISO systems with discrete phase shift,&quot;in Proc. RIVF, Ho Chi Minh City, Vietnam, Dec. 2025.</li>
+</ol>
+<h2 class="pub-year" id="y2024">2024</h2><ol class="pub-list">
+<li><span class="n">[35]</span>Thai-Hoc Vu, Daniel Benevides da Costa, Quoc-Viet Pham, and <span class="pi">Sunghwan Kim</span>, &quot;A novel paradigm shift for next-generation: Symbiotic backscatter rate-splitting multiple access systems,&quot;in Proc. ICCE, Danang, Vietnam, Aug. 2024.</li>
+<li><span class="n">[34]</span>Shehbaz Tariq, Abdurrahman Wachid Shaffar, Wook Park, <span class="pi">Sunghwan Kim</span>, and Hyundong Shin, &quot;Multi-agent quantum reinforcement learning for digital twin placement in 6G multi-tier systems,&quot;in Proc. EAI INISCOM, Danang, Vietnam, Feb. 2024.</li>
+<li><span class="n">[33]</span>Dang-Trac Nguyen and <span class="pi">Sunghwan Kim</span>, &quot;DRF-ECCT: Dynamic reliability filter for error correction code transformer,&quot;in Proc. ICGHIT, Hanoi, Vietnam, Jan. 2024.</li>
+</ol>
+<h2 class="pub-year" id="y2023">2023</h2><ol class="pub-list">
+<li><span class="n">[32]</span>Thai-Hoc Vu, Daniel Benevides da Costa, Quoc-Viet Pham, and <span class="pi">Sunghwan Kim</span>, &quot;Performance analysis of RSMA-aided UAV-to-ground communications,&quot;in Proc. GLOBECOM, Kuala Lumpur, Malaysia, Dec. 2023.</li>
+<li><span class="n">[31]</span>Thi-Huong Khuat and <span class="pi">Sunghwan Kim</span>, &quot;One indel or one-deletion and one-insertion error-correcting code,&quot;in Proc. ATC, Da Nang, Vietnam, Oct. 2023.</li>
+<li><span class="n">[30]</span>Thai-Hoc Vu, Khac-Tuan Nguyen, Quoc-Viet Pham, Thien Huynh-The, Daniel Benevides da Costa, Vo Nguyen Quoc Bao, <span class="pi">Sunghwan Kim</span>, &quot;Outage performance of THz-aided NOMA systems with spherical stochastic model,&quot;in Proc. SSP, Hanoi, Vietnam, July 2023.</li>
+</ol>
+<h2 class="pub-year" id="y2022">2022</h2><ol class="pub-list">
+<li><span class="n">[29]</span>Giang Ngo Tran, Sang Quang Nguyen, Minh Tuan Nguyen, and <span class="pi">Sunghwan Kim</span>, &quot;Optimal power allocation for non-orthogonal multiple access visible light communications with short packet and imperfect channel information,&quot;in Proc. ATC, Hanoi, Vietnam, Oct. 2022.</li>
+<li><span class="n">[28]</span>Sang Quang Nguyen, Thai-Hoc Vu, and <span class="pi">Sunghwan Kim</span>, &quot;Residual transceiver hardware impairment and imperfect interference cancellation with two way-enabled RIS systems,&quot;in Proc. ATC, Hanoi, Vietnam, Oct. 2022.</li>
+<li><span class="n">[27]</span>Xiaozhou Lu and <span class="pi">Sunghwan Kim</span>, &quot;Log-likelihood ratio for low-density parity-check codes under binary symmetric erasure channel in DNA storage,&quot;in Proc. ATC, Hanoi, Vietnam, Oct. 2022.</li>
+<li><span class="n">[26]</span>Khac-Tuan Nguyen, Thai-Hoc Vu, Thi-Huong Khuat, Hai-Chau Le, and <span class="pi">Sunghwan Kim</span>, &quot;Performance analysis of uplink MISO systems with RIS selections and MRC/SC configurations,&quot;in Proc. ICCE, Nha Trang, Vietnam, July 2022.</li>
+<li><span class="n">[25]</span>Thai-Hoc Vu, Trung Q. Duong, Thi-Huong Khuat, Tien Hoa Nguyen, and <span class="pi">Sunghwan Kim</span>, &quot;Short-packet communication for cooperative UAV-based MIMO systems with rate splitting multiple access,&quot;in Proc. ICCE, Nha Trang, Vietnam, July 2022.</li>
+<li><span class="n">[24]</span>Thai-Hoc Vu and <span class="pi">Sunghwan Kim</span>, &quot;Outage performance of rate splitting multiple access-based cooperative MIMO UAV networks,&quot;in Proc. ASCC, Jeju Island, Korea, May 2022.</li>
+</ol>
+<h2 class="pub-year" id="y2019">2019</h2><ol class="pub-list">
+<li><span class="n">[23]</span>Hieu Trong Dao and <span class="pi">Sunghwan Kim</span>, &quot;Pilot power allocation for enhancing channel estimation quality in multi-cell multi-user massive MIMO systems,&quot;in Proc. APCC, Ho Chi Minh City, Vietnam, Nov. 2019.</li>
+<li><span class="n">[22]</span>Mohammed A. A. Al-qaness, Mohamed Abd Elaziz, Ammar Hawbani, Aaqif Afaal Abbasi, Liang Zhao, and <span class="pi">Sunghwan Kim</span>, &quot;Real-time traffic congestion analysis based on collected tweets,&quot;in Proc. IUCC, Shenyang, China, Oct. 2019.</li>
+<li><span class="n">[21]</span>Aaqif Afaal Abbasi, Sidra Sltana, Mohammed A. A. Al-qaness, Ammar Hawbani, Sameen Javed, and <span class="pi">Sunghwan Kim</span>, &quot;Lightweight virtual machine mapping for data centers,&quot;in Proc. DSCI, Shenyang, China, Oct. 2019.</li>
+<li><span class="n">[20]</span>Manh Le Tran and <span class="pi">Sunghwan Kim</span>, &quot;Multilayer collaborative constellation for MIMO visible light communication,&quot;in Proc. ATC, Hanoi, Vietnam, Oct. 2019.</li>
+<li><span class="n">[19]</span>Duc Manh Nguyen and <span class="pi">Sunghwan Kim</span>, &quot;A quantum three pass protocol with phase estimation for many bits transfer,&quot;in Proc. ATC, Hanoi, Vietnam, Oct. 2019.</li>
+<li><span class="n">[18]</span>Manh Le Tran and <span class="pi">Sunghwan Kim</span>, &quot;Generalized LED index modulation with simplified maximum a posteriori detection and improved LED mapping for MIMO visible light communication,&quot;in Proc. ICEVLC, Seoul, Korea, Mar. 2019.</li>
+</ol>
+<h2 class="pub-year" id="y2018">2018</h2><ol class="pub-list">
+<li><span class="n">[17]</span>Duc Manh Nguyen and <span class="pi">Sunghwan Kim</span>, &quot;Application of additive codes over GF(4) on quantum error correction codes,&quot;in Proc. FICTA, Da Nang, Vietnam, Nov. 2018.</li>
+<li><span class="n">[16]</span>Manh Le Tran and <span class="pi">Sunghwan Kim</span>, &quot;Improved generalized LED index modulation for visible light communication,&quot;in Proc. FICTA, Da Nang, Vietnam, Nov. 2018.</li>
+</ol>
+<h2 class="pub-year" id="y2017">2017</h2><ol class="pub-list">
+<li><span class="n">[15]</span>He Wang and <span class="pi">Sunghwan Kim</span>, &quot;A Study on soft run-length limited codes in visible light communication,&quot;in Proc. ICCNT, Zurich, Switzerland, Sept. 2017.</li>
+<li><span class="n">[14]</span>Duc Manh Nguyen and <span class="pi">Sunghwan Kim</span>, &quot;A study on quantum stabilizer codes with Length 7,&quot;in Proc. IFOST, Ulsan, Korea, May 2017.</li>
+</ol>
+<h2 class="pub-year" id="y2016">2016</h2><ol class="pub-list">
+<li><span class="n">[13]</span>Duc Manh Nguyen and <span class="pi">Sunghwan Kim</span>, &quot;Construction and complement circuit of a quantum stabilizer Code with length 7,&quot;in Proc. ICUFN, Vienna, Austria, July 2016.</li>
+<li><span class="n">[12]</span>Fatema-Tuz-Zohra Khanam, Kyoung-Young Song, and <span class="pi">Sunghwan Kim</span>, &quot;A modified reversible data hiding in encrypted image using enhanced measurement functions,&quot;in Proc. ICUFN, Vienna, Austria, July 2016.</li>
+</ol>
+<h2 class="pub-year" id="y2015">2015</h2><ol class="pub-list">
+<li><span class="n">[11]</span>He Wang and <span class="pi">Sunghwan Kim</span>, &quot;Novel soft decoding algorithm of RLL codes for secure physical-layer visible light communications,&quot;in Proc. FiCloud, Rome, Italy, Aug. 2015.</li>
+<li><span class="n">[10]</span>Taesoo Kim and <span class="pi">Sunghwan Kim</span>, &quot;Efficient transmission of reversible data hiding in encryption images by using Reed-Solomon codes&quot;, in Proc. FiCloud, Rome, Italy, Aug. 2015.</li>
+</ol>
+<h2 class="pub-year" id="y2014">2014</h2><ol class="pub-list">
+<li><span class="n">[9]</span>He Wang and <span class="pi">Sunghwan Kim</span>, &quot;Novel decoding of run-length limited codes for visible light communication,&quot;in Proc. CSCC, Santorini Island, Greece, July 2014.</li>
+</ol>
+<h2 class="pub-year" id="y2011">2011</h2><ol class="pub-list">
+<li><span class="n">[8]</span>Sung-Yoon Jung and <span class="pi">Sunghwan Kim</span>, &quot;Punctured pilots for OFDMA communications,&quot;in Proc. IEEE MWSCAS, Seoul, Korea, Aug. 2011.</li>
+</ol>
+<h2 class="pub-year" id="y2010">2010</h2><ol class="pub-list">
+<li><span class="n">[7]</span>Sang Hyun Lee, Ankit Ghiya, Sriram Vishwanath, Sung Soo Hwang, and <span class="pi">Sunghwan Kim</span>, &quot;Structured dirty-paper coding using low-density lattices,&quot;in Proc. ICASSP, Dallas, TX., Mar. 2010</li>
+</ol>
+<h2 class="pub-year" id="y2007">2007</h2><ol class="pub-list">
+<li><span class="n">[6]</span><span class="pi">Sunghwan Kim</span>, Jong-Seon No, Habong Chung, and Dong-Joon Shin, &quot;Cycle analysis and construction of protographs for QC LDPC codes with girth larger than 12,&quot;in Proc. ISIT, Nice, France, June 2007.</li>
+</ol>
+<h2 class="pub-year" id="y2006">2006</h2><ol class="pub-list">
+<li><span class="n">[5]</span><span class="pi">Sunghwan Kim</span>, Min-Ho Jang, Jong-Seon No, Song-Nam Hong, and Dong-Joon Shin, &quot;Analysis of complexity and convergence speed of sequential schedules for decoding LDPC codes,&quot;in Proc. ISITA, Seoul Korea, Nov. 2006.</li>
+</ol>
+<h2 class="pub-year" id="y2005">2005</h2><ol class="pub-list">
+<li><span class="n">[4]</span><span class="pi">Sunghwan Kim</span>, Jong-Seon No, Habong Chung, and Dong-Joon Shin, &quot;Girth analysis of Tanner&#x27;s (3, 5) QC LDPC codes, &quot;in Proc. ISIT, Adelaide, Australia, Sept. 2005.</li>
+</ol>
+<h2 class="pub-year" id="y2002">2002</h2><ol class="pub-list">
+<li><span class="n">[3]</span><span class="pi">Sunghwan Kim</span>, Gang-Mi Gil, Kyung-Hee Kim and Jong-Seon No, &quot;Generalized bent functions constructed from partial spreads,&quot;in Proc. ISIT, Lausanne, Switzerland, July 2002.</li>
+</ol>
+<h2 class="pub-year" id="y2001">2001</h2><ol class="pub-list">
+<li><span class="n">[2]</span><span class="pi">Sunghwan Kim</span> and Jae Hong Lee, &quot;Performance of iterative multiuser detection with a partial PIC detector and serially concatenated codes,&quot;in Proc. IEEE VTC-Fall, Atlantic City, NJ, Oct. 2001.</li>
+</ol>
+<h2 class="pub-year" id="y2000">2000</h2><ol class="pub-list">
+<li><span class="n">[1]</span>Hyundong Shin, <span class="pi">Sunghwan Kim</span>, and Jae Hong Lee, &quot;Turbo decoding in a Rayleigh fading channel with estimated channel state information,&quot;in Proc. IEEE VTC-Fall, Boston, MA, Sept. 2000.</li>
+</ol>
+<!-- PUBS:END -->
+<div class="footer-nav">
+  <a href="../index.html"><span lang="en">← Home</span><span lang="vi">← Trang chủ</span></a>
+  <a href="#top"><span lang="en">↑ Top</span><span lang="vi">↑ Đầu trang</span></a>
+</div>
+</article>
+</main>
+
+<footer>
+  <span lang="en">© 2026 AIIC Lab. · Department of Artificial Intelligence and Information Technology, Sejong University, Seoul, Korea</span>
+  <span lang="vi">© 2026 AIIC Lab. · Khoa Trí tuệ nhân tạo và Công nghệ thông tin, Đại học Sejong, Seoul, Hàn Quốc</span>
+</footer>
+
+<script>
+(function () {
+  var KEY = 'aiic-lang';
+  var root = document.documentElement;
+  function apply(lang) {
+    if (lang !== 'vi' && lang !== 'en') { lang = 'en'; }
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    var t = root.getAttribute('data-title-' + lang);
+    if (t) { document.title = t; }
+    var btns = document.querySelectorAll('.lang-btn');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang') === lang ? 'true' : 'false');
+    }
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  if (saved) { apply(saved); }
+  document.addEventListener('click', function (ev) {
+    var el = ev.target;
+    while (el && el !== document) {
+      if (el.classList && el.classList.contains('lang-btn')) {
+        apply(el.getAttribute('data-lang'));
+        return;
+      }
+      el = el.parentNode;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
