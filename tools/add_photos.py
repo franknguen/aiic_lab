@@ -14,12 +14,26 @@ Two kinds of slot are written into the HTML by hand (or by the first-build gener
 Paths in the slots are relative to the repo root; the script prefixes "../" for pages under pages/.
 A slot whose file is missing is left as it is (initials stay visible, the figure comment stays invisible),
 so the site is always complete. Idempotent: a slot already replaced is not touched.
-Photo guidance: portrait, about 400x500 px, JPEG; figures: PNG at 1000-1280 px wide.
+The extension in the slot is only a suggestion: a file with the same base name and any of
+.jpg .jpeg .png .webp .gif is accepted, and the <img> points at the file that exists.
+Photo guidance: portrait, about 400x500 px; figures: 1000-1280 px wide.
 """
 import os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = ['index.html'] + sorted('pages/' + f for f in os.listdir(os.path.join(ROOT, 'pages')) if f.endswith('.html'))
+EXTS = ['.jpg', '.jpeg', '.png', '.webp', '.gif']
+
+
+def find_file(rel):
+    """Return the repo-relative path of an existing file with rel's base name and any accepted extension, or None."""
+    base = os.path.splitext(rel)[0]
+    for ext in [os.path.splitext(rel)[1]] + EXTS:
+        if ext and os.path.exists(os.path.join(ROOT, base + ext)):
+            return base + ext
+    return None
+
+
 AVATAR = re.compile(r'<div class="avatar" aria-hidden="true" data-photo="([^"]+)">([^<]*)</div>')
 FIGURE = re.compile(r'<!-- FIGURE: ([^|]+?) \| (.*?) -->')
 NAME = re.compile(r'<h3>([^<]*)</h3>')
@@ -36,12 +50,13 @@ def main(list_only=False):
         def avatar(m):
             nonlocal changed
             f, initials = m.group(1), m.group(2)
-            ok = os.path.exists(os.path.join(ROOT, f))
+            found = find_file(f)
             if list_only:
-                print(f'{"ok     " if ok else "missing"} {f}  ({rel})')
+                print(f'{"ok     " if found else "missing"} {f}  ({rel})' + (f'  -> {found}' if found and found != f else ''))
                 return m.group(0)
-            if not ok:
+            if not found:
                 return m.group(0)
+            f = found
             n = NAME.search(s[m.end():m.end() + 400])
             alt = n.group(1) if n else initials
             changed += 1
@@ -50,12 +65,13 @@ def main(list_only=False):
         def figure(m):
             nonlocal changed
             f, cap = m.group(1).strip(), m.group(2).strip()
-            ok = os.path.exists(os.path.join(ROOT, f))
+            found = find_file(f)
             if list_only:
-                print(f'{"ok     " if ok else "missing"} {f}  ({rel})')
+                print(f'{"ok     " if found else "missing"} {f}  ({rel})' + (f'  -> {found}' if found and found != f else ''))
                 return m.group(0)
-            if not ok:
+            if not found:
                 return m.group(0)
+            f = found
             changed += 1
             return f'<figure><img src="{prefix}{f}" alt="{cap}" loading="lazy"><figcaption>{cap}</figcaption></figure>'
 

@@ -37,11 +37,13 @@ current students also appear as short cards on `index.html` (section *Members*) 
 
 ### Photos and figures
 
-Every member card has a photo slot and every research page has figure slots. Until a file exists, the card shows
-the person's initials and the figure slot is an invisible HTML comment, so the site is always complete.
+All 19 member photos (`assets/members/`, JPEG, at most 720 px high) and the 6 research figures
+(`assets/figures/`, PNG) are in place. Every member card has a photo slot and every research page has figure
+slots; a slot whose file is missing shows the person's initials or stays an invisible HTML comment, so the site
+is always complete. To add or replace a picture:
 
-1. Save each photo as `assets/members/<first-last>.jpg` (portrait, about 400×500 px). The exact file name
-   expected for every slot is printed by:
+1. Save the photo as `assets/members/<first-last>.jpg` (portrait, 400–720 px high; `.png` is accepted too).
+   The file name expected for every slot is printed by:
 
    ```bash
    python3 tools/add_photos.py --list
